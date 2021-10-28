@@ -35,7 +35,7 @@ background-color: rgb(162, 162, 162);</string>
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap>../../../.designer/backup/brazzers.png</pixmap>
+         <pixmap>brazzers.png</pixmap>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
