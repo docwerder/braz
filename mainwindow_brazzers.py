@@ -7,7 +7,7 @@ from PyQt5.QtWidgets import QMainWindow
 from PyQt5.QtWidgets import QApplication
 import itertools
 
-from load_bra_db import load_bra_db
+from load_brazzers_database import load_bra_db
 import sys
 
 import pandas as pd
