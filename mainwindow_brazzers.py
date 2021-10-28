@@ -17,7 +17,7 @@ from PyQt5.uic import loadUiType
 
 import search_window_file as search_window
 
-FORM_CLASS, _=loadUiType(path.join(path.dirname('__file__'),"bra_gui_final_v1.ui"))
+FORM_CLASS, _=loadUiType(path.join(path.dirname('__file__'),"mainwindow_brazzers.ui"))
 
 import sqlite3
 
