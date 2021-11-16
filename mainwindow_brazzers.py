@@ -188,7 +188,7 @@ class Main(QMainWindow, FORM_CLASS):
 
         # fill the comboBox with the unique values of site name
         [self.comboBox_site.addItem(x)for x in self.bra_db_df['Site Name'].unique()]
-
+        print('veränderung...')
     def open_search_window(self):
         # self.search_window = search_window.Search_window()
         # self.search_window.show()
