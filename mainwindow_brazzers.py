@@ -6,6 +6,7 @@ from PyQt5 import QtCore
 from PyQt5.QtWidgets import QMainWindow
 from PyQt5.QtWidgets import QApplication
 import itertools
+import pathlib
 
 from load_brazzers_database import load_bra_db
 import sys
@@ -32,59 +33,138 @@ class Main(QMainWindow, FORM_CLASS):
 
     def Handel_Buttons(self):
         #self.refresh_btn.clicked.connect(self.GET_DATA)
-        self.load_df_button.clicked.connect(self.LOAD_DF)
+        #self.load_df_button.clicked.connect(self.LOAD_DF)
+
+        # New version. Try to load a csv-file into dataframe!
+        self.load_df_button.clicked.connect(self.load_csv_file)
         #self.search_btn.clicked.connect(self.SEARCH)
-        self.search_button.clicked.connect(self.SEARCH_BRA_DF)
-        self.search_window_button.clicked.connect(self.open_search_window)
-        self.comboBox_site.currentIndexChanged.connect(self.site_changed)
-        self.comboBox_pornstar_1.currentIndexChanged.connect(self.pornstar_1_changed)
-        self.comboBox_title.currentIndexChanged.connect(self.title_changed)
-        self.play_file_button.clicked.connect(self.play_file)
+        #self.search_button.clicked.connect(self.SEARCH_BRA_DF)
+        #self.search_window_button.clicked.connect(self.open_search_window)
+        #self.comboBox_site.currentIndexChanged.connect(self.site_changed)
+        #self.comboBox_site.currentTextChanged.connect(self.site_changed)
+        #self.comboBox_site.currentTextChanged.connect(self.on_combobox_changed)
+
+        #self.comboBox_title.currentIndexChanged.connect(self.title_changed)
+        #self.play_file_button.clicked.connect(self.play_file)
         #self.mycheckBox.setCheckState(Qt.PartiallyChecked)
         #self.check_btn.clicked.connect(self.LEVEL)
 
-    def LOAD_DF(self):
-        # dict = {'ps_name': ["Nikki Benz", "Shyla Stylez", "Velicity Von", "Rebecca Moore"],
-        #         'site': ["big_tits_at_school", "big_tits_at_work", "big_tits_in_uniform", "real_wife_stories"],
-        #         'score': [90, 40, 80, 98]}
-        #df = pd.DataFrame(dict)
-        #print(df)
-        bra_dir = '/Volumes/WERDERNASX/VIDEOSX/BRAZZERS'
-        self.bra_db_df = load_bra_db(bra_dir)
-        #print(self.bra_db_df)
-        #print('Arbitrary df: \n', df)
-        rows = 0
-        # for row_number, row_data in enumerate(df):
-        self.bra_dir_table.setRowCount(0)
+    # def LOAD_DF(self):
+    #         # dict = {'ps_name': ["Nikki Benz", "Shyla Stylez", "Velicity Von", "Rebecca Moore"],
+    #         #         'site': ["big_tits_at_school", "big_tits_at_work", "big_tits_in_uniform", "real_wife_stories"],
+    #         #         'score': [90, 40, 80, 98]}
+    #         #df = pd.DataFrame(dict)
+    #         #print(df)
+    #         bra_dir = '/Volumes/WERDERNASX/VIDEOSX/BRAZZERS'
+    #         self.bra_db_df = load_bra_db(bra_dir)
+    #
+    #         #print(self.bra_db_df)
+    #         #print('Arbitrary df: \n', df)
+    #         rows = 0
+    #         # for row_number, row_data in enumerate(df):
+    #         self.bra_dir_table.setRowCount(0)
+    #
+    #         for rows, columns in self.bra_db_df.iterrows():
+    #             #print('rows: ', rows)
+    #             #print(columns['Site Name'])
+    #             self.bra_dir_table.insertRow(rows)
+    #             for num, data in enumerate(columns):
+    #                 self.bra_dir_table.setItem(rows, num, QTableWidgetItem(str(data)))
+    #
+    #
+    #         self.combobox_site = comboBox_site(self)
+    #         print('spalten:', self.bra_db_df['Site Name'].unique())
+    #         self.combobox_site.addItems(self.bra_db_df['Site Name'].unique())
+    #
+    #         self.bra_dir_table.setCellWidget(0, 0, self.combobox_site)
+    #
+    #
+    #         # Code below should work ...
+    #         # for rows, columns in df.iterrows():
+    #         #     # print('rows: ', rows)
+    #         #     # print(columns['ps_name'])
+    #         #     self.bra_dir_table.insertRow(rows)
+    #         #     for num, data in enumerate(columns):
+    #         #         self.bra_dir_table.setItem(rows, num, QTableWidgetItem(str(data)))
+    #
+    #             #print('row_number: \t', df[row_number])
+    #             #print('row_data: \t', row_data)
+    #             #self.bra_dir_table.insertRow(rows)
+    #             #for columns, df[rows] in enumerate(df):
+    #              #   self.bra_dir_table.setItem(columns, df[rows], QTableWidgetItem(str(df[rows])))
 
-        for rows, columns in self.bra_db_df.iterrows():
-            #print('rows: ', rows)
-            #print(columns['Site Name'])
+    def load_csv_file(self):
+
+        self.csv_dir = QtWidgets.QFileDialog.getExistingDirectory(
+            parent=None,
+            caption="Select directory of csv-file",
+            directory="",
+        )
+
+        if self.csv_dir == "":
+            return
+
+        csv_file = pathlib.Path(self.csv_dir) / "bra_final_py.csv"
+
+        print(f"Loading {csv_file} ... ")
+        self.loaded_csv_df = pd.read_csv(csv_file)
+        #print('Index: ', self.loaded_csv_df.index)
+
+
+        # bra_dir = '/Volumes/WERDERNASX/VIDEOSX/BRAZZERS'
+        # self.bra_db_df = load_bra_db(bra_dir)
+        rows = 0
+
+        # # for row_number, row_data in enumerate(df):
+        #self.bra_dir_table.setRowCount(0)
+
+
+        # Set Width of the columns within the QTableWidget
+        #self.bra_dir_table.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+        #self.bra_dir_table.horizontalHeader().setSectionResizeMode(1, QHeaderView.Interactive)
+        self.bra_dir_table.setColumnWidth(0, 50)
+        self.bra_dir_table.setColumnWidth(1, 130)
+
+
+
+
+        #print('reduced_df: \n', self.loaded_csv_df_reduced)
+        for rows, columns in self.loaded_csv_df.iterrows():
+            rows = self.bra_dir_table.rowCount()
             self.bra_dir_table.insertRow(rows)
             for num, data in enumerate(columns):
                 self.bra_dir_table.setItem(rows, num, QTableWidgetItem(str(data)))
+        #
+        #
+        #self.comboBox_site = comboBox(self)
+        #self.comboBox_site.clear()
+        #print('spalten:', self.loaded_csv_df['Site'].unique())
+
+        # Populate the Combobox site
+        self.site_list_unique = self.loaded_csv_df['Site'].unique()
+        self.site_list_unique = list(self.site_list_unique)
+        self.site_list_unique.insert(0, "All Sites")
+        for lf in self.site_list_unique:
+            self.comboBox_site.addItem(lf)
+
+        # Populate the combobox ps1
+        self.ps1_list_unique = self.loaded_csv_df['PS1'].unique()
+        self.ps1_list_unique = list(self.ps1_list_unique)
+        self.ps1_list_unique.insert(0, "All Pornstars")
+        for lf in self.ps1_list_unique:
+            self.comboBox_ps1.addItem(lf)
 
 
-        self.combobox_site = comboBox_site(self)
-        print('spalten:', self.bra_db_df['Site Name'].unique())
-        self.combobox_site.addItems(self.bra_db_df['Site Name'].unique())
 
-        self.bra_dir_table.setCellWidget(0, 0, self.combobox_site)
+        #[self.comboBox_site.addItem(x) for x in self.loaded_csv_df['Site'].unique()]
+        #self.comboBox_site.insertItem(0, 'All Sites')
+        #self.comboBox_site.addItems(self.site_list_unique)
 
+        self.comboBox_site.currentTextChanged.connect(self.site_changed)
+        self.comboBox_ps1.currentIndexChanged.connect(self.ps1_changed)
+        # self.bra_dir_table.setCellWidget(0, 0, self.combobox_site)
+        #
 
-        # Code below should work ...
-        # for rows, columns in df.iterrows():
-        #     # print('rows: ', rows)
-        #     # print(columns['ps_name'])
-        #     self.bra_dir_table.insertRow(rows)
-        #     for num, data in enumerate(columns):
-        #         self.bra_dir_table.setItem(rows, num, QTableWidgetItem(str(data)))
-
-            #print('row_number: \t', df[row_number])
-            #print('row_data: \t', row_data)
-            #self.bra_dir_table.insertRow(rows)
-            #for columns, df[rows] in enumerate(df):
-             #   self.bra_dir_table.setItem(columns, df[rows], QTableWidgetItem(str(df[rows])))
 
     def GET_DATA(self):
 
@@ -196,20 +276,56 @@ class Main(QMainWindow, FORM_CLASS):
         self.search_window.show()
 
     def site_changed(self):
-        self.comboBox_pornstar_1.clear()
-        self.pornstar_1 = self.bra_db_df[self.bra_db_df['Site Name'] == self.comboBox_site.currentText()]['Pornstar 1']
-        [self.comboBox_pornstar_1.addItem(x) for x in self.pornstar_1.unique()]
+        self.bra_dir_table.setRowCount(0)
+        #self.comboBox_ps1.clear()
+        self.ps1 = self.loaded_csv_df[self.loaded_csv_df['Site'] == self.comboBox_site.currentText()]['PS1']
+        [self.comboBox_ps1.addItem(x) for x in self.ps1.unique()]
+        print('site changed to: ', self.comboBox_site.currentText())
+        selected_site = self.comboBox_site.currentText()
+        if selected_site == "All Sites":
+            for rows, columns in self.loaded_csv_df.iterrows():
+                rows = self.bra_dir_table.rowCount()
+                self.bra_dir_table.insertRow(rows)
+                for num, data in enumerate(columns):
+                    self.bra_dir_table.setItem(rows, num, QTableWidgetItem(str(data)))
+        else:
+            self.selected_df_of_selected_site = self.loaded_csv_df[self.loaded_csv_df['Site'] == selected_site]
 
-    def pornstar_1_changed(self):
+            rows = 0
+            for rows, columns in self.selected_df_of_selected_site.iterrows():
+                rows = self.bra_dir_table.rowCount()
+                self.bra_dir_table.insertRow(rows)
+                for num, data in enumerate(columns):
+                    self.bra_dir_table.setItem(rows, num, QTableWidgetItem(str(data)))
+
+    def ps1_changed(self):
+        self.bra_dir_table.setRowCount(0)
         self.comboBox_title.clear()
-        self.title = self.bra_db_df[(self.bra_db_df['Site Name'] == self.comboBox_site.currentText()) &
-                                    (self.bra_db_df['Pornstar 1'] == self.comboBox_pornstar_1.currentText())]['Title']
-        [self.comboBox_title.addItem(x) for x in self.title.unique()]
+
+        self.df = self.loaded_csv_df
+        #ps_name = "Nikki Benz"
+
+        ps_name = self.comboBox_ps1.currentText()
+        # ps_selection = df[((df['PS1'] == "Nikki Benz") | (df['PS2'] == "Nikki Benz"))]
+        ps_selection = self.df[((self.df['PS1'] == ps_name) | (self.df['PS2'] == ps_name) | (self.df['PS3'] == ps_name) |
+                                (self.df['PS4'] == ps_name) | (self.df['PS5'] == ps_name) | (self.df['PS6'] == ps_name) |
+                                (self.df['PS7'] == ps_name) | (self.df['PS8'] == ps_name) | (self.df['PS9'] == ps_name) |
+                                (self.df['PS10'] == ps_name))]
+        print('Selected pornstar: ', ps_name)
+        print('Selected dataframe: ', ps_selection)
+        print('Length: ', len(ps_selection))
+
+        # self.title = self.loaded_csv_df[(self.loaded_csv_df['Site'] == self.comboBox_site.currentText()) &
+        #                             (self.loaded_csv_df['PS1'] == self.comboBox_ps1.currentText())]['Title']
+        # [self.comboBox_title.addItem(x) for x in self.title.unique()]
 
     def title_changed(self):
-        self.link = self.bra_db_df[(self.bra_db_df['Site Name'] == self.comboBox_site.currentText()) &
-                                   (self.bra_db_df['Pornstar 1'] == self.comboBox_pornstar_1.currentText()) &
-                                   (self.bra_db_df['Title'] == self.comboBox_title.currentText())]['Link']
+        # self.link = self.loaded_csv_df[(self.loaded_csv_df['Site'] == self.comboBox_site.currentText()) &
+        #                            (self.loaded_csv_df['PS1'] == self.comboBox_ps1.currentText()) &
+        #                            (self.loaded_csv_df['Title'] == self.comboBox_title.currentText())]['Link']
+        self.link = self.loaded_csv_df[(self.loaded_csv_df['Site'] == self.comboBox_site.currentText()) &
+                                       (self.loaded_csv_df['PS1'] == self.comboBox_ps1.currentText())]
+
 
         print(self.link)
         #print(self.textEdit_link.setPlainText(self.link.item()))
@@ -268,12 +384,12 @@ def main():
     app = QApplication(sys.argv)
     window = Main()
     window.show()
-    app.exec_()
-
+    app.exec()
+    #sys(app.exec_())
 
 if __name__ == '__main__':
     main()
 
 
 
-import sqlite3
+#import sqlite3
