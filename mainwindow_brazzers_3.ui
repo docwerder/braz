@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>962</width>
-    <height>691</height>
+    <width>1154</width>
+    <height>839</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,7 +16,7 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout" rowstretch="30,200,20">
     <item row="0" column="0">
-     <layout class="QHBoxLayout" name="horizontalLayout">
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="5,1">
       <item>
        <widget class="QLabel" name="label">
         <property name="sizePolicy">
@@ -39,6 +39,13 @@ background-color: rgb(162, 162, 162);</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_for_site_picture">
+        <property name="text">
+         <string>TextLabel</string>
         </property>
        </widget>
       </item>
@@ -147,7 +154,7 @@ background-color: rgb(162, 162, 162);</string>
        </widget>
       </item>
       <item>
-       <layout class="QVBoxLayout" name="verticalLayout_right" stretch="20,4,20,4,20,4,20,4,20">
+       <layout class="QVBoxLayout" name="verticalLayout_right" stretch="20,4,20,4,20,4,20,4,0,0,0,20">
         <property name="bottomMargin">
          <number>0</number>
         </property>
@@ -250,6 +257,9 @@ background-color: rgb(162, 162, 162);</string>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="1,1">
+          <property name="spacing">
+           <number>0</number>
+          </property>
           <item>
            <widget class="QLabel" name="label_ps_only">
             <property name="text">
@@ -277,6 +287,50 @@ background-color: rgb(162, 162, 162);</string>
          </layout>
         </item>
         <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_13" stretch="1,2,3">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_ctn">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(0, 209, 0);
+font: 13pt &quot;Monaco&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Ctn:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_brazzers_site">
+            <property name="text">
+             <string>Brazzers-site</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_brazzers_site"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="Line" name="line_5">
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_14"/>
+        </item>
+        <item>
          <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="1,1,1,2">
           <item>
            <widget class="QPushButton" name="search_window_button">
@@ -293,9 +347,9 @@ background-color: rgb(162, 162, 162);</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="search_button">
+           <widget class="QPushButton" name="btn_show_picture">
             <property name="text">
-             <string>Search</string>
+             <string>pic...</string>
             </property>
            </widget>
           </item>
@@ -361,7 +415,7 @@ background-color: rgb(162, 162, 162);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>962</width>
+     <width>1154</width>
      <height>24</height>
     </rect>
    </property>

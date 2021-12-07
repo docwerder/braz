@@ -24,7 +24,7 @@ bra_dir_db_2=sorted(next(os.walk(bra_dir_2))[1])
 selected_dirs = [bra_dir_db[i] for i in [0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
                             15, 16, 17, 19, 20, 21, 23]]
 
-selected_dirs_2 = [bra_dir_db_2[i] for i in [0, 3, 4, 5, 7, 8, 11, 12, 13, 15, 16, 19]]
+selected_dirs_2 = [bra_dir_db_2[i] for i in [0, 3, 4, 5, 7, 8, 11, 12, 13, 15, 16, 17, 19, 20, 23]]
 
 selected_dirs_final = [selected_dirs, selected_dirs_2]
 
@@ -41,12 +41,18 @@ tmp_files_title_db = {}
 tmp_files_title_db_2 = {}
 tmp_files_title_db_tmp = []
 
+link_files_tmp = []
+link_files_db = {}
+
 
 for lf in selected_dirs:
     tmp_dir = os.path.join(bra_dir,lf)
     tmp_files = sorted(glob.glob(r'{}/*.mp4'.format(tmp_dir)))
 
+
+
     for lf_tmp in tmp_files:
+        #print('lf_tmp: ', lf_tmp )
         site_string = lf_tmp.split('/')[-2]
         location = lf_tmp.split("/")[2]
         site_with_ps = lf_tmp.split('/')[-1].split('-')[0]
@@ -64,14 +70,17 @@ for lf in selected_dirs:
         tmp_files_title_db_tmp.append(title_string)
         tmp_files_title_db = pd.DataFrame(tmp_files_title_db_tmp)
 
+        link_files_tmp.append(lf_tmp)
+        link_files_db = pd.DataFrame(link_files_tmp)
 
-    df_final_tmp_2 = pd.concat([tmp_files_site_db, tmp_files_db, tmp_files_location_db, tmp_files_title_db], axis=1)
+    df_final_tmp_2 = pd.concat([tmp_files_site_db, tmp_files_db, tmp_files_location_db, tmp_files_title_db, link_files_db], axis=1)
+
 
 for lf in selected_dirs_2:
 
     tmp_dir = os.path.join(bra_dir_2, lf)
     tmp_files = sorted(glob.glob(r'{}/*.mp4'.format(tmp_dir)))
-
+    #print('tmp_files: \n', tmp_files)
     for lf_tmp in tmp_files:
 
         site_string = lf_tmp.split('/')[-2]
@@ -91,12 +100,14 @@ for lf in selected_dirs_2:
         tmp_files_title_db_tmp.append(title_string)
         tmp_files_title_db = pd.DataFrame(tmp_files_title_db_tmp)
 
+        link_files_tmp.append(lf_tmp)
+        link_files_db = pd.DataFrame(link_files_tmp)
 
-    df_final_tmp_2 = pd.concat([tmp_files_site_db, tmp_files_db, tmp_files_location_db, tmp_files_title_db], axis=1)
+    df_final_tmp_2 = pd.concat([tmp_files_site_db, tmp_files_db, tmp_files_location_db, tmp_files_title_db, link_files_db], axis=1)
 
 
 
-df_final_tmp_2.columns = ['Site', 'PS1', 'PS2', 'PS3', 'PS4', 'PS5', 'PS6', 'PS7', 'PS8', 'PS9', 'PS10', 'Location', 'Title']
+df_final_tmp_2.columns = ['Site', 'PS1', 'PS2', 'PS3', 'PS4', 'PS5', 'PS6', 'PS7', 'PS8', 'PS9', 'PS10', 'Location', 'Title', 'Link']
 df_final_tmp_2.loc[(df_final_tmp_2["PS2"].isnull()), "PS2"] = "no_name"
 df_final_tmp_2.loc[(df_final_tmp_2["PS3"].isnull()), "PS3"] = "no_name"
 df_final_tmp_2.loc[(df_final_tmp_2["PS4"].isnull()), "PS4"] = "no_name"
@@ -119,11 +130,11 @@ df_final_tmp_2['PS9'] = df_final_tmp_2['PS9'].map(lambda name:name.replace('_', 
 df_final_tmp_2['PS10'] = df_final_tmp_2['PS10'].map(lambda name:name.replace('_', ' ').title())
 
 df_final_tmp_2 = df_final_tmp_2.fillna('No Name')
-custom_cols = ['Site', 'PS1', 'PS2', 'PS3', 'PS4', 'PS5', 'PS6', 'PS7', 'PS8', 'PS9', 'PS10', 'Title', 'Location']
+custom_cols = ['Site', 'PS1', 'PS2', 'PS3', 'PS4', 'PS5', 'PS6', 'PS7', 'PS8', 'PS9', 'PS10', 'Title', 'Location', 'Link']
 
 df_bra_final = df_final_tmp_2[custom_cols]
 
-print('df_bra_final: \n ', df_bra_final)
+#print('df_bra_final: \n ', df_bra_final)
 
 df_bra_final.to_csv('bra_final_py.csv')
 
