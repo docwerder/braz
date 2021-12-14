@@ -18,7 +18,7 @@ from PyQt5.uic import loadUiType
 
 import search_window_file as search_window
 
-FORM_CLASS, _=loadUiType(path.join(path.dirname('__file__'),"mainwindow_brazzers_3.ui"))
+FORM_CLASS, _=loadUiType(path.join(path.dirname('__file__'),"mainwindow_brazzers_4.ui"))
 
 import sqlite3
 
@@ -172,6 +172,7 @@ class Main(QMainWindow, FORM_CLASS):
         self.comboBox_site.currentTextChanged.connect(self.site_changed)
         self.comboBox_ps1.currentIndexChanged.connect(self.ps1_changed)
         self.comboBox_ps_only.currentIndexChanged.connect(self.filter_ps_only)
+        self.comboBox_title.currentIndexChanged.connect(self.filter_title_only)
         # self.bra_dir_table.setCellWidget(0, 0, self.combobox_site)
         #
 
@@ -279,8 +280,11 @@ class Main(QMainWindow, FORM_CLASS):
         print('selected row :', self.ID_row)
         self.selected_file = self.loaded_csv_df.iloc[int(self.ID_row)]['Link']
         self.selected_site_for_picture = self.loaded_csv_df.iloc[int(self.ID_row)]['Site']
+        self.selected_title = self.loaded_csv_df.iloc[int(self.ID_row)]['Title']
+
         print('Link: \n', self.selected_file)
         print('Selected site: \n', self.selected_site_for_picture)
+        print('Selected title: \n', self.selected_title)
         self.textEdit_link.setPlainText(self.selected_file)
 
         name_tmp = self.selected_site_for_picture.replace(" ", "_").lower() + ".png"
@@ -305,10 +309,12 @@ class Main(QMainWindow, FORM_CLASS):
                                 (self.df['PS7'] == self.selected_ps) | (self.df['PS8'] == self.selected_ps) |
                                 (self.df['PS9'] == self.selected_ps) | (self.df['PS10'] == self.selected_ps))]
         #print(len(ps_selection))
-        #print('self.selected_ps: ', self.ps_selection)
+        print('self.selected_ps: ', self.ps_selection)
         print('len...: ', len(self.ps_selection))
-        print('sites...', self.ps_selection['Site'].unique())
+#        print('sites...', self.ps_selection['Site'].unique())
+#        print('titles...', self.ps_selection['Title'].unique())
         self.brazzers_sites_of_ps_only = self.ps_selection['Site'].unique()
+        self.brazzers_titles_of_ps_only = self.ps_selection['Title'].unique()
 
         self.ps_selection_ctn_text = "CTN: " + str(len(self.ps_selection))
         self.label_ctn.setText(self.ps_selection_ctn_text)
@@ -317,11 +323,32 @@ class Main(QMainWindow, FORM_CLASS):
         for lf in sorted(self.brazzers_sites_of_ps_only):
             self.comboBox_brazzers_site.addItem(lf)
 
+
+        self.comboBox_title.clear()
+        for lff in ['All titles'] + sorted(self.brazzers_titles_of_ps_only):
+            self.comboBox_title.addItem(lff)
+
         for rows, columns in self.ps_selection.iterrows():
             rows = self.bra_dir_table.rowCount()
             self.bra_dir_table.insertRow(rows)
             for num, data in enumerate(columns):
                 self.bra_dir_table.setItem(rows, num, QTableWidgetItem(str(data)))
+
+    def filter_title_only(self):
+        self.bra_dir_table.setRowCount(0)
+        if self.comboBox_title.currentText() != "All titles":
+            print('selected_title: ', self.comboBox_title.currentText())
+            self.title_selection = self.comboBox_title.currentText()    ## Attention. Do not mix up with self.selected_title!!
+            self.title_selected_df = self.df[(self.df['Title'] == self.title_selection)]
+
+            print('df_title_selected: ', self.title_selected_df)
+            for rows, columns in self.title_selected_df.iterrows():
+                rows = self.bra_dir_table.rowCount()
+                self.bra_dir_table.insertRow(rows)
+                for num, data in enumerate(columns):
+                    self.bra_dir_table.setItem(rows, num, QTableWidgetItem(str(data)))
+        # for lff in sorted(self.brazzers_titles_of_ps_only):
+        #      self.comboBox_title.addItem(lff)
 
     def show_picture(self):
             print('PyQt5 button click')
@@ -329,8 +356,9 @@ class Main(QMainWindow, FORM_CLASS):
             imagePath = image[0]
             pixmap = QPixmap(imagePath)
             self.label_for_site_picture.setPixmap(pixmap)
-            # print(ocr.resimden_yaziya(imagePath))
             print(imagePath)
+
+
 
 
 
