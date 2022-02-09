@@ -24,7 +24,8 @@ bra_dir_db_2=sorted(next(os.walk(bra_dir_2))[1])
 selected_dirs = [bra_dir_db[i] for i in [0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
                             15, 16, 17, 19, 20, 21, 23]]
 
-selected_dirs_2 = [bra_dir_db_2[i] for i in [0, 3, 4, 5, 7, 8, 11, 12, 13, 15, 16, 17, 19, 20, 23]]
+#selected_dirs_2 = [bra_dir_db_2[i] for i in [0, 3, 4, 5, 7, 8, 11, 12, 13, 15, 16, 17, 19, 20, 23]]
+selected_dirs_2 = [bra_dir_db_2[i] for i in [0, 3, 4, 5, 7, 8, 9, 12, 13, 14, 16, 17, 18, 20, 21, 24, 26]]
 
 selected_dirs_final = [selected_dirs, selected_dirs_2]
 
