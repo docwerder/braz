@@ -1,6 +1,7 @@
 import pandas as pd
 import os
 import glob
+from tabulate import tabulate
 import numpy as np
 #import qgrid
 pd.set_option('display.max_columns', None)
@@ -136,6 +137,7 @@ custom_cols = ['Site', 'PS1', 'PS2', 'PS3', 'PS4', 'PS5', 'PS6', 'PS7', 'PS8', '
 df_bra_final = df_final_tmp_2[custom_cols]
 
 #print('df_bra_final: \n ', df_bra_final)
+print(tabulate(df_bra_final, headers='keys', tablefmt='psql'))
 
 df_bra_final.to_csv('bra_final_py.csv')
 

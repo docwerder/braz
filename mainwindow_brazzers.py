@@ -9,7 +9,6 @@ import itertools
 import pathlib
 
 from load_brazzers_database import load_bra_db
-import sys
 
 import pandas as pd
 from os import path
@@ -21,7 +20,6 @@ import search_window_file as search_window
 FORM_CLASS, _=loadUiType(path.join(path.dirname('__file__'),"mainwindow_brazzers_4.ui"))
 
 import sqlite3
-
 class Main(QMainWindow, FORM_CLASS):
     def __init__(self, parent=None):
         super(Main, self).__init__(parent)
