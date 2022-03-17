@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/braz.iml" filepath="$PROJECT_DIR$/.idea/braz.iml" />
       <module fileurl="file://$PROJECT_DIR$/../development/.idea/development.iml" filepath="$PROJECT_DIR$/../development/.idea/development.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pyqt5_course/.idea/pyqt5_course.iml" filepath="$PROJECT_DIR$/../pyqt5_course/.idea/pyqt5_course.iml" />
     </modules>
   </component>
 </project>

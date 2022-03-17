@@ -29,3 +29,14 @@ def indices(lst, element):
         except ValueError:
             return result
         result.append(offset)
+
+def indices_2(lst, element):
+    result = []
+    offset = -1
+    while True:
+        try:
+            offset = lst.index(element, offset+1)
+            #print(offset)
+        except ValueError:
+            return result
+        result.append(offset)

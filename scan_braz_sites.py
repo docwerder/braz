@@ -10,7 +10,7 @@ db_btaw = []
 db_rws = []
 
 # btaw_site = 'https://www.brazzers.com/site/71/big-tits-at-work/page/2'
-big_tits_at_school_site = 'https://www.brazzers.com/videos/site/75/big-tits-at-school/sortby/views/page/1'
+big_tits_at_school_site = 'https://www.brazzers.com/videos/site/75/big-tits-at-school/sortby/views/page/2'
 real_wife_stories_site = 'https://www.brazzers.com/videos/site/81/real-wife-stories/sortby/views/page/1'
 doctor_adventures_site = 'https://www.brazzers.com/videos/site/62/doctor-adventures/sortby/views/page/1'
 big_tits_in_uniform_site = 'https://www.brazzers.com/videos/site/89/big-tits-in-uniform/sortby/views/page/1'
@@ -62,5 +62,5 @@ for link in data_rws_page:
     db_rws.append(link.get('href'))
 
 
-print(db_btaw)
+print('db_btaw: ', db_btaw)
 print(db_rws)
