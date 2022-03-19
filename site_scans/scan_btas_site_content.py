@@ -2,9 +2,9 @@ from utilities_functions import scan_func
 from utilities_functions import indices
 import pandas as pd
 from tabulate import tabulate
-import os
-# db_bgb = 'https://www.brazzers.com/videos/site/66/baby-got-boobs/sortby/views/page/1'
-number = range(1,24)
+
+#db_btas = scan_func('https://www.brazzers.com/videos/site/75/big-tits-at-school/sortby/views/page/1')
+number = range(1,22)
 page_content_db = pd.DataFrame()
 page_number_db = {}
 page_content_tmp = {}
@@ -14,10 +14,10 @@ btas_db_1 = {}
 ps1_db = pd.DataFrame()
 ps2_db = {}
 title_db = {}
-db_bgb = pd.DataFrame()
+db_btas = pd.DataFrame()
 
 for lf in number:
-    actual_site = "https://www.brazzers.com/videos/site/66/baby-got-boobs/sortby/views/page/" + str(lf)
+    actual_site = "https://www.brazzers.com/videos/site/75/big-tits-at-school/sortby/views/page/" + str(lf)
     site_name = actual_site.split('/')[-5].replace('-', ' ').title()
     #print('site_name: ', site_name)
     page_number = actual_site.split('/')[-2] + '/' + actual_site.split('/')[-1]
@@ -42,18 +42,14 @@ for lf in number:
     db_all_tmp = pd.concat([site_db, ps1_db, ps2_db, title_db], axis=1)
     custom_cols = ['Site', 'PS1', 'PS2', 'Title']
     db_all_tmp.columns = custom_cols
-    db_bgb = pd.concat([db_bgb, db_all_tmp])
+    db_btas = pd.concat([db_btas, db_all_tmp])
 
-db_bgb = db_bgb.reset_index()
-del db_bgb['index']
+db_btas = db_btas.reset_index()
+del db_btas['index']
 
-root = os.getcwd()
-save_path = os.path.join(root, 'scanned_site_content')
-save_file = os.path.join(save_path, 'db_bgb_site_content.csv')
-print('save_file: ', save_file)
-db_bgb_sliced = db_bgb.dropna()
-print(tabulate(db_bgb_sliced, headers='keys', tablefmt='psql'))
+db_btas_sliced = db_btas.dropna()
+print(tabulate(db_btas_sliced, headers='keys', tablefmt='psql'))
 
-db_bgb_sliced.to_csv(save_file)
+db_btas_sliced.to_csv('db_btas_site_content.csv')
 
 

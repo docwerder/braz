@@ -139,5 +139,6 @@ df_bra_final = df_final_tmp_2[custom_cols]
 #print('df_bra_final: \n ', df_bra_final)
 print(tabulate(df_bra_final, headers='keys', tablefmt='psql'))
 
+
 df_bra_final.to_csv('bra_final_py.csv')
 

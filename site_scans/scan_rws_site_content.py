@@ -4,7 +4,7 @@ import pandas as pd
 from tabulate import tabulate
 import os
 # db_bgb = 'https://www.brazzers.com/videos/site/66/baby-got-boobs/sortby/views/page/1'
-number = range(1,24)
+number = range(1,29)
 page_content_db = pd.DataFrame()
 page_number_db = {}
 page_content_tmp = {}
@@ -14,10 +14,10 @@ btas_db_1 = {}
 ps1_db = pd.DataFrame()
 ps2_db = {}
 title_db = {}
-db_bgb = pd.DataFrame()
+db_rws = pd.DataFrame()
 
 for lf in number:
-    actual_site = "https://www.brazzers.com/videos/site/66/baby-got-boobs/sortby/views/page/" + str(lf)
+    actual_site = "https://www.brazzers.com/videos/site/81/real-wife-stories/sortby/views/page/" + str(lf)
     site_name = actual_site.split('/')[-5].replace('-', ' ').title()
     #print('site_name: ', site_name)
     page_number = actual_site.split('/')[-2] + '/' + actual_site.split('/')[-1]
@@ -42,18 +42,18 @@ for lf in number:
     db_all_tmp = pd.concat([site_db, ps1_db, ps2_db, title_db], axis=1)
     custom_cols = ['Site', 'PS1', 'PS2', 'Title']
     db_all_tmp.columns = custom_cols
-    db_bgb = pd.concat([db_bgb, db_all_tmp])
+    db_rws = pd.concat([db_rws, db_all_tmp])
 
-db_bgb = db_bgb.reset_index()
-del db_bgb['index']
+db_rws = db_rws.reset_index()
+del db_rws['index']
 
 root = os.getcwd()
 save_path = os.path.join(root, 'scanned_site_content')
-save_file = os.path.join(save_path, 'db_bgb_site_content.csv')
+save_file = os.path.join(save_path, 'db_rws_site_content.csv')
 print('save_file: ', save_file)
-db_bgb_sliced = db_bgb.dropna()
-print(tabulate(db_bgb_sliced, headers='keys', tablefmt='psql'))
+db_rws_sliced = db_rws.dropna()
+print(tabulate(db_rws_sliced, headers='keys', tablefmt='psql'))
 
-db_bgb_sliced.to_csv(save_file)
+db_rws_sliced.to_csv(save_file)
 
 
