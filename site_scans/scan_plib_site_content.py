@@ -4,7 +4,7 @@ import pandas as pd
 import os
 from tabulate import tabulate
 
-#db_btas = scan_func('https://www.brazzers.com/videos/site/75/big-tits-at-school/sortby/views/page/1')
+
 number = range(1,29)
 page_content_db = pd.DataFrame()
 page_number_db = {}
@@ -18,7 +18,7 @@ title_db = {}
 db_plib = pd.DataFrame()
 
 for lf in number:
-    actual_site = "https://www.brazzers.com/videos/site/77/pornstars-like-it-big/sortby/page/" + str(lf)
+    actual_site = "https://www.brazzers.com/videos/site/77/pornstars-like-it-big/sortby/views/page/" + str(lf)
     site_name = actual_site.split('/')[-5].replace('-', ' ').title()
     #print('site_name: ', site_name)
     page_number = actual_site.split('/')[-2] + '/' + actual_site.split('/')[-1]

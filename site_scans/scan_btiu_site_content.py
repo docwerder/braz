@@ -1,10 +1,11 @@
 from utilities_functions import scan_func
 from utilities_functions import indices
 import pandas as pd
+import os
 from tabulate import tabulate
 
-#db_btas = scan_func('https://www.brazzers.com/videos/site/75/big-tits-at-school/sortby/views/page/1')
-number = range(1,26)
+
+number = range(1,8)  # 8
 page_content_db = pd.DataFrame()
 page_number_db = {}
 page_content_tmp = {}
@@ -14,10 +15,10 @@ btas_db_1 = {}
 ps1_db = pd.DataFrame()
 ps2_db = {}
 title_db = {}
-db_btaw = pd.DataFrame()
+db_btiu = pd.DataFrame()
 
 for lf in number:
-    actual_site = "https://www.brazzers.com/videos/site/71/big-tits-at-work/sortby/views/page/" + str(lf)
+    actual_site = "https://www.brazzers.com/videos/site/89/big-tits-in-uniform/sortby/views/page/" + str(lf)
     site_name = actual_site.split('/')[-5].replace('-', ' ').title()
     #print('site_name: ', site_name)
     page_number = actual_site.split('/')[-2] + '/' + actual_site.split('/')[-1]
@@ -42,14 +43,19 @@ for lf in number:
     db_all_tmp = pd.concat([site_db, ps1_db, ps2_db, title_db], axis=1)
     custom_cols = ['Site', 'PS1', 'PS2', 'Title']
     db_all_tmp.columns = custom_cols
-    db_btaw = pd.concat([db_btaw, db_all_tmp])
+    db_btiu = pd.concat([db_btiu, db_all_tmp])
 
-db_btaw = db_btaw.reset_index()
-del db_btaw['index']
+db_btiu = db_btiu.reset_index()
+del db_btiu['index']
 
-db_btaw_sliced = db_btaw.dropna()
-print(tabulate(db_btaw_sliced, headers='keys', tablefmt='psql'))
+root = os.getcwd()
+save_path = os.path.join(root, 'scanned_site_content')
+save_file = os.path.join(save_path, 'db_btiu_site_content.csv')
+print('save_file: ', save_file)
 
-db_btaw_sliced.to_csv('db_btaw_site_content.csv')
+db_btiu_sliced = db_btiu.dropna()
+print(tabulate(db_btiu_sliced, headers='keys', tablefmt='psql'))
+
+db_btiu_sliced.to_csv(save_file)
 
 
