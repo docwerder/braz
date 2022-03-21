@@ -1,31 +1,40 @@
 import os
-#
-# # print("Path at terminal when executing this file")
-# # print(os.getcwd() + "\n")
-# #
-# # print("This file path, relative to os.getcwd()")
-# # print(__file__ + "\n")
-# #
-# # print("This file full path (following symlinks)")
-# full_path = os.path.realpath(__file__)
-# print(full_path + "\n")
-#
-# print("This file directory and name")
-# path, filename = os.path.split(full_path)
-# print(path + ' --> ' + filename + "\n")
+import pandas as pd
+from tabulate import tabulate
 
-# print("This file directory only")
-# print(os.path.dirname(full_path))
-for root, dirs, files in os.walk(os.getcwd(), topdown=False):
-   for name in files:
+final_db = pd.DataFrame()
+db_tmp = pd.DataFrame()
+
+for root, dirs, files in sorted(os.walk(os.getcwd())):
+   for name in sorted(files)[11:12]:
        complete_file_name = os.path.join(root, name)
+
        if ".DS_Store" in complete_file_name:
            continue
        elif "original_scanned" in complete_file_name:
            continue
+       elif "db_final_complete" in complete_file_name:
+           continue
        elif ".py" in complete_file_name:
            continue
        else:
-           print('file: ', complete_file_name)
-   # for name in dirs:
-   #    print(os.path.join(root, name))
+           # print('file: ', complete_file_name)
+           print('complete_file: ', complete_file_name)
+           db_tmp = pd.read_csv(complete_file_name, index_col=0)
+           #print('db_tmp: ', db_tmp)
+           final_db = pd.concat([final_db, db_tmp])
+
+
+final_db = final_db.reset_index()
+del final_db['index']
+# print(tabulate(final_db, headers='keys', tablefmt='psql'))
+
+root = os.getcwd()
+save_path = os.path.join(root, 'scanned_site_content')
+save_final_file = os.path.join(root, 'db_final_complete.csv')
+#print('save_file: ', save_final_file)
+
+#ggg = final_db[final_db['Site'] == 'nan']['Site']
+print('cols.. ', final_db['Site'].unique())
+final_db.to_csv(save_final_file)
+# print(tabulate(final_db, headers='keys', tablefmt='psql'))
