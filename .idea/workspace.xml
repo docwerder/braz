@@ -2,25 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae3ffdfe-efa5-4405-8002-cd42f645a886" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/jpg_to_pdf_project/.ipynb_checkpoints/Untitled-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jpg_to_pdf_project/.ipynb_checkpoints/cc_jpg_to_pdf-Copy1-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jpg_to_pdf_project/.ipynb_checkpoints/cc_jpg_to_pdf-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jpg_to_pdf_project/.ipynb_checkpoints/join_mp4-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jpg_to_pdf_project/.ipynb_checkpoints/jpg_to_pdf-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jpg_to_pdf_project/Untitled.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jpg_to_pdf_project/cc_jpg_to_pdf-Copy1.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jpg_to_pdf_project/cc_jpg_to_pdf.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jpg_to_pdf_project/join_mp4.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jpg_to_pdf_project/jpg_to_pdf.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site_scans/.ipynb_checkpoints/database_braz_sites-checkpoint.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site_scans/.ipynb_checkpoints/full_scan-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site_scans/db_bustyz_site_content_original_scanned.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site_scans/db_jugfuckers_site_content_original_scanned.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site_scans/full_scan.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site_scans/scanned_site_content/.ipynb_checkpoints/accomplying_notebook-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site_scans/scanned_site_content/.ipynb_checkpoints/try_full_scan-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site_scans/scanned_site_content/accomplying_notebook.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site_scans/scanned_site_content/db_bustyz_site_content_backup.csv" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/._.DS_Store" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/.___pycache__" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/._app" afterDir="false" />
@@ -736,12 +717,9 @@
       <change afterPath="$PROJECT_DIR$/../pyqt5_course/source_files/pyside2_source/basic/nested_layout_test.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../pyqt5_course/source_files/pyside2_source/basic/qgrid_span_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site_scans/.ipynb_checkpoints/full_scan-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/site_scans/.ipynb_checkpoints/full_scan-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site_scans/database_braz_sites.py" beforeDir="false" afterPath="$PROJECT_DIR$/site_scans/database_braz_sites.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site_scans/scanned_site_content/create_final_df_of_scanned_site.py" beforeDir="false" afterPath="$PROJECT_DIR$/site_scans/scanned_site_content/create_final_df_of_scanned_site.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site_scans/scanned_site_content/db_bustyz_site_content.csv" beforeDir="false" afterPath="$PROJECT_DIR$/site_scans/scanned_site_content/db_bustyz_site_content.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site_scans/scanned_site_content/db_bustyz_site_content_original_scanned.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site_scans/scanned_site_content/db_final_complete.csv" beforeDir="false" afterPath="$PROJECT_DIR$/site_scans/scanned_site_content/db_final_complete.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site_scans/scanned_site_content/db_jugfuckers_site_content_original_scanned.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site_scans/full_scan.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/site_scans/full_scan.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../development/Qthread_test_no_freezing.py" beforeDir="false" afterPath="$PROJECT_DIR$/../development/Qthread_test_no_freezing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../development/accompanying_notebook.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../development/accompanying_notebook.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../development/progressbar_QThread.py" beforeDir="false" afterPath="$PROJECT_DIR$/../development/progressbar_QThread.py" afterDir="false" />
