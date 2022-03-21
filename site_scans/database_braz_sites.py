@@ -1,9 +1,10 @@
 # big_tits_at_school_site = 'https://www.brazzers.com/videos/site/75/big-tits-at-school/sortby/views/page/2'
-# real_wife_stories_site = 'https://www.brazzers.com/videos/site/81/real-wife-stories/sortby/views/page/1'
+
+##  real_wife_stories_site = 'https://www.brazzers.com/videos/site/81/real-wife-stories/sortby/views/page/1'
 # doctor_adventures_site = 'https://www.brazzers.com/videos/site/62/doctor-adventures/sortby/views/page/1'
-# big_tits_in_uniform_site = 'https://www.brazzers.com/videos/site/89/big-tits-in-uniform/sortby/views/page/1'
+## big_tits_in_uniform_site = 'https://www.brazzers.com/videos/site/89/big-tits-in-uniform/sortby/views/page/1'
 # big_wet_butts_site = 'https://www.brazzers.com/videos/site/65/big-wet-butts/sortby/views/page/1'
-# baby_got_boobs_site = 'https://www.brazzers.com/videos/site/66/baby-got-boobs/sortby/views/page/1'
+## baby_got_boobs_site = 'https://www.brazzers.com/videos/site/66/baby-got-boobs/sortby/views/page/1'
 # mommy_got_boobs_site = 'https://www.brazzers.com/videos/site/67/mommy-got-boobs/sortby/views/page/1'
 # big_tits_at_work_site = 'https://www.brazzers.com/videos/site/71/big-tits-at-work/sortby/page/1'
 # pornstars_like_it_big_site = 'https://www.brazzers.com/videos/site/77/pornstars-like-it-big/sortby/views/page/1'
@@ -24,7 +25,7 @@
 # hot_and_mean_site ='https://www.brazzers.com/videos/site/90/hot-and-mean/sortby/views/page/'  # to be executed...
 # asses_in_public = 'https://www.brazzers.com/videos/site/79/asses-in-public/sortby/views/page/'
 # sex_pro = 'https://www.brazzers.com/videos/site/76/sex-pro-adventures/sortby/views/page/'
-bustyz = 'https://www.brazzers.com/videos/site/63/bustyz/sortby/views/page/'  ## to be executed again!
+# bustyz = 'https://www.brazzers.com/videos/site/63/bustyz/sortby/views/page/'  ## to be executed again!
 # busty_and_real = 'https://www.brazzers.com/videos/site/60/busty-real/sortby/views/page/'
 # hot_chicks_big_asses = 'https://www.brazzers.com/videos/site/64/hot-chicks-big-asses/sortby/page/'
 # jugfuckers = 'https://www.brazzers.com/videos/site/69/jug-fuckers/sortby/page/' # edited by hand!
