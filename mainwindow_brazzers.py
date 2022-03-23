@@ -286,7 +286,7 @@ class Main(QMainWindow, FORM_CLASS):
         self.textEdit_link.setPlainText(self.selected_file)
 
         name_tmp = self.selected_site_for_picture.replace(" ", "_").lower() + ".png"
-        path_folder_site_pictures = "/Users/joerg/OneDrive/repos/braz/site_pictures"
+        path_folder_site_pictures = "/Users/joerg/repos/braz/site_pictures"
         path_to_picture = os.path.join(path_folder_site_pictures, name_tmp)
         print('path_to_picture', path_to_picture)
         pixmap = QPixmap(path_to_picture)
