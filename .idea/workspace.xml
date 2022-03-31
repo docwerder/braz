@@ -2,727 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae3ffdfe-efa5-4405-8002-cd42f645a886" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/._.DS_Store" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/.___pycache__" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/._app" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/._basic" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/._bitmap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/._concurrent" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/._cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/._custom-widgets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/._databases" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/._designer" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/._further" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/._model-views" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/._packaging" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/._plotting" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/._tableview" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/._themes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/._browser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/._browser_skeleton.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/._browser_tabs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/._icons" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/._minesweeper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/browser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/browser_skeleton.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/browser_tabs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/._arrow-000.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/._arrow-180.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/._arrow-circle-315.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/._bomb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/._bug.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/._cactus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/._cake.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/._clock-select.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/._cross-circle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/._cross.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/._cup.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/._disk--arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/._disk--pencil.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/._flag.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/._fruit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/._hamburger.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/._home.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/._ice-cream-sprinkles.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/._lifebuoy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/._lock-nossl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/._lock-ssl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/._ma-icon-128.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/._ma-icon-256.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/._ma-icon-64.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/._mushroom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/._plus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/._printer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/._question.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/._rocket.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/._smiley-lol.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/._smiley.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/._ui-tab--plus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/arrow-000.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/arrow-180.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/arrow-circle-315.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/bomb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/bug.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/cactus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/cake.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/clock-select.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/cross-circle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/cross.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/cup.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/disk--arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/disk--pencil.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/flag.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/fruit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/hamburger.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/home.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/ice-cream-sprinkles.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/lifebuoy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/lock-nossl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/lock-ssl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/ma-icon-128.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/ma-icon-256.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/ma-icon-64.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/mushroom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/plus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/printer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/question.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/rocket.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/smiley-lol.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/smiley.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/icons/ui-tab--plus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/app/minesweeper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._MainWindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._bug.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._creating_a_window_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._creating_a_window_1b.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._creating_a_window_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._creating_a_window_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._creating_a_window_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._creating_a_window_end.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._dialog_bad.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._dialog_platform.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._dialogs_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._dialogs_2a.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._dialogs_2b.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._dialogs_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._dialogs_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._dialogs_5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._dialogs_6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._dialogs_start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._events_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._events_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._events_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._events_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._layout_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._layout_2a.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._layout_2b.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._layout_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._layout_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._layout_5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._layout_6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._layout_7.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._layout_8.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._layout_9.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._layout_9b.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._layout_colorwidget.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._layout_start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._mainwindow.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._otje.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._otje2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._signals_and_slots_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._signals_and_slots_1b.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._signals_and_slots_1c.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._signals_and_slots_1d.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._signals_and_slots_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._signals_and_slots_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._signals_and_slots_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._signals_slots_and_events_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._signals_slots_and_events_start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._toolbar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._toolbars_and_menus_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._toolbars_and_menus_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._toolbars_and_menus_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._toolbars_and_menus_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._toolbars_and_menus_5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._toolbars_and_menus_6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._toolbars_and_menus_7.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._toolbars_and_menus_8.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._toolbars_and_menus_9.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._toolbars_and_menus_end.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._toolbars_and_menus_start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._widgets_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._widgets_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._widgets_2a.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._widgets_2b.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._widgets_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._widgets_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._widgets_5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._widgets_6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._widgets_7.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._widgets_8.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._widgets_9.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._widgets_list.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._widgets_start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._windows_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._windows_1b.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._windows_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._windows_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._windows_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._windows_4b.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._windows_5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._windows_6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._windows_6b.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._windows_6c.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/._windows_7.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/MainWindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/bug.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/creating_a_window_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/creating_a_window_1b.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/creating_a_window_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/creating_a_window_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/creating_a_window_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/creating_a_window_end.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/dialog_bad.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/dialog_platform.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/dialogs_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/dialogs_2a.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/dialogs_2b.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/dialogs_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/dialogs_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/dialogs_5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/dialogs_6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/dialogs_start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/events_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/events_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/events_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/events_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/layout_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/layout_2a.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/layout_2b.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/layout_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/layout_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/layout_5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/layout_6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/layout_7.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/layout_8.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/layout_9.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/layout_9b.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/layout_colorwidget.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/layout_start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/mainwindow.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/otje.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/otje2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/signals_and_slots_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/signals_and_slots_1b.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/signals_and_slots_1c.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/signals_and_slots_1d.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/signals_and_slots_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/signals_and_slots_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/signals_and_slots_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/signals_slots_and_events_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/signals_slots_and_events_start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/toolbar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/toolbars_and_menus_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/toolbars_and_menus_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/toolbars_and_menus_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/toolbars_and_menus_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/toolbars_and_menus_5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/toolbars_and_menus_6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/toolbars_and_menus_7.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/toolbars_and_menus_8.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/toolbars_and_menus_9.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/toolbars_and_menus_end.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/toolbars_and_menus_start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/widgets_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/widgets_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/widgets_2a.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/widgets_2b.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/widgets_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/widgets_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/widgets_5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/widgets_6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/widgets_7.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/widgets_8.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/widgets_9.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/widgets_list.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/widgets_start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/windows_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/windows_1b.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/windows_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/windows_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/windows_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/windows_4b.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/windows_5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/windows_6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/windows_6b.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/windows_6c.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/basic/windows_7.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/.__snippet_alignment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/._draw.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/._drawpoints.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/._ellipse.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/._line.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/._line_with_pen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/._paint.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/._paint_line.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/._paint_start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/._paint_with_fill.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/._point.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/._point_with_pen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/._points.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/._points_color.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/._rect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/._rect_with_brush.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/._roundrect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/._spray.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/._spraypaint.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/._stub.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/._text.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/_snippet_alignment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/draw.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/drawpoints.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/ellipse.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/line.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/line_with_pen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/paint.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/paint_line.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/paint_start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/paint_with_fill.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/point.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/point_with_pen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/points.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/points_color.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/rect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/rect_with_brush.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/roundrect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/spray.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/spraypaint.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/stub.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/bitmap/text.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/._bad_example_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/._bad_example_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/._dummy_script.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/._qprocess.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/._qprocess_manager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/._qrunner_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/._qrunner_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/._qrunner_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/._qrunner_base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/._qrunner_calculator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/._qrunner_generic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/._qrunner_generic_callback.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/._qrunner_io.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/._qrunner_io_parser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/._qrunner_manager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/._qrunner_manager_stop.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/._qrunner_pause.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/._qrunner_process.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/._qrunner_process_parser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/._qrunner_process_parser_elapsed.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/._qrunner_process_result.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/._qrunner_progress.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/._qrunner_progress_many.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/._qrunner_progress_many_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/._qrunner_stop.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/bad_example_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/bad_example_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/dummy_script.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/qprocess.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/qprocess_manager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/qrunner_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/qrunner_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/qrunner_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/qrunner_base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/qrunner_calculator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/qrunner_generic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/qrunner_generic_callback.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/qrunner_io.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/qrunner_io_parser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/qrunner_manager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/qrunner_manager_stop.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/qrunner_pause.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/qrunner_process.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/qrunner_process_parser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/qrunner_process_parser_elapsed.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/qrunner_process_result.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/qrunner_progress.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/qrunner_progress_many.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/qrunner_progress_many_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/concurrent/qrunner_stop.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/cpp/._example.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/cpp/._example_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/cpp/._example_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/cpp/._example_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/cpp/._example_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/cpp/._example_final.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/cpp/._example_working.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/cpp/._imports.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/cpp/example.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/cpp/example_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/cpp/example_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/cpp/example_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/cpp/example_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/cpp/example_final.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/cpp/example_working.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/cpp/imports.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/custom-widgets/._powerbar.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/custom-widgets/._powerbar_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/custom-widgets/._powerbar_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/custom-widgets/._powerbar_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/custom-widgets/._powerbar_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/custom-widgets/._powerbar_5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/custom-widgets/._powerbar_6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/custom-widgets/._powerbar_7.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/custom-widgets/._powerbar_8.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/custom-widgets/._powerbar_9.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/custom-widgets/._powerbar_demo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/custom-widgets/._stub.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/custom-widgets/powerbar.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/custom-widgets/powerbar_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/custom-widgets/powerbar_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/custom-widgets/powerbar_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/custom-widgets/powerbar_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/custom-widgets/powerbar_5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/custom-widgets/powerbar_6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/custom-widgets/powerbar_7.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/custom-widgets/powerbar_8.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/custom-widgets/powerbar_9.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/custom-widgets/powerbar_demo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/custom-widgets/stub.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/.__snippet_connection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/.__snippet_relational.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/._chinook.sqlite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/._tableview.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/._tableview_querymodel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/._tableview_querymodel_parameter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/._tableview_querymodel_search.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/._tableview_relationalmodel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/._tableview_relationalmodel_delegate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/._tableview_tablemodel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/._tableview_tablemodel_filter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/._tableview_tablemodel_filter_clean.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/._tableview_tablemodel_sort.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/._tableview_tablemodel_sortname.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/._tableview_tablemodel_titles.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/._tableview_tablemodel_titlesname.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/._widget_mapper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/._widget_mapper_controls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/_snippet_connection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/_snippet_relational.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/chinook.sqlite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/tableview.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/tableview_querymodel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/tableview_querymodel_parameter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/tableview_querymodel_search.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/tableview_relationalmodel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/tableview_relationalmodel_delegate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/tableview_tablemodel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/tableview_tablemodel_filter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/tableview_tablemodel_filter_clean.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/tableview_tablemodel_sort.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/tableview_tablemodel_sortname.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/tableview_tablemodel_titles.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/tableview_tablemodel_titlesname.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/widget_mapper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/databases/widget_mapper_controls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/designer/._MainWindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/designer/._animal-penguin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/designer/._compiled_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/designer/._example_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/designer/._example_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/designer/._example_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/designer/._mainwindow.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/designer/._qresource.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/designer/._resources.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/designer/._resources.qrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/designer/MainWindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/designer/animal-penguin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/designer/compiled_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/designer/example_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/designer/example_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/designer/example_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/designer/mainwindow.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/designer/qresource.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/designer/resources.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/designer/resources.qrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/._animal-penguin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/._arguments.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/._arguments_open.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/._book-open-text.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/._color.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/._icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/._notes.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/._routing_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/._routing_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/._routing_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/._signals_custom.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/._signals_extra_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/._signals_extra_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/._signals_extra_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/._signals_extra_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/._signals_forward.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/._systray.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/._systray_color.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/._systray_window.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/animal-penguin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/arguments.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/arguments_open.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/book-open-text.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/color.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/notes.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/routing_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/routing_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/routing_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/signals_custom.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/signals_extra_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/signals_extra_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/signals_extra_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/signals_extra_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/signals_forward.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/systray.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/systray_color.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/further/systray_window.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/._MainWindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/.__snippet_qabstracttablemodel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/._amserfoort.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/._calendar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/._cross.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/._data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/._delegate_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/._mainwindow.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/._otje.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/._tableview.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/._tableview_decorationrole.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/._tableview_delegate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/._tableview_demo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/._tableview_dictionary.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/._tableview_format_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/._tableview_format_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/._tableview_format_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/._tableview_format_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/._tableview_format_5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/._tableview_format_6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/._tableview_format_7.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/._tableview_format_8.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/._tableview_format_9.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/._tableview_numpy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/._tableview_pandas.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/._tick.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/._todo_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/._todo_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/._todo_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/._todo_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/._todo_5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/._todo_6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/._todo_complete.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/._todo_skeleton.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/MainWindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/_snippet_qabstracttablemodel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/amserfoort.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/calendar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/cross.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/delegate_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/mainwindow.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/otje.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/tableview.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/tableview_decorationrole.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/tableview_delegate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/tableview_demo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/tableview_dictionary.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/tableview_format_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/tableview_format_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/tableview_format_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/tableview_format_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/tableview_format_5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/tableview_format_6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/tableview_format_7.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/tableview_format_8.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/tableview_format_9.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/tableview_numpy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/tableview_pandas.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/tick.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/todo_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/todo_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/todo_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/todo_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/todo_5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/todo_6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/todo_complete.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/model-views/todo_skeleton.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/.__fbs_snippet_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/.__fbs_snippet_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/.__fbs_snippet_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/._fbs-stub.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/._fbs_stub.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/._moonsweeper-fbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/_fbs_snippet_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/_fbs_snippet_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/_fbs_snippet_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/fbs-stub.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/fbs_stub.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/._.DS_Store" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/._.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/._README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/._requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/._screenshot-minesweeper1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/._screenshot-minesweeper2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/._src" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/._target" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/screenshot-minesweeper1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/screenshot-minesweeper2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/._build" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/._main" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/build/._settings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/build/settings/._base.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/build/settings/._linux.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/build/settings/._mac.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/build/settings/base.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/build/settings/linux.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/build/settings/mac.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/._Installer.nsi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/._icons" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/._python" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/._resources" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/Installer.nsi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/icons/._Icon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/icons/._README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/icons/._base" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/icons/._linux" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/icons/._mac" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/icons/Icon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/icons/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/icons/base/._16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/icons/base/._24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/icons/base/._32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/icons/base/._48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/icons/base/._64.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/icons/base/16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/icons/base/24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/icons/base/32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/icons/base/48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/icons/base/64.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/icons/linux/._1024.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/icons/linux/._128.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/icons/linux/._256.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/icons/linux/._512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/icons/linux/1024.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/icons/linux/128.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/icons/linux/256.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/icons/linux/512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/icons/mac/._1024.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/icons/mac/._128.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/icons/mac/._256.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/icons/mac/._512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/icons/mac/1024.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/icons/mac/128.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/icons/mac/256.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/icons/mac/512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/python/.___init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/python/._main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/python/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/python/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/resources/._base" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/resources/._mac" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/resources/base/._images" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/resources/base/images/._bomb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/resources/base/images/._bug.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/resources/base/images/._clock-select.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/resources/base/images/._cross.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/resources/base/images/._flag.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/resources/base/images/._plus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/resources/base/images/._rocket.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/resources/base/images/._smiley-lol.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/resources/base/images/._smiley.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/resources/base/images/bomb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/resources/base/images/bug.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/resources/base/images/clock-select.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/resources/base/images/cross.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/resources/base/images/flag.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/resources/base/images/plus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/resources/base/images/rocket.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/resources/base/images/smiley-lol.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/resources/base/images/smiley.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/resources/mac/._Contents" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/resources/mac/Contents/._Info.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/packaging/moonsweeper-fbs/src/main/resources/mac/Contents/Info.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/plotting/.__snippet_pyqtgraph_lines.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/plotting/.__snippet_pyqtgraph_symbols.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/plotting/._matplotlib_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/plotting/._matplotlib_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/plotting/._matplotlib_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/plotting/._matplotlib_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/plotting/._matplotlib_5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/plotting/._matplotlib_6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/plotting/._pyqtgraph_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/plotting/._pyqtgraph_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/plotting/._pyqtgraph_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/plotting/._pyqtgraph_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/plotting/._pyqtgraph_5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/plotting/._pyqtgraph_6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/plotting/_snippet_pyqtgraph_lines.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/plotting/_snippet_pyqtgraph_symbols.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/plotting/matplotlib_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/plotting/matplotlib_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/plotting/matplotlib_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/plotting/matplotlib_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/plotting/matplotlib_5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/plotting/matplotlib_6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/plotting/pyqtgraph_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/plotting/pyqtgraph_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/plotting/pyqtgraph_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/plotting/pyqtgraph_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/plotting/pyqtgraph_5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/plotting/pyqtgraph_6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/themes/.__snippet_palette.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/themes/._fusion_widgets.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/themes/._linux_icons.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/themes/._minus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/themes/._modern.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/themes/._palette_dark.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/themes/._palette_dark_widgets.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/themes/._palette_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/themes/._plus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/themes/._puzzle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/themes/._qss_tester.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/themes/_snippet_palette.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/themes/fusion_widgets.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/themes/linux_icons.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/themes/minus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/themes/modern.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/themes/palette_dark.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/themes/palette_dark_widgets.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/themes/palette_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/themes/plus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/themes/puzzle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/file_manager/pyside2_source/themes/qss_tester.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/jpg_to_pdf_project/Untitled.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/jpg_to_pdf_project/cc_jpg_to_pdf-Copy1.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/jpg_to_pdf_project/cc_jpg_to_pdf.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/jpg_to_pdf_project/join_mp4.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/jpg_to_pdf_project/jpg_to_pdf.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/manually_layout_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/my_gui_for_feature_overview_hbox_vbox_variant.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/my_gui_for_scanning_dirs_grid_variant.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/my_gui_for_scanning_dirs_hbox_vbox_variant.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/rosen_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/style_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/werderuser_logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/braz_manual_edtion/brazzers_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/braz_manual_edtion/mainmenu_brazzers_manually.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site_pictures/brazzers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pyqt5_course/share/man/man1/ttx.1" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../pyqt5_course/source_files/pyside2_source/basic/layout_test.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../pyqt5_course/source_files/pyside2_source/basic/layout_test2.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../pyqt5_course/source_files/pyside2_source/basic/nested_layout_test.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../pyqt5_course/source_files/pyside2_source/basic/qgrid_span_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainwindow_brazzers.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainwindow_brazzers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site_scans/.ipynb_checkpoints/full_scan-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/site_scans/.ipynb_checkpoints/full_scan-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site_scans/final_df_tmp.csv" beforeDir="false" afterPath="$PROJECT_DIR$/site_scans/final_df_tmp.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site_scans/full_scan.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/site_scans/full_scan.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../development/Qthread_test_no_freezing.py" beforeDir="false" afterPath="$PROJECT_DIR$/../development/Qthread_test_no_freezing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../development/accompanying_notebook.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../development/accompanying_notebook.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../development/progressbar_QThread.py" beforeDir="false" afterPath="$PROJECT_DIR$/../development/progressbar_QThread.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -765,7 +56,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/site_scans" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.23727088" />
   </component>
   <component name="RecentsManager">
@@ -801,6 +92,48 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="main_proto" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="development" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../pyqt5_course/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../development" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../development/main_proto.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mainmenu_brazzers_manually" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="braz" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../pyqt5_course/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/braz_manual_edtion" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/braz_manual_edtion/mainmenu_brazzers_manually.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="mainwindow_brazzers" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="braz" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -814,6 +147,48 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mainwindow_brazzers.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="my_gui_for_feature_overview_hbox_vbox_variant" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="development" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../pyqt5_course/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../development" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../development/my_gui_for_feature_overview_hbox_vbox_variant.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pyside2_matplotlib_test" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="development" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../pyqt5_course/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../development" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../development/pyside2_matplotlib_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -843,62 +218,22 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="scan_hot_and_mean_site_content" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="braz" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/site_scans" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/site_scans/scan_hot_and_mean_site_content.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="scan_jugfuckers_site_content" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="braz" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/site_scans" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/site_scans/scan_jugfuckers_site_content.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Python.scan_jugfuckers_site_content" />
-      <item itemvalue="Python.scan_hot_and_mean_site_content" />
+      <item itemvalue="Python.pyside2_matplotlib_test" />
+      <item itemvalue="Python.main_proto" />
       <item itemvalue="Python.create_final_df_of_scanned_site" />
       <item itemvalue="Python.scan_bustyz_site_content" />
       <item itemvalue="Python.mainwindow_brazzers" />
+      <item itemvalue="Python.my_gui_for_feature_overview_hbox_vbox_variant" />
+      <item itemvalue="Python.mainmenu_brazzers_manually" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.mainwindow_brazzers" />
+        <item itemvalue="Python.mainmenu_brazzers_manually" />
+        <item itemvalue="Python.my_gui_for_feature_overview_hbox_vbox_variant" />
         <item itemvalue="Python.create_final_df_of_scanned_site" />
         <item itemvalue="Python.scan_bustyz_site_content" />
-        <item itemvalue="Python.scan_hot_and_mean_site_content" />
-        <item itemvalue="Python.scan_jugfuckers_site_content" />
       </list>
     </recent_temporary>
   </component>
