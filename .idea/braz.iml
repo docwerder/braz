@@ -6,5 +6,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="development" />
     <orderEntry type="module" module-name="pyqt5_course" />
+    <orderEntry type="module" module-name="Simple_PySide_Base" />
   </component>
 </module>

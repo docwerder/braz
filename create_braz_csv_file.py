@@ -90,6 +90,7 @@ for lf in selected_dirs_2:
         site_with_ps = lf_tmp.split('/')[-1].split('-')[0]
 
         ps_all = lf_tmp.split("-")[0].split(site_string + "_")[1]
+
         ps_single = ps_all.split("__")
         tmp_files_location_db_tmp.append(location)
         tmp_files_location_db = pd.DataFrame(tmp_files_location_db_tmp)
