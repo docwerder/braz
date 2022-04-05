@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../Simple_PySide_Base" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../my_qt_material" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../pyqt5_course" vcs="Git" />
   </component>
 </project>

@@ -14,6 +14,26 @@ from PySide2.QtWidgets import (
 from PySide2.QtGui import QFontMetrics
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
+from qt_material import apply_stylesheet
+
+extra = {
+    # Button colors
+    'danger': '#dc3545',
+    'warning': '#ffc107',
+    'success': '#17a2b8',
+
+    # Font
+    'font': 'Monaco',
+    'font_size': '22px',
+    'line_height': '13px',
+
+    # Density scale
+    'density_scale': '0',
+
+    # environ:
+    'pyside2': True,
+    'linux': True,
+}
 
 class QHLine(QFrame):
     def __init__(self):
@@ -184,7 +204,33 @@ class MainWindowBrazzers(QMainWindow):
 
 
 if __name__ == "__main__":
+    current_path = os.path.dirname(__file__)
+    print('current_path: ', current_path)
+    style_path = os.path.join(current_path, 'app.css')
+    # load and set stylesheet
+
     app = QApplication(sys.argv)
+
+    # first variant: Define the apply_stylesheet method...
+    apply_stylesheet(app, theme='dark_blue.xml', extra=extra)
+
+    # second variant
+    # define, load and set stylesheet
+    #current_path = os.path.dirname(__file__)
+    #style_path = os.path.join(current_path, 'app.css')
+    #with open(style_path, "r") as fh:
+    #    app.setStyleSheet(fh.read())
+
+    # Third variant:
+    apply_stylesheet(app, theme='dark_blue.xml')
+
+    stylesheet = app.styleSheet()
+    with open('my_style_2.css') as file:
+        app.setStyleSheet(stylesheet + file.read().format(**os.environ))
+
+
+
+
     window = MainWindowBrazzers()
     window.resize(800, 600)
     window.show()

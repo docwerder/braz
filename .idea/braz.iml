@@ -7,5 +7,6 @@
     <orderEntry type="module" module-name="development" />
     <orderEntry type="module" module-name="pyqt5_course" />
     <orderEntry type="module" module-name="Simple_PySide_Base" />
+    <orderEntry type="module" module-name="my_qt_material" />
   </component>
 </module>

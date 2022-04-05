@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/../Simple_PySide_Base/.idea/Simple_PySide_Base.iml" filepath="$PROJECT_DIR$/../Simple_PySide_Base/.idea/Simple_PySide_Base.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/braz.iml" filepath="$PROJECT_DIR$/.idea/braz.iml" />
       <module fileurl="file://$PROJECT_DIR$/../development/.idea/development.iml" filepath="$PROJECT_DIR$/../development/.idea/development.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../my_qt_material/.idea/my_qt_material.iml" filepath="$PROJECT_DIR$/../my_qt_material/.idea/my_qt_material.iml" />
       <module fileurl="file://$PROJECT_DIR$/../pyqt5_course/.idea/pyqt5_course.iml" filepath="$PROJECT_DIR$/../pyqt5_course/.idea/pyqt5_course.iml" />
     </modules>
   </component>
