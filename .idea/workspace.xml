@@ -5,32 +5,38 @@
       <change afterPath="$PROJECT_DIR$/../Simple_PySide_Base/.idea/Simple_PySide_Base.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Simple_PySide_Base/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Simple_PySide_Base/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/braz_manual_edtion/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/braz_manual_edtion/my_material.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../my_qt_material/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../my_qt_material/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../my_qt_material/.idea/my_qt_material.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../my_qt_material/my_qt_material_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../my_qt_material/qtMaterialExample/MyInterface.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../my_qt_material/qtMaterialExample/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../my_qt_material/qtMaterialExample/my_theme.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../my_qt_material/qtdarkMode/MyInterface.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../my_qt_material/qtdarkMode/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../my_qt_material/qtdarkMode/pthon-sheets-key.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../my_qt_material/qtdarkMode/ui_MyInterface.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/df_final_my_db_py.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site_scans/.ipynb_checkpoints/final_df_11_04_2022-checkpoint.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site_scans/.ipynb_checkpoints/scancompare_df_final_my_db-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site_scans/df_compare_db_14_04_22.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site_scans/df_final_adjustment_my_db.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site_scans/df_final_inklusive_ms.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site_scans/df_final_my_db_py.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site_scans/df_jj.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site_scans/df_missing_sites.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site_scans/final_df_11_04_2022.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site_scans/scancompare_df_final_my_db.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../development/my_feature_upload_thread_manually.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../development/my_feature_upload_thread_manually_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../development/qlineedit_example.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../development/qsplitter_example.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../development/selenium_test_wetter.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../pyqt5_course/share/man/man1/ttx.1" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../pyqt5_course/source_files/pyside2_source/basic/layout_test.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../pyqt5_course/source_files/pyside2_source/basic/layout_test2.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../pyqt5_course/source_files/pyside2_source/basic/nested_layout_test.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../pyqt5_course/source_files/pyside2_source/basic/qgrid_span_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Simple_PySide_Base/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Simple_PySide_Base/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/braz.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/braz.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/braz_manual_edtion/mainmenu_brazzers_manually.py" beforeDir="false" afterPath="$PROJECT_DIR$/braz_manual_edtion/mainmenu_brazzers_manually.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/braz_manual_edtion/my_style_2.css" beforeDir="false" afterPath="$PROJECT_DIR$/braz_manual_edtion/my_style_2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_braz_csv_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_braz_csv_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site_scans/.ipynb_checkpoints/df_bra_final_search_masks-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/site_scans/.ipynb_checkpoints/df_bra_final_search_masks-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site_scans/.ipynb_checkpoints/full_scan-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/site_scans/.ipynb_checkpoints/full_scan-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site_scans/df_bra_final_search_masks.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/site_scans/df_bra_final_search_masks.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site_scans/full_scan.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/site_scans/full_scan.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../development/my_gui_for_feature_overview_hbox_vbox_variant.py" beforeDir="false" afterPath="$PROJECT_DIR$/../development/my_gui_for_feature_overview_hbox_vbox_variant.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../development/progressbar_QThread.py" beforeDir="false" afterPath="$PROJECT_DIR$/../development/progressbar_QThread.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +51,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../development" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -73,7 +79,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="advanced.settings" />
     <property name="settings.editor.splitter.proportion" value="0.23727088" />
   </component>
   <component name="RecentsManager">
@@ -88,28 +94,7 @@
       <recent name="$PROJECT_DIR$/../development/" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.mainmenu_brazzers_manually">
-    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="my_qt_material" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../my_qt_material/qtMaterialExample" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../my_qt_material/qtMaterialExample/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.mainwindow_brazzers">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Simple_PySide_Base" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -173,22 +158,64 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="mainmenu_brazzers_manually" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="mainwindow_brazzers" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="braz" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../my_qt_material/qt_material_venv/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/braz_manual_edtion" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mainwindow_brazzers.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="my_feature_upload_thread_manually" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="development" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../pyqt5_course/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../development" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/braz_manual_edtion/mainmenu_brazzers_manually.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../development/my_feature_upload_thread_manually.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="my_feature_upload_thread_manually_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="development" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../pyqt5_course/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../development" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../development/my_feature_upload_thread_manually_2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
@@ -207,48 +234,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../my_qt_material/my_qt_material_extra_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="my_qt_material_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="my_qt_material" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../my_qt_material" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../my_qt_material/my_qt_material_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="nice_gui_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="development" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../pyqt5_course/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../development" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../development/nice_gui_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -278,23 +263,66 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="qlineedit_example" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="development" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../development" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../development/qlineedit_example.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="qsplitter_example" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="development" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../development" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../development/qsplitter_example.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.pyside2_matplotlib_test" />
       <item itemvalue="Python.main_proto" />
       <item itemvalue="Python.main" />
-      <item itemvalue="Python.nice_gui_test" />
-      <item itemvalue="Python.mainmenu_brazzers_manually" />
-      <item itemvalue="Python.main (1)" />
-      <item itemvalue="Python.my_qt_material_test" />
+      <item itemvalue="Python.my_feature_upload_thread_manually" />
       <item itemvalue="Python.my_qt_material_extra_test" />
+      <item itemvalue="Python.my_feature_upload_thread_manually_2" />
+      <item itemvalue="Python.mainwindow_brazzers" />
+      <item itemvalue="Python.qlineedit_example" />
+      <item itemvalue="Python.qsplitter_example" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.mainmenu_brazzers_manually" />
+        <item itemvalue="Python.mainwindow_brazzers" />
+        <item itemvalue="Python.qsplitter_example" />
+        <item itemvalue="Python.qlineedit_example" />
+        <item itemvalue="Python.my_feature_upload_thread_manually_2" />
         <item itemvalue="Python.my_qt_material_extra_test" />
-        <item itemvalue="Python.my_qt_material_test" />
-        <item itemvalue="Python.main (1)" />
-        <item itemvalue="Python.nice_gui_test" />
       </list>
     </recent_temporary>
   </component>

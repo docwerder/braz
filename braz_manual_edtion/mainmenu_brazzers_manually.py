@@ -144,7 +144,7 @@ class MainWindowBrazzers(QMainWindow):
         # first second button row...
         self.second_horizontal_box = QHBoxLayout()
         self.site_label_search = QLabel("Search for PS: ")
-        self.site_label_search.setStyleSheet("font-size: 12px;" "color: green;")
+        #self.site_label_search.setStyleSheet("font-size: 12px;" "color: green;")
         self.site_comboBox_search_ps = QComboBox()
         self.second_horizontal_box.addWidget(self.site_label_search)
         self.second_horizontal_box.addWidget(self.site_comboBox_search_ps)
@@ -153,7 +153,7 @@ class MainWindowBrazzers(QMainWindow):
         self.third_horizontal_box = QHBoxLayout()
 
         self.header_selected_ps = QLabel("Sites of the selected PS")
-        self.header_selected_ps.setStyleSheet("font: Monaco;" "color: blue;")
+        #self.header_selected_ps.setStyleSheet("font: Monaco;" "color: blue;")
         self.third_horizontal_box.addWidget(self.header_selected_ps)
 
         # Define layout for a horizontal line...
@@ -164,10 +164,14 @@ class MainWindowBrazzers(QMainWindow):
         self.fourth_horizontal_box = QHBoxLayout()
         selected_ps_name = "Rebecca More"
         self.lbl_selected_ps = QLabel(selected_ps_name)
-        self.lbl_selected_ps.setStyleSheet("font-size: 12px;" "color: green;")
+        #self.lbl_selected_ps.setStyleSheet("font-size: 12px;" "color: green;")
         self.sites_of_selected_ps = QComboBox()
-        for cnts in ['Milfs Like It Big', 'Big Tits In Uniform']:
+        for cnts in ['Milfs Like It Big', 'Big Tits In Uniform',
+                     'Big Tits At School', 'Big Tits In Sports']:
             self.sites_of_selected_ps.addItem(cnts)
+        width = self.sites_of_selected_ps.minimumSizeHint().width()
+        self.sites_of_selected_ps.view().setMinimumWidth(width*1.5)
+        print("width_: ", width)
         self.fourth_horizontal_box.addWidget(self.lbl_selected_ps)
         self.fourth_horizontal_box.addWidget(self.sites_of_selected_ps)
 
@@ -206,13 +210,13 @@ class MainWindowBrazzers(QMainWindow):
 if __name__ == "__main__":
     current_path = os.path.dirname(__file__)
     print('current_path: ', current_path)
-    style_path = os.path.join(current_path, 'app.css')
+    #style_path = os.path.join(current_path, 'app.css')
     # load and set stylesheet
 
     app = QApplication(sys.argv)
 
     # first variant: Define the apply_stylesheet method...
-    apply_stylesheet(app, theme='dark_blue.xml', extra=extra)
+    #apply_stylesheet(app, theme='my_dark_amber.xml', extra=extra)
 
     # second variant
     # define, load and set stylesheet
@@ -222,7 +226,7 @@ if __name__ == "__main__":
     #    app.setStyleSheet(fh.read())
 
     # Third variant:
-    apply_stylesheet(app, theme='dark_blue.xml')
+    apply_stylesheet(app, theme='my_dark_amber.xml')
 
     stylesheet = app.styleSheet()
     with open('my_style_2.css') as file:

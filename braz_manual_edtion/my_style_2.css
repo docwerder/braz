@@ -9,9 +9,16 @@ QPushButton {{
 }}
 
 QLabel {{
-  color: {QTMATERIAL_SECONDARYCOLOR};
-  text-transform: none;
-  background-color: {QTMATERIAL_PRIMARYCOLOR};
+  color: #ffd740;
+  text-transform: green;
+  font-family: "Monaco";
+  font-size: 14px;
+}}
+
+QComboBox {{
+    color: cyan;
+    background: #31363b;
+    font-family: "Monaco";
 }}
 
 .big_button {{
