@@ -5,17 +5,6 @@
       <change afterPath="$PROJECT_DIR$/../Simple_PySide_Base/.idea/Simple_PySide_Base.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Simple_PySide_Base/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Simple_PySide_Base/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/df_final_my_db_py.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site_scans/.ipynb_checkpoints/final_df_11_04_2022-checkpoint.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site_scans/.ipynb_checkpoints/scancompare_df_final_my_db-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site_scans/df_compare_db_14_04_22.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site_scans/df_final_adjustment_my_db.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site_scans/df_final_inklusive_ms.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site_scans/df_final_my_db_py.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site_scans/df_jj.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site_scans/df_missing_sites.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site_scans/final_df_11_04_2022.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site_scans/scancompare_df_final_my_db.ipynb" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../development/my_feature_upload_thread_manually.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../development/my_feature_upload_thread_manually_2.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../development/qlineedit_example.py" afterDir="false" />
@@ -28,13 +17,6 @@
       <change afterPath="$PROJECT_DIR$/../pyqt5_course/source_files/pyside2_source/basic/qgrid_span_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Simple_PySide_Base/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Simple_PySide_Base/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/braz_manual_edtion/mainmenu_brazzers_manually.py" beforeDir="false" afterPath="$PROJECT_DIR$/braz_manual_edtion/mainmenu_brazzers_manually.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/braz_manual_edtion/my_style_2.css" beforeDir="false" afterPath="$PROJECT_DIR$/braz_manual_edtion/my_style_2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_braz_csv_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_braz_csv_file.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site_scans/.ipynb_checkpoints/df_bra_final_search_masks-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/site_scans/.ipynb_checkpoints/df_bra_final_search_masks-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site_scans/.ipynb_checkpoints/full_scan-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/site_scans/.ipynb_checkpoints/full_scan-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site_scans/df_bra_final_search_masks.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/site_scans/df_bra_final_search_masks.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site_scans/full_scan.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/site_scans/full_scan.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../development/my_gui_for_feature_overview_hbox_vbox_variant.py" beforeDir="false" afterPath="$PROJECT_DIR$/../development/my_gui_for_feature_overview_hbox_vbox_variant.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../development/progressbar_QThread.py" beforeDir="false" afterPath="$PROJECT_DIR$/../development/progressbar_QThread.py" afterDir="false" />
     </list>
