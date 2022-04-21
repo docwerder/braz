@@ -5,11 +5,9 @@
       <change afterPath="$PROJECT_DIR$/../Simple_PySide_Base/.idea/Simple_PySide_Base.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Simple_PySide_Base/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Simple_PySide_Base/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/my_feature_upload_thread_manually.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/my_feature_upload_thread_manually_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/qlineedit_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/qsplitter_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/selenium_test_wetter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/df_final_my_db_py_19_04_2022.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site_scans/df_final_my_db_py_21_04_2022.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site_scans/ps_search_differences.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../pyqt5_course/share/man/man1/ttx.1" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../pyqt5_course/source_files/pyside2_source/basic/layout_test.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../pyqt5_course/source_files/pyside2_source/basic/layout_test2.py" afterDir="false" />
@@ -17,8 +15,12 @@
       <change afterPath="$PROJECT_DIR$/../pyqt5_course/source_files/pyside2_source/basic/qgrid_span_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Simple_PySide_Base/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Simple_PySide_Base/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../development/my_gui_for_feature_overview_hbox_vbox_variant.py" beforeDir="false" afterPath="$PROJECT_DIR$/../development/my_gui_for_feature_overview_hbox_vbox_variant.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../development/progressbar_QThread.py" beforeDir="false" afterPath="$PROJECT_DIR$/../development/progressbar_QThread.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra_final_py.csv" beforeDir="false" afterPath="$PROJECT_DIR$/bra_final_py.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_braz_csv_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_braz_csv_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site_scans/.ipynb_checkpoints/scancompare_df_final_my_db-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/site_scans/.ipynb_checkpoints/scancompare_df_final_my_db-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site_scans/df_bra_final_search_masks.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/site_scans/df_bra_final_search_masks.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site_scans/scancompare_df_final_my_db.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/site_scans/scancompare_df_final_my_db.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../development/jpg_to_pdf_project/cc_jpg_to_pdf-Copy1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../development/jpg_to_pdf_project/cc_jpg_to_pdf-Copy1.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +35,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../development" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -60,15 +62,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../development" />
     <property name="settings.editor.selected.configurable" value="advanced.settings" />
     <property name="settings.editor.splitter.proportion" value="0.23727088" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../development" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/site_scans" />
-      <recent name="$PROJECT_DIR$/../development" />
       <recent name="$PROJECT_DIR$/../pyqt5_course/source_files" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -76,7 +78,7 @@
       <recent name="$PROJECT_DIR$/../development/" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.create_braz_csv_file">
+  <component name="RunManager" selected="Python.ps_search_differences">
     <configuration name="create_braz_csv_file" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="braz" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -90,6 +92,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/create_braz_csv_file.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="fusion_widgets" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pyqt5_course" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../pyqt5_course/source_files/pyside6_source/themes" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../pyqt5_course/source_files/pyside6_source/themes/fusion_widgets.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -203,7 +226,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="my_feature_upload_thread_manually_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="my_feature_upload_thread_manually_only_qplaintextedit" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="development" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -215,7 +238,28 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../development/my_feature_upload_thread_manually_2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../development/my_feature_upload_thread_manually_only_qplaintextedit.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ps_search_differences" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="braz" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/site_scans" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/site_scans/ps_search_differences.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -245,66 +289,24 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="qlineedit_example" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="development" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../development" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../development/qlineedit_example.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="qsplitter_example" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="development" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../development" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../development/qsplitter_example.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="true" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.pyside2_matplotlib_test" />
       <item itemvalue="Python.main_proto" />
       <item itemvalue="Python.main" />
       <item itemvalue="Python.my_feature_upload_thread_manually" />
-      <item itemvalue="Python.my_feature_upload_thread_manually_2" />
-      <item itemvalue="Python.mainwindow_brazzers" />
-      <item itemvalue="Python.qlineedit_example" />
-      <item itemvalue="Python.qsplitter_example" />
+      <item itemvalue="Python.my_feature_upload_thread_manually_only_qplaintextedit" />
+      <item itemvalue="Python.fusion_widgets" />
       <item itemvalue="Python.create_braz_csv_file" />
+      <item itemvalue="Python.mainwindow_brazzers" />
+      <item itemvalue="Python.ps_search_differences" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ps_search_differences" />
         <item itemvalue="Python.create_braz_csv_file" />
         <item itemvalue="Python.mainwindow_brazzers" />
-        <item itemvalue="Python.qsplitter_example" />
-        <item itemvalue="Python.qlineedit_example" />
-        <item itemvalue="Python.my_feature_upload_thread_manually_2" />
+        <item itemvalue="Python.my_feature_upload_thread_manually_only_qplaintextedit" />
+        <item itemvalue="Python.fusion_widgets" />
       </list>
     </recent_temporary>
   </component>
