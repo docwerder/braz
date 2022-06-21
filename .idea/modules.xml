@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../udemy_dash_plotly_course/Plotly-Dashboards-with-Dash/.idea/Plotly-Dashboards-with-Dash.iml" filepath="$PROJECT_DIR$/../udemy_dash_plotly_course/Plotly-Dashboards-with-Dash/.idea/Plotly-Dashboards-with-Dash.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Simple_PySide_Base/.idea/Simple_PySide_Base.iml" filepath="$PROJECT_DIR$/../Simple_PySide_Base/.idea/Simple_PySide_Base.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/braz.iml" filepath="$PROJECT_DIR$/.idea/braz.iml" />
       <module fileurl="file://$PROJECT_DIR$/../development/.idea/development.iml" filepath="$PROJECT_DIR$/../development/.idea/development.iml" />

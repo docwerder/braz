@@ -106,7 +106,8 @@ class Main(QMainWindow, FORM_CLASS):
         if self.csv_dir == "":
             return
 
-        csv_file = pathlib.Path(self.csv_dir) / "bra_final_py.csv"
+        #csv_file = pathlib.Path(self.csv_dir) / "bra_final_py.csv"
+        csv_file = pathlib.Path(self.csv_dir) / "df_final_my_db_py_22_04_2022.csv"
 
         print(f"Loading {csv_file} ... ")
         self.loaded_csv_df = pd.read_csv(csv_file)
@@ -520,7 +521,7 @@ def main():
     window = Main()
     window.show()
     app.exec()
-    #sys(app.exec_())
+    #sys(app.exec_())b
 
 if __name__ == '__main__':
     main()

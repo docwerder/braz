@@ -5,5 +5,6 @@
     <mapping directory="$PROJECT_DIR$/../Simple_PySide_Base" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../my_qt_material" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../pyqt5_course" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../udemy_dash_plotly_course/Plotly-Dashboards-with-Dash" vcs="Git" />
   </component>
 </project>

@@ -16,7 +16,7 @@ ps_col = []
 total_title_list = pd.DataFrame()
 db_total_difference = pd.DataFrame()
 
-ps_db = ['Krissy Lynn', 'Nicolette Shea', 'Rebecca More', 'Ava Addams']
+ps_db = ['Krissy Lynn', 'Nicolette Shea', 'Rebecca More', 'Ava Addams', 'Jasmine Jae']
 
 for ps_name in ps_db:
     print(ps_name)
