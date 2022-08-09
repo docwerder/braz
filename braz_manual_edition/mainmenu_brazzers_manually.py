@@ -226,7 +226,7 @@ if __name__ == "__main__":
     #    app.setStyleSheet(fh.read())
 
     # Third variant:
-    apply_stylesheet(app, theme='my_dark_amber.xml')
+    apply_stylesheet(app, theme='dark_cyan.xml')
 
     stylesheet = app.styleSheet()
     with open('my_style_2.css') as file:

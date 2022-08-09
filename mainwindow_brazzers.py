@@ -1,3 +1,6 @@
+import sys
+sys.path.append('/Users/joerg/repos/development/utilities_functions')
+
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5 import QtWidgets
@@ -7,16 +10,29 @@ from PyQt5.QtWidgets import QMainWindow
 from PyQt5.QtWidgets import QApplication
 import itertools
 import pathlib
-
+#import applescript
 from load_brazzers_database import load_bra_db
 
+import os
 import pandas as pd
 from os import path
-import os, subprocess, sys
+import os, subprocess
 from PyQt5.uic import loadUiType
 
 import search_window_file as search_window
 
+
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(os.path.dirname(SCRIPT_DIR))
+print(sys.path)
+from mnt_functions import mnt_WERDERNAS
+from mnt_functions import mnt_WERDERNAS2
+from mnt_functions import mnt_WERDERNASX
+from mnt_functions import mnt_WERDERNAS2X
+mnt_WERDERNAS()
+mnt_WERDERNAS2()
+mnt_WERDERNASX()
+mnt_WERDERNAS2X()
 FORM_CLASS, _=loadUiType(path.join(path.dirname('__file__'),"mainwindow_brazzers_4.ui"))
 
 import sqlite3
@@ -105,10 +121,11 @@ class Main(QMainWindow, FORM_CLASS):
 
         if self.csv_dir == "":
             return
+            
 
-        #csv_file = pathlib.Path(self.csv_dir) / "bra_final_py.csv"
-        csv_file = pathlib.Path(self.csv_dir) / "df_final_my_db_py_22_04_2022.csv"
-
+        csv_file = pathlib.Path(self.csv_dir) / "df_top56_ps_07_08_22.csv"
+        #csv_file = pathlib.Path(self.csv_dir) / "df_final_my_db_py_22_04_2022.csv"
+        
         print(f"Loading {csv_file} ... ")
         self.loaded_csv_df = pd.read_csv(csv_file)
         #print('All PS: ', len(self.loaded_csv_df['PS1'].unique()))

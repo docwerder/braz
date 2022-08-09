@@ -56,6 +56,6 @@ print('save_file: ', save_file)
 db_btiu_sliced = db_btiu.dropna()
 print(tabulate(db_btiu_sliced, headers='keys', tablefmt='psql'))
 
-db_btiu_sliced.to_csv(save_file)
+#db_btiu_sliced.to_csv(save_file)
 
 

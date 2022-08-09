@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../development/my_gui_manual_edition"
+		}
+	],
+	"settings": {
+		"notebook.output.textLineLimit": 300
+	}
+}

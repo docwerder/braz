@@ -5,12 +5,48 @@
       <change afterPath="$PROJECT_DIR$/../Simple_PySide_Base/.idea/Simple_PySide_Base.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Simple_PySide_Base/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Simple_PySide_Base/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/df_final_my_db_py_22_04_2022.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site_scans/df_final_my_db_py_22_04_2022.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ARCHIVE/accompanying_notebook.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ARCHIVE/bra_overview_07.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ARCHIVE/braz_df_mito_view.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ARCHIVE/requests_bra_sites.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/create_braz_csv_file_08_08_22.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv_ARCHIVE/bra_final_py-werderair.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv_ARCHIVE/bra_final_py.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv_ARCHIVE/bra_final_py_sql.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv_ARCHIVE/bra_final_py_sql_1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv_ARCHIVE/df_final_my_db_py.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv_ARCHIVE/df_final_my_db_py_10_07_2022.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv_ARCHIVE/df_final_my_db_py_18_04_2022.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv_ARCHIVE/df_final_my_db_py_19_04_2022.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv_ARCHIVE/real_wife_stories_titles.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db_final_complete.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/df_final_my_db_py_08_08_2022.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/df_final_my_db_py_11_07_2022.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/df_top56_ps_07_08_22.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/df_top56_ps_tmp_08_08_22.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/find_titles_of_top56_ps_in_df_braz_complete.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scancompare_model_df_final_my_db.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site_scans/evaluation_df_final_my_db/.ipynb_checkpoints/scancompare_model_df_final_my_db-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site_scans/evaluation_df_final_my_db/df_final_my_db_py_11_07_2022.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site_scans/evaluation_df_final_my_db/df_final_my_db_py_19_04_2022.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site_scans/scancompare_model_df_final_my_db.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/top50_ps.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vscode_test.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../development/Untitled1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../development/connect_to_werderhome.ipynb" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../development/jupyter_templates_root/my_templates/my_template_1.ipynb" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../development/jupyter_templates_root/new_name_sample.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../development/mount_to_WerderNAS.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../development/my_gui_manual_edition/my_find_properties_manual_edition.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../development/notebooks.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../development/spotify/create_spotify_playlist_of_schlagerradio_2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../development/spotify/csv_file_of_TOP50_schlagerradio.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../development/spotify/schlager_charts.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../development/spotify/top_50_schlagerradio_18_07_2022.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../development/spotify/top_50_schlagerradio_24_06_2022.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../development/usenet_scans.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../development/utilities_functions/mnt_functions.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../pyqt5_course/share/man/man1/ttx.1" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../pyqt5_course/source_files/pyside2_source/basic/layout_test.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../pyqt5_course/source_files/pyside2_source/basic/layout_test2.py" afterDir="false" />
@@ -34,26 +70,46 @@
       <change afterPath="$PROJECT_DIR$/../udemy_dash_plotly_course/Plotly-Dashboards-with-Dash/1-04-BarCharts/mocksurvey.csv" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../udemy_dash_plotly_course/Plotly-Dashboards-with-Dash/1-04-BarCharts/myplotly_barcharts.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Simple_PySide_Base/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Simple_PySide_Base/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/braz.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/braz.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accompanying_notebook.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/accompanying_notebook.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_braz_csv_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_braz_csv_file.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/df_final_my_db_py_19_04_2022.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Untitled1-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Untitled.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Untitled1.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accompanying_notebook.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra_final_py-werderair.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra_final_py.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra_final_py_sql.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra_final_py_sql_1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bra_overview_07.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/braz_df_mito_view.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/braz_manual_edtion/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/braz_manual_edtion/brazzers_.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/braz_manual_edtion/mainmenu_brazzers_manually.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/braz_manual_edtion/my_material.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/braz_manual_edtion/my_style_2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/df_final_my_db_py.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/df_final_my_db_py_18_04_2022.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mainwindow_brazzers.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainwindow_brazzers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site_scans/df_bra_final_search_masks.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/site_scans/df_bra_final_search_masks.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real_wife_stories_titles.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requests_bra_sites.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site_scans/evaluation_df_final_my_db/.ipynb_checkpoints/evaluation_sheet_df_final_my_db-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/site_scans/evaluation_df_final_my_db/.ipynb_checkpoints/evaluation_sheet_df_final_my_db-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site_scans/evaluation_df_final_my_db/evaluation_sheet_df_final_my_db.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/site_scans/evaluation_df_final_my_db/evaluation_sheet_df_final_my_db.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site_scans/ps_scan_df_final_my_db.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/site_scans/ps_scan_df_final_my_db.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site_scans/ps_search_differences.py" beforeDir="false" afterPath="$PROJECT_DIR$/site_scans/ps_search_differences.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site_scans/scancompare_df_final_my_db.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/site_scans/scancompare_df_final_my_db.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site_scans/scanned_site_content/.ipynb_checkpoints/accomplying_notebook-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/site_scans/scanned_site_content/.ipynb_checkpoints/accomplying_notebook-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site_scans/scanned_site_content/accomplying_notebook.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/site_scans/scanned_site_content/accomplying_notebook.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site_scans/scan_btiu_site_content.py" beforeDir="false" afterPath="$PROJECT_DIR$/site_scans/scan_btiu_site_content.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site_scans/scancompare_df_final_my_db.ipynb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../development/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../development/Untitled.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../development/accompanying_notebook.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../development/accompanying_notebook.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../development/dev_javascript/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../development/dev_javascript/index2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../development/ipydatagrid" beforeDir="false" afterPath="$PROJECT_DIR$/../development/ipydatagrid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../development/jupyter_notebooks/mpp_overview.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../development/jupyter_notebooks/mpp_overview.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../development/lumino" beforeDir="false" afterPath="$PROJECT_DIR$/../development/lumino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../development/my_gui_manual_edition/feature_upload_manually.py" beforeDir="false" afterPath="$PROJECT_DIR$/../development/my_gui_manual_edition/feature_upload_manually.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../development/plotly_tutorial/plotly_case.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../development/plotly_tutorial/plotly_case.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../development/spotify/.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../development/spotify/.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../development/spotify/create_spotifyPlaylist_of_schlagerradio_hitparade.py" beforeDir="false" afterPath="$PROJECT_DIR$/../development/spotify/create_spotifyPlaylist_of_schlagerradio_hitparade.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../development/spotify/create_spotify_playlist.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../development/spotify/create_spotify_playlist.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../development/spotify/schlagerradio_hitparade.py" beforeDir="false" afterPath="$PROJECT_DIR$/../development/spotify/schlagerradio_hitparade.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../development/spotify/top_50_schlagerradio_14_06.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../development/spotify/top_50_schlagerradio_14_06.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../udemy_dash_plotly_course/Plotly-Dashboards-with-Dash/1-02-ScatterPlots/scatter1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../udemy_dash_plotly_course/Plotly-Dashboards-with-Dash/1-02-ScatterPlots/scatter1.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,8 +120,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -98,16 +154,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../development/my_feature_overview_manual_edition" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.23727088" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/../development/my_feature_overview_manual_edition" />
       <recent name="$PROJECT_DIR$/../development/my_line_overview_for_pdw" />
       <recent name="$PROJECT_DIR$/../development" />
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/site_scans" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -116,6 +172,27 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.mainwindow_brazzers">
+    <configuration name="create_braz_csv_file_10_07_22" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="braz" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/create_braz_csv_file_10_07_22.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="create_spotifyPlaylist_of_schlagerradio_hitparade" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="development" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -173,49 +250,7 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../development/my_gui_manual_edition/feature_overview_manually_jw_edited.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="true" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="feature_upload_manually_jw_edited" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="development" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../pyqt5_course/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../development/my_gui_overview_manual_edition" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../development/my_gui_overview_manual_edition/feature_upload_manually_jw_edited.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="true" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="feature_upload_manually_original" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="development" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../pyqt5_course/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../development/my_line_overview_for_pdw" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../development/my_line_overview_for_pdw/feature_upload_manually_original.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
@@ -312,15 +347,15 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../pyqt5_course/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mainwindow_brazzers.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
@@ -342,6 +377,27 @@
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="my_find_properties_manual_edition" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="development" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../development/my_gui_manual_edition" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../development/my_gui_manual_edition/my_find_properties_manual_edition.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
@@ -431,19 +487,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="testfile" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="usenet_scans" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="development" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../pyqt5_course/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../development/my_line_overview_for_pdw" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../development" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../development/my_line_overview_for_pdw/testfile.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../development/usenet_scans.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -463,19 +519,19 @@
       <item itemvalue="Python.get_spotify_playlists" />
       <item itemvalue="Python.create_spotifyPlaylist_of_schlagerradio_hitparade" />
       <item itemvalue="Python.scan_directories_manually" />
-      <item itemvalue="Python.feature_overview_manually_jw_edited" />
-      <item itemvalue="Python.feature_upload_manually_jw_edited" />
-      <item itemvalue="Python.feature_upload_manually_original" />
       <item itemvalue="Python.mainwindow_brazzers" />
-      <item itemvalue="Python.testfile" />
+      <item itemvalue="Python.feature_overview_manually_jw_edited" />
+      <item itemvalue="Python.usenet_scans" />
+      <item itemvalue="Python.create_braz_csv_file_10_07_22" />
+      <item itemvalue="Python.my_find_properties_manual_edition" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.mainwindow_brazzers" />
+        <item itemvalue="Python.my_find_properties_manual_edition" />
+        <item itemvalue="Python.create_braz_csv_file_10_07_22" />
         <item itemvalue="Python.feature_overview_manually_jw_edited" />
-        <item itemvalue="Python.feature_upload_manually_jw_edited" />
-        <item itemvalue="Python.testfile" />
-        <item itemvalue="Python.feature_upload_manually_original" />
+        <item itemvalue="Python.usenet_scans" />
       </list>
     </recent_temporary>
   </component>
