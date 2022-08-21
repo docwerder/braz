@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "../../development/my_gui_manual_edition"
+		},
+		{
+			"path": "../../development"
 		}
 	],
 	"settings": {

@@ -5,7 +5,7 @@ import sys
 sys.path.append('/Users/joerg/repos/development/utilities_functions')
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.dirname(SCRIPT_DIR))
-from tabulate import tabulate
+#from tabulate import tabulate
 
 import numpy as np
 #import qgrid
@@ -19,7 +19,7 @@ mnt_WERDERNAS()
 mnt_WERDERNAS2()
 mnt_WERDERNASX()
 mnt_WERDERNAS2X()
-import ipywidgets as wg
+
 bra_dir = '/Volumes/WERDERNASX/VIDEOSX/BRAZZERS'
 bra_dir_2 = '/Volumes/WERDERNAS2X/VIDEOS2X/BRAZZERS2'
 
@@ -37,10 +37,8 @@ bra_dir_db_2 = sorted(next(os.walk(bra_dir_2))[1])
 
 selected_dirs = [bra_dir_db[i] for i in [0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
                             15, 16, 17, 19, 20, 21, 23]]
-print('selected_dirs: ', selected_dirs)
-#selected_dirs_2 = [bra_dir_db_2[i] for i in [0, 3, 4, 5, 7, 8, 11, 12, 13, 15, 16, 17, 19, 20, 23]]
-selected_dirs_2 = [bra_dir_db_2[i] for i in [0, 2, 3, 4, 5, 6, 7, 8, 11, 12, 13, 15, 16, 17, 19, 20, 23]]
-print('selected_dirs_2: ', selected_dirs_2)
+
+selected_dirs_2 = [bra_dir_db_2[i] for i in [0, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 19, 20, 23]]
 
 
 selected_dirs_final = [selected_dirs, selected_dirs_2]
@@ -62,17 +60,16 @@ link_files_tmp = []
 link_files_db = {}
 
 
+# going through the chosen folders selected_dirs
 for lf in selected_dirs:
     tmp_dir = os.path.join(bra_dir,lf)
     tmp_files = sorted(glob.glob(r'{}/*.mp4'.format(tmp_dir)))
-
-
 
     for lf_tmp in tmp_files:
         #print('lf_tmp: ', lf_tmp )
         site_string = lf_tmp.split('/')[-2]
         location = lf_tmp.split("/")[2]
-        site_with_ps = lf_tmp.split('/')[-1].split('-')[0]
+        site_with_ps = lf_tmp.split('/df_final_my_db_10_08_22')[-1].split('-')[0]
 
         ps_all = lf_tmp.split("-")[0].split(site_string + "_")[1]
         ps_single = ps_all.split("__")
@@ -92,18 +89,18 @@ for lf in selected_dirs:
 
     df_final_tmp_2 = pd.concat([tmp_files_site_db, tmp_files_db, tmp_files_location_db, tmp_files_title_db, link_files_db], axis=1)
 
-
+# going through the chosen folders selected_dirs_2
 for lf in selected_dirs_2:
 
     tmp_dir = os.path.join(bra_dir_2, lf)
     tmp_files = sorted(glob.glob(r'{}/*.mp4'.format(tmp_dir)))
-    #print('tmp_files: \n', tmp_files)
+    
     for lf_tmp in tmp_files:
-
+        #print('lf_tmp: ', lf_tmp)
         site_string = lf_tmp.split('/')[-2]
         location = lf_tmp.split("/")[2]
         site_with_ps = lf_tmp.split('/')[-1].split('-')[0]
-        print('lf_tmp: ', lf_tmp)
+        
         ps_all = lf_tmp.split("-")[0].split(site_string + "_")[1]
 
         ps_single = ps_all.split("__")
@@ -149,13 +146,13 @@ df_final_tmp_2['PS10'] = df_final_tmp_2['PS10'].map(lambda name:name.replace('_'
 
 df_final_tmp_2 = df_final_tmp_2.fillna('No Name')
 #custom_cols = ['Site', 'PS1', 'PS2', 'PS3', 'PS4', 'PS5', 'PS6', 'PS7', 'PS8', 'PS9', 'PS10', 'Title', 'Location', 'Link']
-custom_cols_new = ['Site', 'PS1', 'PS2', 'Title', 'PS3', 'PS4', 'PS5', 'PS6', 'PS7', 'PS8', 'PS9', 'PS10', 'Location', 'Link']
+custom_cols_new = ['Site', 'PS1', 'PS2', 'PS3', 'Title', 'PS4', 'PS5', 'PS6', 'PS7', 'PS8', 'PS9', 'PS10', 'Location', 'Link']
 
 df_bra_final = df_final_tmp_2[custom_cols_new]
-
 #print('df_bra_final: \n ', df_bra_final)
-print(tabulate(df_bra_final, headers='keys', tablefmt='psql'))
+#print(tabulate(df_bra_final, headers='keys', tablefmt='psql'))
 
+saved_csv_file = input('Enter the name of the csv_file: ')
+df_bra_final.to_csv(saved_csv_file)
 
-df_bra_final.to_csv('df_final_my_db_py_08_08_2022.csv')
 
