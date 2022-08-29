@@ -28,9 +28,9 @@ def create_df_actual_ps(actual_ps, chosen_model_brazz_site, max_page_len_of_chos
                 
             #print('site_name: ', site_name)
             db_page_tmp = scan_func(actual_site)
-            print('db_page_tmp: ', db_page_tmp)
+            #print('db_page_tmp: ', db_page_tmp)
             db_page_video = [i for i in db_page_tmp if i.startswith('/video/')]
-            print('db_page_video: ', db_page_video)
+            #print('db_page_video: ', db_page_video)
             db_page_ps = [i for i in db_page_tmp if i.startswith('/pornstar/')]
             ps1 = [h.split('/')[-1].replace('-','_') for h in db_page_ps[::2]]
             ps2 = [h.split('/')[-1].replace('-', '_') for h in db_page_ps[1::2]]
