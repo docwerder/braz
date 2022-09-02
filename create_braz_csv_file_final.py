@@ -154,5 +154,3 @@ df_bra_final = df_final_tmp_2[custom_cols_new]
 
 saved_csv_file = input('Enter the name of the csv_file: ')
 df_bra_final.to_csv(saved_csv_file)
-
-
