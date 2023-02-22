@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/../development/.idea/development.iml" filepath="$PROJECT_DIR$/../development/.idea/development.iml" />
       <module fileurl="file://$PROJECT_DIR$/../my_qt_material/.idea/my_qt_material.iml" filepath="$PROJECT_DIR$/../my_qt_material/.idea/my_qt_material.iml" />
       <module fileurl="file://$PROJECT_DIR$/../pyqt5_course/.idea/pyqt5_course.iml" filepath="$PROJECT_DIR$/../pyqt5_course/.idea/pyqt5_course.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../werdernas/.idea/werdernas.iml" filepath="$PROJECT_DIR$/../werdernas/.idea/werdernas.iml" />
     </modules>
   </component>
 </project>

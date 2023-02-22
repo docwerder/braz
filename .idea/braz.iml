@@ -9,5 +9,6 @@
     <orderEntry type="module" module-name="Simple_PySide_Base" />
     <orderEntry type="module" module-name="my_qt_material" />
     <orderEntry type="module" module-name="Plotly-Dashboards-with-Dash" />
+    <orderEntry type="module" module-name="werdernas" />
   </component>
 </module>

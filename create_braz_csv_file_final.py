@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 import glob
-import sys   
+import sys  
 sys.path.append('/Users/joerg/repos/development/utilities_functions')
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.dirname(SCRIPT_DIR))
@@ -19,6 +19,9 @@ mnt_WERDERNAS()
 mnt_WERDERNAS2()
 mnt_WERDERNASX()
 mnt_WERDERNAS2X()
+
+
+
 
 bra_dir = '/Volumes/WERDERNASX/VIDEOSX/BRAZZERS'
 bra_dir_2 = '/Volumes/WERDERNAS2X/VIDEOS2X/BRAZZERS2'

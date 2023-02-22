@@ -5,20 +5,6 @@
       <change afterPath="$PROJECT_DIR$/../Simple_PySide_Base/.idea/Simple_PySide_Base.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Simple_PySide_Base/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Simple_PySide_Base/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/Untitled1.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/connect_to_werderhome.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/jupyter_templates_root/my_templates/my_template_1.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/jupyter_templates_root/new_name_sample.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/mount_to_WerderNAS.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/my_gui_manual_edition/my_find_properties_manual_edition.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/notebooks.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/spotify/create_spotify_playlist_of_schlagerradio_2.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/spotify/csv_file_of_TOP50_schlagerradio.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/spotify/schlager_charts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/spotify/top_50_schlagerradio_18_07_2022.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/spotify/top_50_schlagerradio_24_06_2022.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/usenet_scans.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../development/utilities_functions/mnt_functions.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../pyqt5_course/share/man/man1/ttx.1" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../pyqt5_course/source_files/pyside2_source/basic/layout_test.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../pyqt5_course/source_files/pyside2_source/basic/layout_test2.py" afterDir="false" />
@@ -41,26 +27,26 @@
       <change afterPath="$PROJECT_DIR$/../udemy_dash_plotly_course/Plotly-Dashboards-with-Dash/1-04-BarCharts/barcharts_exercise.ipynb" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../udemy_dash_plotly_course/Plotly-Dashboards-with-Dash/1-04-BarCharts/mocksurvey.csv" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../udemy_dash_plotly_course/Plotly-Dashboards-with-Dash/1-04-BarCharts/myplotly_barcharts.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../werdernas/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../werdernas/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../werdernas/.idea/werdernas.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Simple_PySide_Base/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Simple_PySide_Base/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/braz_manual_edition/braz.code-workspace" beforeDir="false" afterPath="$PROJECT_DIR$/braz_manual_edition/braz.code-workspace" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_braz_csv_file_08_08_22.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/df_final_my_db_py_08_08_2022.csv" beforeDir="false" afterPath="$PROJECT_DIR$/df_final_my_db_py_08_08_2022.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scancompare_model_df_final_my_db.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/scancompare_model_df_final_my_db.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../development/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../development/Untitled.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../development/accompanying_notebook.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../development/accompanying_notebook.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../development/dev_javascript/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../development/dev_javascript/index2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../development/ipydatagrid" beforeDir="false" afterPath="$PROJECT_DIR$/../development/ipydatagrid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../development/jupyter_notebooks/energieverbrauch.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../development/jupyter_notebooks/energieverbrauch.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../development/jupyter_notebooks/mpp_overview.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../development/jupyter_notebooks/mpp_overview.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../development/lumino" beforeDir="false" afterPath="$PROJECT_DIR$/../development/lumino" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../development/my_gui_manual_edition/feature_upload_manually.py" beforeDir="false" afterPath="$PROJECT_DIR$/../development/my_gui_manual_edition/feature_upload_manually.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../development/plotly_tutorial/plotly_case.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../development/plotly_tutorial/plotly_case.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../development/spotify/.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../development/spotify/.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../development/spotify/create_spotifyPlaylist_of_schlagerradio_hitparade.py" beforeDir="false" afterPath="$PROJECT_DIR$/../development/spotify/create_spotifyPlaylist_of_schlagerradio_hitparade.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../development/spotify/create_spotify_playlist.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../development/spotify/create_spotify_playlist.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../development/spotify/schlagerradio_hitparade.py" beforeDir="false" afterPath="$PROJECT_DIR$/../development/spotify/schlagerradio_hitparade.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../development/spotify/top_50_schlagerradio_14_06.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../development/spotify/top_50_schlagerradio_14_06.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/braz.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/braz.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Untitled3-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_braz_csv_file_final.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_braz_csv_file_final.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scan_ps_site_and_compare_with_my_db.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/scan_ps_site_and_compare_with_my_db.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vscode_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../development/connect_to_werderhome.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../development/connect_to_werderhome.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../development/default_vscode_systax_color.py" beforeDir="false" afterPath="$PROJECT_DIR$/../development/default_vscode_systax_color.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../development/df_search_algos.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../development/df_search_algos.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../development/jupyter_notebooks/mpp_overview_oct_2022.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../development/jupyter_notebooks/mpp_overview_oct_2022.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../development/jupyter_notebooks/stromverbrauch_2011_2022.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../development/jupyter_notebooks/stromverbrauch_2011_2022.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../development/utilities_functions/mnt_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../development/utilities_functions/mnt_functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../udemy_dash_plotly_course/Plotly-Dashboards-with-Dash/1-02-ScatterPlots/scatter1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../udemy_dash_plotly_course/Plotly-Dashboards-with-Dash/1-02-ScatterPlots/scatter1.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +63,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../werdernas" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -106,8 +92,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="settings.editor.splitter.proportion" value="0.23727088" />
+  </component>
+  <component name="ReaderModeSettings">
+    <option name="showLigatures" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -122,7 +111,28 @@
       <recent name="$PROJECT_DIR$/../development/" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.mainwindow_brazzers">
+  <component name="RunManager" selected="Python.connectToWerderNas_2try">
+    <configuration name="connectToWerderNas_2try" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="werdernas" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../werdernas" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../werdernas/connectToWerderNas_2try.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="create_braz_csv_file_10_07_22" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="braz" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -306,7 +316,7 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mainwindow_brazzers.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
@@ -438,51 +448,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="usenet_scans" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="development" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../development" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../development/usenet_scans.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Python.create_braz_csv_file_10_07_22" />
       <item itemvalue="Python.create_spotifyPlaylist_of_schlagerradio_hitparade" />
       <item itemvalue="Python.feature_overview_manually" />
-      <item itemvalue="Python.feature_overview_manually_jw_edited" />
       <item itemvalue="Python.get_spotify_playlists" />
       <item itemvalue="Python.main" />
       <item itemvalue="Python.main_proto" />
-      <item itemvalue="Python.mainwindow_brazzers" />
       <item itemvalue="Python.my_feature_upload_thread_manually" />
-      <item itemvalue="Python.my_find_properties_manual_edition" />
       <item itemvalue="Python.pyside2_matplotlib_test" />
       <item itemvalue="Python.scan_directories_manually" />
       <item itemvalue="Python.scatter1" />
       <item itemvalue="Python.schlagerradio_hitparade" />
-      <item itemvalue="Python.usenet_scans" />
+      <item itemvalue="Python.create_braz_csv_file_10_07_22" />
+      <item itemvalue="Python.feature_overview_manually_jw_edited" />
+      <item itemvalue="Python.mainwindow_brazzers" />
+      <item itemvalue="Python.my_find_properties_manual_edition" />
+      <item itemvalue="Python.connectToWerderNas_2try" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.connectToWerderNas_2try" />
         <item itemvalue="Python.mainwindow_brazzers" />
         <item itemvalue="Python.my_find_properties_manual_edition" />
         <item itemvalue="Python.create_braz_csv_file_10_07_22" />
         <item itemvalue="Python.feature_overview_manually_jw_edited" />
-        <item itemvalue="Python.usenet_scans" />
       </list>
     </recent_temporary>
   </component>
