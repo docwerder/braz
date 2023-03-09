@@ -1,0 +1,32 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    // "version": "2.0.0",
+    // "tasks": [
+    //     {
+    //         "label": "echo",
+    //         "type": "shell",
+    //         "command": "echo Hello"
+    //     }
+    // ]
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run main_gui task",
+            "type": "shell",
+            "command": "/Users/joerg/opt/anaconda3/envs/pyside2_dev/bin/python",
+            "args": [
+                "/Users/joerg/repos/braz/braz_manual_edition/mainmenu_brazzers_manually.py"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

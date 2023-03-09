@@ -99,7 +99,7 @@ for lf in selected_dirs_2:
     tmp_files = sorted(glob.glob(r'{}/*.mp4'.format(tmp_dir)))
     
     for lf_tmp in tmp_files:
-        print('lf_tmp: ', lf_tmp)
+        # print('lf_tmp: ', lf_tmp)
         site_string = lf_tmp.split('/')[-2]
         location = lf_tmp.split("/")[2]
         site_with_ps = lf_tmp.split('/')[-1].split('-')[0]

@@ -1,6 +1,7 @@
 {
     "python.defaultInterpreterPath": "/Users/joerg/opt/anaconda3/envs/pyside2_dev/bin/python",
     "editor.fontSize": 14,
+    // "jupyter.sendSelectionToInteractiveWindow": true
     // "python.analysis.diagnosticSeverityOverrides": {
     // "reportMissingImports": "none",
     // }

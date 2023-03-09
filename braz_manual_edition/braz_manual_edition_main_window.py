@@ -50,14 +50,14 @@ class BrazzersManualMainWindow(QMainWindow):
         #self.lbl_brazzers_logo.setStyleSheet("font-size: 18px;" "color: rgb(44, 44, 126);")
         
         self.pixmap_brazzers = QPixmap("/Users/joerg/repos/braz/braz_manual_edition/brazzers.png")
-        self.scaled_brazzers = self.pixmap_brazzers.scaled(self.lbl_brazzers_logo.size() / 4, QtCore.Qt.KeepAspectRatio)
+        self.scaled_brazzers = self.pixmap_brazzers.scaled(self.lbl_brazzers_logo.size() / 6, QtCore.Qt.KeepAspectRatio)
         self.lbl_brazzers_logo.setPixmap(self.scaled_brazzers)
         self.lbl_brazzers_logo.setScaledContents(False)
 
         # Setting the values for the site_logo 
         self.lbl_site_logo = QLabel("Site logo")
         self.pixmap = QPixmap("/Users/joerg/repos/braz/braz_manual_edition/zz_series.jpg")
-        scaled = self.pixmap.scaled(self.lbl_site_logo.size() / 4, QtCore.Qt.KeepAspectRatio)
+        scaled = self.pixmap.scaled(self.lbl_site_logo.size() / 10, QtCore.Qt.KeepAspectRatio)
         self.lbl_site_logo.setPixmap(scaled)
         self.lbl_site_logo.setScaledContents(False)
 

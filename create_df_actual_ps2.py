@@ -2,8 +2,7 @@
 import pandas as pd
 from utilities_functions import scan_func
 
-def create_df_actual_ps(actual_ps, chosen_model_brazz_site, max_page_len_of_chosen_model):
-    print('maxxxx: ', max_page_len_of_chosen_model)
+def createDfActualPS(actual_ps, chosen_model_brazz_site, max_page_len_of_chosen_model):
     page_content_db = pd.DataFrame()
     page_number_db = {}
     page_content_tmp = {}
@@ -16,15 +15,14 @@ def create_df_actual_ps(actual_ps, chosen_model_brazz_site, max_page_len_of_chos
     db_actual_site_name_sliced = pd.DataFrame()
 
        
+    root_site = chosen_model_brazz_site
+    for number in max_page_len_of_chosen_model:
         
-    for root_site, number in zip(chosen_model_brazz_site[:], max_page_len_of_chosen_model):
-        print('max..' , number)
     
         # max_page_number = math.ceil(int(number) / 24)
         
         for page_nr in range(1, int(number) + 1):
             print('page_nr: ', page_nr)
-            
             actual_site = root_site + str(page_nr)
             print('actual_site: ', actual_site)
             site_name = actual_site.split('/')[-5].replace('-', ' ').title()

@@ -229,8 +229,8 @@ if __name__ == "__main__":
     apply_stylesheet(app, theme='dark_cyan.xml')
 
     stylesheet = app.styleSheet()
-    with open('my_style_2.css') as file:
-        app.setStyleSheet(stylesheet + file.read().format(**os.environ))
+    # with open("my_style_2.css") as file:
+    #     app.setStyleSheet(stylesheet + file.read().format(**os.environ))
 
 
 
