@@ -10,10 +10,7 @@ import sys
 
 sys.path.append('/Users/joerg/repos/braz')
 from utilities_functions import scan_func
-# from create_df_actual_ps2 import createDfActualPS
-# To run all commands within one cell:
-#from IPython.core.interactiveshell import InteractiveShell
-#InteractiveShel
+
 pd.set_option('display.max_rows', None)
 
 class dfActualPS():
