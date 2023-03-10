@@ -83,6 +83,7 @@ class BrazzersManualMainWindow(QMainWindow):
         
         #% Layout for the site
         self.site_layout = QHBoxLayout()
+        self.site_layout.setAlignment(Qt.AlignLeft)
         self.site_label = QLabel("Site: ")
         self.combobox_site = QComboBox()
         self.site_layout.addWidget(self.site_label)
@@ -90,21 +91,24 @@ class BrazzersManualMainWindow(QMainWindow):
                                    )
         #% Layout for the PS1
         self.PS1_layout = QHBoxLayout()
-        self.PS1_label = QLabel("PS1: ")
+        self.PS1_label = QLabel("PS11111111111111111111111111: ")
         self.combobox_PS1 = QComboBox()
         self.PS1_layout.addWidget(self.PS1_label)
         self.PS1_layout.addWidget(self.combobox_PS1)
 
         #% Layout for the PS2
         self.PS2_layout = QHBoxLayout()
-        self.PS2_label = QLabel("PS2: ")
+        self.PS2_label = QLabel("PS33333333333333333333332: ")
+        # self.PS2_layout.setAlignment(Qt.AlignLeft)
         self.combobox_PS2 = QComboBox()
         self.PS2_layout.addWidget(self.PS2_label)
+        self.PS2_layout.stretch(1)
         self.PS2_layout.addWidget(self.combobox_PS2)
 
         #% Layout for the Title
         self.title_layout = QHBoxLayout()
         self.title_label = QLabel("Title: ")
+        self.title_layout.setAlignment(Qt.AlignLeft)
         self.combobox_title = QComboBox()
         self.title_layout.addWidget(self.title_label)
         self.title_layout.addWidget(self.combobox_title)

@@ -150,7 +150,7 @@ df_final_tmp_2['PS10'] = df_final_tmp_2['PS10'].map(lambda name:name.replace('_'
 
 df_final_tmp_2 = df_final_tmp_2.fillna('No Name')
 #custom_cols = ['Site', 'PS1', 'PS2', 'PS3', 'PS4', 'PS5', 'PS6', 'PS7', 'PS8', 'PS9', 'PS10', 'Title', 'Location', 'Link']
-custom_cols_new = ['Site', 'PS1', 'PS2', 'PS3', 'Title', 'PS4', 'PS5', 'PS6', 'PS7', 'PS8', 'PS9', 'PS10', 'Location', 'Link']
+custom_cols_new = ['Site', 'PS1', 'PS2', 'PS3', 'Title', 'PS4', 'PS5', 'PS6', 'PS7', 'PS8', 'PS9', 'PS10', 'Location', 'Link'] 
 
 df_bra_final = df_final_tmp_2[custom_cols_new]
 #print('df_bra_final: \n ', df_bra_final)

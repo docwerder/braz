@@ -53,6 +53,7 @@ class dfActualPS():
                 db_page_video = [i for i in db_page_tmp if i.startswith('/video/')]
                 #print('db_page_video: ', db_page_video)
                 db_page_ps = [i for i in db_page_tmp if i.startswith('/pornstar/')]
+                # db_page_ps = [i for i in db_page_tmp if i.startswith('/models/')]
                 ps1 = [h.split('/')[-1].replace('-','_') for h in db_page_ps[::2]]
                 ps2 = [h.split('/')[-1].replace('-', '_') for h in db_page_ps[1::2]]
                 
@@ -73,18 +74,19 @@ class dfActualPS():
                 db_all_tmp.columns = custom_cols
                 db_actual_site_name = pd.concat([db_actual_site_name, db_all_tmp])
                 #print('db_all_tmp: ', db_all_tmp)
-                #print('db_actual_site_name:\n ', db_actual_site_name)
+                # print('db_actual_site_name:\n ', db_actual_site_name)
 
             df_tmp = db_actual_site_name
             #print('db_actual_site_name: ', db_actual_site_name)
         
         df_chosen_model_tmp = db_actual_site_name
+        #rint('df_chosen_model_tmp: ', df_chosen_model_tmp)
         self.df_chosen_ps = df_chosen_model_tmp[df_chosen_model_tmp['PS1'].notna()]
+        #print('self.df_chosen_ps: ', self.df_chosen_ps)
+        #print('count of titles: ', len(self.df_chosen_ps))
+        return self.df_chosen_ps
 
-        print('count of titles: ', len(self.df_chosen_ps))
-        # return df_chosen_ps
-
-    def compareWithDfFinal(self):
+    def getTitlesInDfFinal(self):
         # print(self.df_chosen_ps)
         self.df_curent_final = pd.read_csv(self.csv_file_final , index_col=[0])
         self.titles_in_df_curent_final = self.df_curent_final[(self.df_curent_final['PS1'] == self.actual_ps) |
@@ -108,6 +110,7 @@ class dfActualPS():
     def getMissingTitles(self):
         zz = 0
         missing_titles = []
+        print("Chosen PS: ", self.actual_ps)
         for single_title in self.df_chosen_ps['Title']:
             found_titles = self.search_titles(self.titles_in_df_curent_final, single_title)
             #print('found_titles: ', found_titles)
