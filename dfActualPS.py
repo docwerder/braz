@@ -87,7 +87,7 @@ class dfActualPS():
         return self.df_chosen_ps
 
     def getTitlesInDfFinal(self):
-        # print(self.df_chosen_ps)
+        print('self.actual_ps: ', self.actual_ps)
         self.df_curent_final = pd.read_csv(self.csv_file_final , index_col=[0])
         self.titles_in_df_curent_final = self.df_curent_final[(self.df_curent_final['PS1'] == self.actual_ps) |
                                                     (self.df_curent_final['PS2'] == self.actual_ps) |

@@ -72,8 +72,9 @@ for lf in selected_dirs:
         #print('lf_tmp: ', lf_tmp )
         site_string = lf_tmp.split('/')[-2]
         location = lf_tmp.split("/")[2]
-        site_with_ps = lf_tmp.split('/df_final_my_db_10_08_22')[-1].split('-')[0]
-
+        # site_with_ps = lf_tmp.split('/df_final_my_db_10_08_22')[-1].split('-')[0]
+        site_with_ps = lf_tmp.split('/df_final_10_03_23')[-1].split('-')[0]
+        
         ps_all = lf_tmp.split("-")[0].split(site_string + "_")[1]
         ps_single = ps_all.split("__")
         tmp_files_location_db_tmp.append(location)

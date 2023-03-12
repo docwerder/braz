@@ -9,7 +9,7 @@ from PySide2.QtCore import Signal as pyqtSignal
 os.environ['QT_MAC_WANTS_LAYER'] = '1'
 from PySide2.QtWidgets import (
     QApplication, QVBoxLayout, QHBoxLayout, QGridLayout, QLineEdit, QTableView,
-    QMainWindow, QWidget, QPushButton, QComboBox, QLabel, QListWidget,
+    QMainWindow, QWidget, QPushButton, QComboBox, QLabel, QListWidget, QTableWidget,
     QFileDialog, QFrame, QMessageBox
 )
 #from emat_mfl_combined.applications.pdw_upload.analysis_tools.path2proj import Path2ProjAnomaliesGeneral
@@ -75,7 +75,29 @@ class BrazzersManualMainWindow(QMainWindow):
 
         #% QTable-Layout 
         self.brazzers_table_layout = QVBoxLayout()
-        self.brazzers_table = QTableView()
+        self.brazzers_table = QTableWidget()
+        data = [
+          [4, 9, 2],
+          [1, 0, 0],
+          [3, 5, 0],
+          [3, 3, 2],
+          [7, 8, 9],
+        ]
+        self.brazzers_table.setColumnCount(15)
+        self.brazzers_table.setHorizontalHeaderLabels(["Nr.", "Site", "PS1", "PS2", "PS3", "PS4",
+                                                      "PS5", "PS6", "PS7", "PS8", "PS9", "PS10",
+                                                      "title", "loc", "link"])
+
+        header = self.brazzers_table.horizontalHeader()
+
+        # self.csv_dir = pathlib.Path("/Users/joerg/repos/braz")
+        # csv_file = pathlib.Path(self.csv_dir) / "df_final_12_03_23.csv"
+
+        # print(f"Loading {csv_file} ... ")
+        # self.loaded_csv_df = pd.read_csv(csv_file, index_col=[0])
+        
+        # print(self.loaded_csv_df)
+
         self.brazzers_table_layout.addWidget(self.brazzers_table)
 
         #% ComboBoxes_layout
@@ -83,7 +105,7 @@ class BrazzersManualMainWindow(QMainWindow):
         
         #% Layout for the site
         self.site_layout = QHBoxLayout()
-        self.site_layout.setAlignment(Qt.AlignLeft)
+        # self.site_layout.setAlignment(Qt.AlignLeft)
         self.site_label = QLabel("Site: ")
         self.combobox_site = QComboBox()
         self.site_layout.addWidget(self.site_label)
@@ -91,14 +113,15 @@ class BrazzersManualMainWindow(QMainWindow):
                                    )
         #% Layout for the PS1
         self.PS1_layout = QHBoxLayout()
-        self.PS1_label = QLabel("PS11111111111111111111111111: ")
+        # self.PS1_layout.setAlignment(Qt.AlignLeft)
+        self.PS1_label = QLabel("PS1: ")
         self.combobox_PS1 = QComboBox()
         self.PS1_layout.addWidget(self.PS1_label)
         self.PS1_layout.addWidget(self.combobox_PS1)
 
         #% Layout for the PS2
         self.PS2_layout = QHBoxLayout()
-        self.PS2_label = QLabel("PS33333333333333333333332: ")
+        self.PS2_label = QLabel("PS2: ")
         # self.PS2_layout.setAlignment(Qt.AlignLeft)
         self.combobox_PS2 = QComboBox()
         self.PS2_layout.addWidget(self.PS2_label)
@@ -108,7 +131,7 @@ class BrazzersManualMainWindow(QMainWindow):
         #% Layout for the Title
         self.title_layout = QHBoxLayout()
         self.title_label = QLabel("Title: ")
-        self.title_layout.setAlignment(Qt.AlignLeft)
+        # self.title_layout.setAlignment(Qt.AlignLeft)
         self.combobox_title = QComboBox()
         self.title_layout.addWidget(self.title_label)
         self.title_layout.addWidget(self.combobox_title)
@@ -116,6 +139,7 @@ class BrazzersManualMainWindow(QMainWindow):
         #% Layout for load_and_play_buttons
         self.load_and_play_button_layout = QHBoxLayout()
         self.load_button = QPushButton("Load csv-file")
+        self.load_button.clicked.connect(self.load_csv_file)
         self.play_button = QPushButton("Play file")
         self.load_and_play_button_layout.addWidget(self.load_button)
         self.load_and_play_button_layout.addWidget(self.play_button)
@@ -149,6 +173,30 @@ class BrazzersManualMainWindow(QMainWindow):
         self.complete_layout.addLayout(self.complete_link_layout)
         dummy_widget.setLayout(self.complete_layout)
         self.setCentralWidget(dummy_widget)
+
+
+    #% Define the methods of the buttons etc....
+
+    def load_csv_file(self):
+
+        self.csv_dir = QFileDialog.getExistingDirectory(
+            parent=None,
+            caption="Select directory of csv-file",
+            # directory="",
+        )
+
+        if self.csv_dir == "":
+            return
+            
+
+        csv_file = pathlib.Path(self.csv_dir) / "df_final_12_03_23.csv"
+        # csv_file = pathlib.Path(self.csv_dir) / "df_final_my_db_py_22_04_2022.csv"
+        
+        print(f"Loading {csv_file} ... ")
+        self.loaded_csv_df = pd.read_csv(csv_file)
+        print(self.loaded_csv_df.head())
+        #print('All PS: ', len(self.loaded_csv_df['PS1'].unique()))
+        rows = 0
 
 
 if __name__ == '__main__':
