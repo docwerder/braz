@@ -10,7 +10,7 @@ os.environ['QT_MAC_WANTS_LAYER'] = '1'
 from PySide2.QtWidgets import (
     QApplication, QVBoxLayout, QHBoxLayout, QGridLayout, QLineEdit, QTableView,
     QMainWindow, QWidget, QPushButton, QComboBox, QLabel, QListWidget, QTableWidget,
-    QFileDialog, QFrame, QMessageBox
+    QFileDialog, QFrame, QMessageBox, QTableWidgetItem, QStyle
 )
 #from emat_mfl_combined.applications.pdw_upload.analysis_tools.path2proj import Path2ProjAnomaliesGeneral
 import pathlib
@@ -76,13 +76,6 @@ class BrazzersManualMainWindow(QMainWindow):
         #% QTable-Layout 
         self.brazzers_table_layout = QVBoxLayout()
         self.brazzers_table = QTableWidget()
-        data = [
-          [4, 9, 2],
-          [1, 0, 0],
-          [3, 5, 0],
-          [3, 3, 2],
-          [7, 8, 9],
-        ]
         self.brazzers_table.setColumnCount(15)
         self.brazzers_table.setHorizontalHeaderLabels(["Nr.", "Site", "PS1", "PS2", "PS3", "PS4",
                                                       "PS5", "PS6", "PS7", "PS8", "PS9", "PS10",
@@ -189,12 +182,53 @@ class BrazzersManualMainWindow(QMainWindow):
             return
             
 
-        csv_file = pathlib.Path(self.csv_dir) / "df_final_12_03_23.csv"
+        csv_file = pathlib.Path(self.csv_dir) / "df_final_13_03_23.csv"
         # csv_file = pathlib.Path(self.csv_dir) / "df_final_my_db_py_22_04_2022.csv"
         
         print(f"Loading {csv_file} ... ")
         self.loaded_csv_df = pd.read_csv(csv_file)
-        print(self.loaded_csv_df.head())
+        # print(self.loaded_csv_df.head())
+
+        self.brazzers_table.setColumnWidth(0, 50)
+        self.brazzers_table.setColumnWidth(1, 130)
+
+        #% Filling the table with the content of the csv-file
+        for rows, columns in self.loaded_csv_df.iterrows():
+            rows = self.brazzers_table.rowCount()
+            self.brazzers_table.insertRow(rows)
+            for num, data in enumerate(columns):
+                self.brazzers_table.setItem(rows, num, QTableWidgetItem(str(data)))
+
+        #% Filling Combobox of "Site"
+        self.site_list_unique = self.loaded_csv_df['Site'].unique()
+        self.site_list_unique = list(self.site_list_unique)
+        self.site_list_unique.insert(0, "All Sites")
+        for lf in self.site_list_unique:
+            self.combobox_site.addItem(lf)
+
+        #% Filling the ComboBox "PS1"
+        self.ps1_list_unique = self.loaded_csv_df['PS1'].unique()
+        self.ps1_list_unique = list(self.ps1_list_unique)
+        self.ps1_list_unique.insert(0, "All Pornstars")
+        
+        
+        
+        # width = self.combobox_PS1.sizeHint().width()
+
+        
+        for lf in sorted(self.ps1_list_unique):
+            self.combobox_PS1.addItem(lf)    
+        max_width = max([self.combobox_PS1.fontMetrics().width(self.combobox_PS1.itemText(i)) for i in range(self.combobox_PS1.count())])
+        print('max_width: ', max_width)
+        self.combobox_PS1.setMinimumWidth(max_width + 40 * self.combobox_PS1.style().pixelMetric(QStyle.PM_DefaultFrameWidth))
+        print('frame: ', str(self.combobox_PS1.style().pixelMetric(QStyle.PM_DefaultFrameWidth)))
+        #% Filling the ComboBox "PS2"
+        self.ps1_list_unique = self.loaded_csv_df['PS2'].unique()
+        self.ps1_list_unique = list(self.ps1_list_unique)
+        self.ps1_list_unique.insert(0, "All Pornstars")
+        for lf in sorted(self.ps1_list_unique):
+            self.combobox_PS2.addItem(lf)  
+    
         #print('All PS: ', len(self.loaded_csv_df['PS1'].unique()))
         rows = 0
 
