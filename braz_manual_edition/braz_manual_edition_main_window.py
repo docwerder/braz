@@ -6,6 +6,8 @@ from PySide2.QtCore import Qt
 from PySide2.QtGui import QPixmap
 from PySide2.QtCore import QThread
 from PySide2.QtCore import Signal as pyqtSignal
+import os, subprocess, sys
+
 os.environ['QT_MAC_WANTS_LAYER'] = '1'
 from PySide2.QtWidgets import (
     QApplication, QVBoxLayout, QHBoxLayout, QGridLayout, QLineEdit, QTableView,
@@ -25,7 +27,7 @@ class QHLine(QFrame):
         self.setFrameShadow(QFrame.Sunken)
 
 
-class BrazzersManualMainWindow(QMainWindow):
+class BrazzersManualMainWindow(QWidget):
     def __init__(self, x_pos_parent_window, y_pos_parent_window, width_parent_window):
         super().__init__()
         
@@ -35,7 +37,7 @@ class BrazzersManualMainWindow(QMainWindow):
         self.width_parent_window = width_parent_window
 
         self.setWindowTitle("BRAZZERS - Manual Edition V0.5!")
-        #self.setFixedSize(1000, 700)
+        self.resize(1000, 600)
 
         ### Define the layout ####
         
@@ -83,6 +85,8 @@ class BrazzersManualMainWindow(QMainWindow):
 
         header = self.brazzers_table.horizontalHeader()
 
+        #% Define the function which his executed, when cell was clicked !
+        self.brazzers_table.cellClicked.connect(self.cell_was_clicked)
         # self.csv_dir = pathlib.Path("/Users/joerg/repos/braz")
         # csv_file = pathlib.Path(self.csv_dir) / "df_final_12_03_23.csv"
 
@@ -98,9 +102,10 @@ class BrazzersManualMainWindow(QMainWindow):
         
         #% Layout for the site
         self.site_layout = QHBoxLayout()
-        # self.site_layout.setAlignment(Qt.AlignLeft)
+        # self.site_layout.setAlignment(Qsortedt.AlignLeft)
         self.site_label = QLabel("Site: ")
         self.combobox_site = QComboBox()
+        
         self.site_layout.addWidget(self.site_label)
         self.site_layout.addWidget(self.combobox_site
                                    )
@@ -130,23 +135,29 @@ class BrazzersManualMainWindow(QMainWindow):
         self.title_layout.addWidget(self.combobox_title)
 
         #% Layout for load_and_play_buttons
-        self.load_and_play_button_layout = QHBoxLayout()
+        self.load_play_and_close_button_layout = QHBoxLayout()
         self.load_button = QPushButton("Load csv-file")
         self.load_button.clicked.connect(self.load_csv_file)
         self.play_button = QPushButton("Play file")
-        self.load_and_play_button_layout.addWidget(self.load_button)
-        self.load_and_play_button_layout.addWidget(self.play_button)
+        self.play_button.clicked.connect(self.play_file)
+        self.close_button = QPushButton("Close")
+        self.close_button.clicked.connect(self.close)
+        self.load_play_and_close_button_layout.addWidget(self.load_button)
+        self.load_play_and_close_button_layout.addWidget(self.play_button)
+        self.load_play_and_close_button_layout.addWidget(self.close_button)
 
+        
+        
 
         #% Add the single components to the layout
         self.comboboxes_complete_layout.addLayout(self.site_layout)
         self.comboboxes_complete_layout.addLayout(self.PS1_layout)
         self.comboboxes_complete_layout.addLayout(self.PS2_layout)
         self.comboboxes_complete_layout.addLayout(self.title_layout)
-        self.comboboxes_complete_layout.addLayout(self.load_and_play_button_layout)
+        self.comboboxes_complete_layout.addLayout(self.load_play_and_close_button_layout)
+
 
         #% Add both layout to the brazzers_table_and_comboxes_layout
-
         self.brazzers_table_and_comboxes_layout.addLayout(self.brazzers_table_layout)
         self.brazzers_table_and_comboxes_layout.addLayout(self.comboboxes_complete_layout)
 
@@ -160,13 +171,13 @@ class BrazzersManualMainWindow(QMainWindow):
 
 
         # Set the hand-made complete layout in a superordinate QWidget called dummy_widget
-        dummy_widget = QWidget()
+        # dummy_widget = QWidget()
         self.complete_layout.addLayout(self.brazzers_logo_site_logo_layout)
         self.complete_layout.addLayout(self.brazzers_table_and_comboxes_layout)#
         self.complete_layout.addLayout(self.complete_link_layout)
-        dummy_widget.setLayout(self.complete_layout)
-        self.setCentralWidget(dummy_widget)
-
+        # dummy_widget.setLayout(self.complete_layout)
+        # self.setCentralWidget(dummy_widget)
+        self.setLayout(self.complete_layout)
 
     #% Define the methods of the buttons etc....
 
@@ -193,45 +204,108 @@ class BrazzersManualMainWindow(QMainWindow):
         self.brazzers_table.setColumnWidth(1, 130)
 
         #% Filling the table with the content of the csv-file
+        # for rows, columns in self.loaded_csv_df.iterrows():
+        #     rows = self.brazzers_table.rowCount()
+        #     self.brazzers_table.insertRow(rows)
+        #     for num, data in enumerate(columns):
+        #         self.brazzers_table.setItem(rows, num, QTableWidgetItem(str(data)))
+        self.fill_brazzers_table(self.loaded_csv_df)
+
+
+        #% Filling Combobox of "Site"
+        self.site_list_unique = self.loaded_csv_df['Site'].unique()
+        self.site_list_sorted = sorted(list(self.site_list_unique))
+        self.site_list_sorted = [lf.lstrip() for lf in self.site_list_sorted]
+        self.site_list_sorted.insert(0, "== All Sites ==")
+        # print('Sorted list: ', self.site_list_sorted)
+
+        for lf, i in zip(self.site_list_sorted, range(len(self.site_list_sorted)+1)):
+            self.combobox_site.addItem(lf)
+            self.combobox_site.setItemData(i, Qt.AlignRight)
+        self.combobox_site.setFixedWidth(160)
+        self.combobox_site.currentTextChanged.connect(self.site_changed)
+
+        #% Filling the ComboBox "PS1"
+        self.ps1_list_unique = self.loaded_csv_df['PS1'].unique()
+        self.ps1_list_sorted = sorted(list(self.ps1_list_unique))
+        self.ps1_list_sorted = [lf.lstrip() for lf in self.ps1_list_sorted]
+        self.ps1_list_sorted.insert(0, "== All PS1 ==")
+        # print('Sorted PS1-list: ', self.ps1_list_sorted)
+        for lf in sorted(self.ps1_list_sorted):
+            self.combobox_PS1.addItem(lf)  
+        for lf, i_ps1 in zip(self.ps1_list_sorted, range(len(self.ps1_list_sorted)+1)):
+            self.combobox_PS1.addItem(lf)    
+            self.combobox_PS1.setItemData(i_ps1, Qt.AlignHCenter)
+
+        
+        #% Filling the ComboBox "PS2" 
+        self.ps2_list_unique = self.loaded_csv_df['PS2'].unique()
+        self.ps2_list_sorted = sorted(list(self.ps2_list_unique))
+        self.ps2_list_sorted = [lf.lstrip() for lf in self.ps2_list_sorted]
+        self.ps2_list_sorted.insert(0, "== All PS2 ==")
+
+        for lf in sorted(self.ps2_list_sorted):
+            self.combobox_PS2.addItem(lf)  
+        for lf, i_ps2 in zip(self.ps2_list_sorted, range(len(self.ps2_list_sorted)+1)):
+            self.combobox_PS2.addItem(lf)    
+            self.combobox_PS2.setItemData(i_ps2, Qt.AlignHCenter)
+        # max_width_combobox_PS1 = max([self.combobox_PS1.fontMetrics().width(self.combobox_PS1.itemText(i)) for i in range(self.combobox_PS1.count())])
+        # self.combobox_PS1.setMinimumWidth(max_width_combobox_PS1 + 40 * self.combobox_PS1.style().pixelMetric(QStyle.PM_DefaultFrameWidth))
+        self.combobox_PS1.setFixedWidth(160)
+
+        #% Filling the ComboBox "PS2" and adjust it with the max_width of text-entry
+        
+        # max_width_combobox_PS2 = max([self.combobox_PS2.fontMetrics().width(self.combobox_PS2.itemText(i)) for i in range(self.combobox_PS2.count())])
+        # self.combobox_PS2.setMinimumWidth(max_width_combobox_PS2 + 40 * self.combobox_PS2.style().pixelMetric(QStyle.PM_DefaultFrameWidth))
+        self.combobox_PS2.setFixedWidth(160)
+
+        self.combobox_title.setFixedWidth(160)
+
+        rows = 0
+
+    def cell_was_clicked(self, row, column):
+        print("Row %d and Column %d was clicked" % (row, column))
+        item = self.brazzers_table.item(row, 0)  
+        ### look at the second entry! Because it is 0, python gives the column!
+
+        self.ID_row = item.text()
+        print('selected row :', self.ID_row)
+        self.selected_file = self.loaded_csv_df.iloc[int(self.ID_row)]['Link']
+        self.selected_site_for_picture = self.loaded_csv_df.iloc[int(self.ID_row)]['Site']
+        self.selected_title = self.loaded_csv_df.iloc[int(self.ID_row)]['Title']
+
+        print('Link: \n', self.selected_file)
+        print('Selected site: \n', self.selected_site_for_picture)
+        print('Selected title: \n', self.selected_title)
+        self.link_text.setText(self.selected_file)
+
+        name_tmp = self.selected_site_for_picture.replace(" ", "_").lower() + ".png"
+        path_folder_site_pictures = "/Users/joerg/repos/braz/site_pictures"
+        path_to_picture = os.path.join(path_folder_site_pictures, name_tmp)
+        print('path_to_picture', path_to_picture)
+        pixmap = QPixmap(path_to_picture)
+        self.label_for_site_picture.setPixmap(pixmap)
+
+    #% function for executing, when the site is changed in the combobox...
+
+    def site_changed(self):
+       self.brazzers_table.setRowCount(0)
+       self.combobox_PS1.clear()
+       print('currentText_site: ', self.combobox_site.currentText())
+
+    #    self.ps1_selected_site = self.loaded_csv_df[self.loaded_csv_df['Site'] == self.combobox_site.currentText()]['PS1']
+
+    def play_file(self):
+        subprocess.call(['open', self.selected_file])
+
+    def fill_brazzers_table(self, load_csv_df: pd.DataFrame):
+        self.load_csv_df = load_csv_df
+         #% Filling the table with the content of the csv-file
         for rows, columns in self.loaded_csv_df.iterrows():
             rows = self.brazzers_table.rowCount()
             self.brazzers_table.insertRow(rows)
             for num, data in enumerate(columns):
                 self.brazzers_table.setItem(rows, num, QTableWidgetItem(str(data)))
-
-        #% Filling Combobox of "Site"
-        self.site_list_unique = self.loaded_csv_df['Site'].unique()
-        self.site_list_unique = list(self.site_list_unique)
-        self.site_list_unique.insert(0, "All Sites")
-        for lf in self.site_list_unique:
-            self.combobox_site.addItem(lf)
-
-        #% Filling the ComboBox "PS1"
-        self.ps1_list_unique = self.loaded_csv_df['PS1'].unique()
-        self.ps1_list_unique = list(self.ps1_list_unique)
-        self.ps1_list_unique.insert(0, "All Pornstars")
-        
-        
-        
-        # width = self.combobox_PS1.sizeHint().width()
-
-        
-        for lf in sorted(self.ps1_list_unique):
-            self.combobox_PS1.addItem(lf)    
-        max_width = max([self.combobox_PS1.fontMetrics().width(self.combobox_PS1.itemText(i)) for i in range(self.combobox_PS1.count())])
-        print('max_width: ', max_width)
-        self.combobox_PS1.setMinimumWidth(max_width + 40 * self.combobox_PS1.style().pixelMetric(QStyle.PM_DefaultFrameWidth))
-        print('frame: ', str(self.combobox_PS1.style().pixelMetric(QStyle.PM_DefaultFrameWidth)))
-        #% Filling the ComboBox "PS2"
-        self.ps1_list_unique = self.loaded_csv_df['PS2'].unique()
-        self.ps1_list_unique = list(self.ps1_list_unique)
-        self.ps1_list_unique.insert(0, "All Pornstars")
-        for lf in sorted(self.ps1_list_unique):
-            self.combobox_PS2.addItem(lf)  
-    
-        #print('All PS: ', len(self.loaded_csv_df['PS1'].unique()))
-        rows = 0
-
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
