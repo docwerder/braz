@@ -193,7 +193,7 @@ class BrazzersManualMainWindow(QWidget):
             return
             
 
-        csv_file = pathlib.Path(self.csv_dir) / "df_final_13_03_23.csv"
+        csv_file = pathlib.Path(self.csv_dir) / "df_final_12_03_23.csv"
         # csv_file = pathlib.Path(self.csv_dir) / "df_final_my_db_py_22_04_2022.csv"
         
         print(f"Loading {csv_file} ... ")
@@ -249,19 +249,17 @@ class BrazzersManualMainWindow(QWidget):
         for lf, i_ps2 in zip(self.ps2_list_sorted, range(len(self.ps2_list_sorted)+1)):
             self.combobox_PS2.addItem(lf)    
             self.combobox_PS2.setItemData(i_ps2, Qt.AlignHCenter)
-        # max_width_combobox_PS1 = max([self.combobox_PS1.fontMetrics().width(self.combobox_PS1.itemText(i)) for i in range(self.combobox_PS1.count())])
-        # self.combobox_PS1.setMinimumWidth(max_width_combobox_PS1 + 40 * self.combobox_PS1.style().pixelMetric(QStyle.PM_DefaultFrameWidth))
+        
         self.combobox_PS1.setFixedWidth(160)
 
         #% Filling the ComboBox "PS2" and adjust it with the max_width of text-entry
         
-        # max_width_combobox_PS2 = max([self.combobox_PS2.fontMetrics().width(self.combobox_PS2.itemText(i)) for i in range(self.combobox_PS2.count())])
-        # self.combobox_PS2.setMinimumWidth(max_width_combobox_PS2 + 40 * self.combobox_PS2.style().pixelMetric(QStyle.PM_DefaultFrameWidth))
+    
         self.combobox_PS2.setFixedWidth(160)
 
-        self.combobox_title.setFixedWidth(160)
+        # self.combobox_title.setFixedWidth(160)
 
-        rows = 0
+        # rows = 0
 
     def cell_was_clicked(self, row, column):
         print("Row %d and Column %d was clicked" % (row, column))
@@ -290,22 +288,27 @@ class BrazzersManualMainWindow(QWidget):
 
     def site_changed(self):
        self.brazzers_table.setRowCount(0)
-       self.combobox_PS1.clear()
+    #    self.combobox_PS1.clear()
        print('currentText_site: ', self.combobox_site.currentText())
+       print('self.loaded_csv_df@site_changed: ', self.loaded_csv_df.head())
 
-    #    self.ps1_selected_site = self.loaded_csv_df[self.loaded_csv_df['Site'] == self.combobox_site.currentText()]['PS1']
-
+       self.df_selected_site = self.loaded_csv_df[self.loaded_csv_df['Site'] == self.combobox_site.currentText()]#['Site']
+       self.fill_brazzers_table(self.df_selected_site)
+ 
     def play_file(self):
         subprocess.call(['open', self.selected_file])
 
-    def fill_brazzers_table(self, load_csv_df: pd.DataFrame):
-        self.load_csv_df = load_csv_df
-         #% Filling the table with the content of the csv-file
-        for rows, columns in self.loaded_csv_df.iterrows():
+    def fill_brazzers_table(self, selected_df: pd.DataFrame):
+        # self.loaded_csv_df = load_csv_df
+        
+        #% Filling the table with the content of the csv-file
+        for rows, columns in selected_df.iterrows():
             rows = self.brazzers_table.rowCount()
             self.brazzers_table.insertRow(rows)
             for num, data in enumerate(columns):
                 self.brazzers_table.setItem(rows, num, QTableWidgetItem(str(data)))
+        
+        print('Debug 1', selected_df)
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
