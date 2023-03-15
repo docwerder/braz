@@ -12,7 +12,7 @@ os.environ['QT_MAC_WANTS_LAYER'] = '1'
 from PySide2.QtWidgets import (
     QApplication, QVBoxLayout, QHBoxLayout, QGridLayout, QLineEdit, QTableView,
     QMainWindow, QWidget, QPushButton, QComboBox, QLabel, QListWidget, QTableWidget,
-    QFileDialog, QFrame, QMessageBox, QTableWidgetItem, QStyle
+    QFileDialog, QFrame, QMessageBox, QTableWidgetItem, QStyle, QPlainTextEdit
 )
 #from emat_mfl_combined.applications.pdw_upload.analysis_tools.path2proj import Path2ProjAnomaliesGeneral
 import pathlib
@@ -87,13 +87,6 @@ class BrazzersManualMainWindow(QWidget):
 
         #% Define the function which his executed, when cell was clicked !
         self.brazzers_table.cellClicked.connect(self.cell_was_clicked)
-        # self.csv_dir = pathlib.Path("/Users/joerg/repos/braz")
-        # csv_file = pathlib.Path(self.csv_dir) / "df_final_12_03_23.csv"
-
-        # print(f"Loading {csv_file} ... ")
-        # self.loaded_csv_df = pd.read_csv(csv_file, index_col=[0])
-        
-        # print(self.loaded_csv_df)
 
         self.brazzers_table_layout.addWidget(self.brazzers_table)
 
@@ -146,8 +139,14 @@ class BrazzersManualMainWindow(QWidget):
         self.load_play_and_close_button_layout.addWidget(self.play_button)
         self.load_play_and_close_button_layout.addWidget(self.close_button)
 
-        
-        
+        #% Layout for the Output of the (possible) terminal statements...
+        self.text_statements_layout = QVBoxLayout()
+        self.output_textbox = QPlainTextEdit()
+        text = "Welcome to brazzers db"
+        self.output_textbox.setStyleSheet("background-color: rgb(255, 255, 255); border-radius: 15px")
+        self.output_textbox.appendPlainText(text)
+        self.text_statements_layout.addWidget(self.output_textbox)
+
 
         #% Add the single components to the layout
         self.comboboxes_complete_layout.addLayout(self.site_layout)
@@ -155,7 +154,7 @@ class BrazzersManualMainWindow(QWidget):
         self.comboboxes_complete_layout.addLayout(self.PS2_layout)
         self.comboboxes_complete_layout.addLayout(self.title_layout)
         self.comboboxes_complete_layout.addLayout(self.load_play_and_close_button_layout)
-
+        self.comboboxes_complete_layout.addLayout(self.text_statements_layout)
 
         #% Add both layout to the brazzers_table_and_comboxes_layout
         self.brazzers_table_and_comboxes_layout.addLayout(self.brazzers_table_layout)
@@ -193,7 +192,7 @@ class BrazzersManualMainWindow(QWidget):
             return
             
 
-        csv_file = pathlib.Path(self.csv_dir) / "df_final_12_03_23.csv"
+        csv_file = pathlib.Path(self.csv_dir) / "df_final_13_03_23.csv"
         # csv_file = pathlib.Path(self.csv_dir) / "df_final_my_db_py_22_04_2022.csv"
         
         print(f"Loading {csv_file} ... ")
