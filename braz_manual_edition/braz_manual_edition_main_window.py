@@ -60,15 +60,15 @@ class BrazzersManualMainWindow(QWidget):
 
         #% Setting the values for the site_logo 
         self.lbl_site_logo = QLabel("Placeholder!!!!")
-        # self.pixmap = QPixmap("/Users/joerg/repos/braz/braz_manual_edition/zz_series.jpg")
+        pixmap = QPixmap("/Users/joerg/repos/braz/braz_manual_edition/zz_series.jpg")
         # default_site_pic_path = Path(r"/Users/joerg/repos/braz/braz_manual_edition/zz_series.jpg")
         # # site_pic_path = '/Users/joerg/repos/braz/site_pictures/big_tits_in_sports.png'
         # self.pixmap = QPixmap(str(default_site_pic_path))
 
-        # scaled = self.pixmap.scaled(self.lbl_site_logo.size() / 10, QtCore.Qt.KeepAspectRatio)
-        # self.lbl_site_logo.setPixmap(scaled)
-        # self.lbl_site_logo.setScaledContents(False)
-        self.lbl_site_logo.hide()
+        scaled = pixmap.scaled(self.lbl_site_logo.size() / 10, QtCore.Qt.KeepAspectRatio)
+        self.lbl_site_logo.setPixmap(scaled)
+        self.lbl_site_logo.setScaledContents(False)
+        # self.lbl_site_logo.hide()
     
 
         #% Fill the brazzers_and_site_logo_layout
@@ -111,15 +111,15 @@ class BrazzersManualMainWindow(QWidget):
         self.site_layout.addWidget(self.combobox_site)
 
 
-        #% Layout for the PS_Top60
-        self.PSTop61_layout = QHBoxLayout()
+        #% Layout for the TopPS
+        self.TopPS_layout = QHBoxLayout()
         # self.PS1_layout.setAlignment(Qt.AlignLeft)
-        self.PSTop61_label = QLabel("PS Top61: ")
-        self.combobox_PSTop61 = QComboBox()
-        self.PSTop61_layout.addWidget(self.PSTop61_label)
-        self.PSTop61_layout.addWidget(self.combobox_PSTop61)
+        self.TopPS_label = QLabel("Top PS: ")
+        self.combobox_TopPS = QComboBox()
+        self.TopPS_layout.addWidget(self.TopPS_label)
+        self.TopPS_layout.addWidget(self.combobox_TopPS)
 
-        top61_ps = ['Abbey Brooks', 'Abbie Cat', 'Alena Croft', 'Aletta Ocean', 'Alexis Ford', 
+        self.TopPS = ['Abbey Brooks', 'Abbie Cat', 'Alena Croft', 'Aletta Ocean', 'Alexis Ford', 
             'Angel Wicky', 'Angela White', 'Armani Black', 'Ava Addams', 'Bridgette B', 'Britney Shannon', 'Carmella Bing', 'Cathy Heaven', 'Chessie Kay', 'Christie Stevens', 'Claire Dames', 'Corinna Blake', 'Dee Williams', 'Diamond Foxxx', 'Donna Bell', 'Ella Hughes', 'Emma Butt', 'Eva Karera', 'Eva Notty', 'Harmony Reigns', 'Holly Halston', 'Jasmine Jae', 'Jayden Jaymes', 'Jenna Presley', 'Jessica Moore', 'Jillian Janson', 'Julia Ann', 'Katie Kox', 'Kelly Divine', 'Kendra Lust', 'Kiara Mia', 'Krissy Lynn', 'Leigh Darby', 'Madison Ivy', 'Marsha May', 'Memphis Monroe', 'Nicolette Shea', 'Nikki Benz', 'Noelle Easton', 'Peta Jensen', 'Rebeca Linares', 'Rebecca More', 'Riley Evans', 'Roberta Gemma',
             'Romi Rain', 'Sensual Jane', 'Shyla Stylez', 'Sienna West', 'Sophie Dee', 'Stella Cox', 
             'Syren De Mer', 'Tarra White', 'Tory Lane', 'Velicity Von', 'Veronica Avluv', 'Yasmin Scott']
@@ -173,7 +173,7 @@ class BrazzersManualMainWindow(QWidget):
 
         #% Add the single components to the layout
         self.comboboxes_complete_layout.addLayout(self.site_layout)
-        self.comboboxes_complete_layout.addLayout(self.PSTop61_layout)
+        self.comboboxes_complete_layout.addLayout(self.TopPS_layout)
         self.comboboxes_complete_layout.addLayout(self.PS1_layout)
         self.comboboxes_complete_layout.addLayout(self.PS2_layout)
         self.comboboxes_complete_layout.addLayout(self.title_layout)
@@ -234,6 +234,19 @@ class BrazzersManualMainWindow(QWidget):
         #         self.brazzers_table.setItem(rows, num, QTableWidgetItem(str(data)))
         self.fill_brazzers_table(self.loaded_csv_df)
 
+
+        #% Filling Combobox of "Top PS"
+        self.TopPS_list_unique = list(self.TopPS)#.unique()
+        self.TopPS_list_sorted = sorted(list(self.TopPS_list_unique))
+        self.TopPS_list_sorted = [lf.lstrip() for lf in self.TopPS_list_sorted]
+        self.TopPS_list_sorted.insert(0, "== All Top PS ==")
+        # print('Sorted list: ', self.site_list_sorted)
+
+        for lf, TopPS_i in zip(self.TopPS_list_sorted, range(len(self.TopPS_list_sorted)+1)):
+            self.combobox_TopPS.addItem(lf)
+            self.combobox_TopPS.setItemData(TopPS_i, Qt.AlignRight)
+        self.combobox_TopPS.setFixedWidth(160)
+        # self.combobox_TopPS.currentTextChanged.connect(self.site_changed)
 
         #% Filling Combobox of "Site"
         self.site_list_unique = self.loaded_csv_df['Site'].unique()
@@ -353,7 +366,7 @@ class BrazzersManualMainWindow(QWidget):
             # site_pic_path = '/Users/joerg/repos/braz/site_pictures/big_tits_in_sports.png'
             pixmap = QPixmap(str(path_to_picture))
 
-            scaled = pixmap.scaled(lbl_site_logo_tmp.size() / 4, QtCore.Qt.KeepAspectRatio)
+            scaled = pixmap.scaled(lbl_site_logo_tmp.size() / 10, QtCore.Qt.KeepAspectRatio)
             
             # scaled = pixmap.scaled(self.lbl_site_logo.size() / 4, QtCore.Qt.KeepAspectRatio)
             self.lbl_site_logo.setPixmap(scaled)
