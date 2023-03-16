@@ -1,5 +1,6 @@
 import sys
 import os
+from pathlib import Path
 from PySide2.QtGui import QPixmap
 from PySide2 import QtCore
 from PySide2.QtCore import Qt
@@ -47,21 +48,28 @@ class BrazzersManualMainWindow(QWidget):
         # Layout for brazzers_label and Site_picture
         self.brazzers_logo_site_logo_layout = QHBoxLayout()
 
-        # Define label for brazzers_logo and site_logo. First step: Default png-picture!
+        # Define label for brazzers_logo and site_logo. Fir st step: Default png-picture!
         self.lbl_brazzers_logo = QLabel()
         #self.lbl_brazzers_logo.setStyleSheet("font-size: 18px;" "color: rgb(44, 44, 126);")
         
         self.pixmap_brazzers = QPixmap("/Users/joerg/repos/braz/braz_manual_edition/brazzers.png")
-        self.scaled_brazzers = self.pixmap_brazzers.scaled(self.lbl_brazzers_logo.size() / 6, QtCore.Qt.KeepAspectRatio)
-        self.lbl_brazzers_logo.setPixmap(self.scaled_brazzers)
-        self.lbl_brazzers_logo.setScaledContents(False)
+        # self.pixmap_brazzers = QPixmap('/Users/joerg/repos/braz/site_pictures/big_tits_in_sports.png')
+        # self.scaled_brazzers = self.pixmap_brazzers.scaled(self.lbl_brazzers_logo.size() / 6, QtCore.Qt.KeepAspectRatio)
+        # self.lbl_brazzers_logo.setPixmap(self.scaled_brazzers)
+        # self.lbl_brazzers_logo.setScaledContents(False)
 
         #% Setting the values for the site_logo 
-        self.lbl_site_logo = QLabel("Site logo")
-        self.pixmap = QPixmap("/Users/joerg/repos/braz/braz_manual_edition/zz_series.jpg")
-        scaled = self.pixmap.scaled(self.lbl_site_logo.size() / 10, QtCore.Qt.KeepAspectRatio)
-        self.lbl_site_logo.setPixmap(scaled)
-        self.lbl_site_logo.setScaledContents(False)
+        self.lbl_site_logo = QLabel("Placeholder!!!!")
+        # self.pixmap = QPixmap("/Users/joerg/repos/braz/braz_manual_edition/zz_series.jpg")
+        # default_site_pic_path = Path(r"/Users/joerg/repos/braz/braz_manual_edition/zz_series.jpg")
+        # # site_pic_path = '/Users/joerg/repos/braz/site_pictures/big_tits_in_sports.png'
+        # self.pixmap = QPixmap(str(default_site_pic_path))
+
+        # scaled = self.pixmap.scaled(self.lbl_site_logo.size() / 10, QtCore.Qt.KeepAspectRatio)
+        # self.lbl_site_logo.setPixmap(scaled)
+        # self.lbl_site_logo.setScaledContents(False)
+        self.lbl_site_logo.hide()
+    
 
         #% Fill the brazzers_and_site_logo_layout
         self.brazzers_logo_site_logo_layout.addWidget(self.lbl_brazzers_logo)
@@ -100,8 +108,23 @@ class BrazzersManualMainWindow(QWidget):
         self.combobox_site = QComboBox()
         
         self.site_layout.addWidget(self.site_label)
-        self.site_layout.addWidget(self.combobox_site
-                                   )
+        self.site_layout.addWidget(self.combobox_site)
+
+
+        #% Layout for the PS_Top60
+        self.PSTop61_layout = QHBoxLayout()
+        # self.PS1_layout.setAlignment(Qt.AlignLeft)
+        self.PSTop61_label = QLabel("PS Top61: ")
+        self.combobox_PSTop61 = QComboBox()
+        self.PSTop61_layout.addWidget(self.PSTop61_label)
+        self.PSTop61_layout.addWidget(self.combobox_PSTop61)
+
+        top61_ps = ['Abbey Brooks', 'Abbie Cat', 'Alena Croft', 'Aletta Ocean', 'Alexis Ford', 
+            'Angel Wicky', 'Angela White', 'Armani Black', 'Ava Addams', 'Bridgette B', 'Britney Shannon', 'Carmella Bing', 'Cathy Heaven', 'Chessie Kay', 'Christie Stevens', 'Claire Dames', 'Corinna Blake', 'Dee Williams', 'Diamond Foxxx', 'Donna Bell', 'Ella Hughes', 'Emma Butt', 'Eva Karera', 'Eva Notty', 'Harmony Reigns', 'Holly Halston', 'Jasmine Jae', 'Jayden Jaymes', 'Jenna Presley', 'Jessica Moore', 'Jillian Janson', 'Julia Ann', 'Katie Kox', 'Kelly Divine', 'Kendra Lust', 'Kiara Mia', 'Krissy Lynn', 'Leigh Darby', 'Madison Ivy', 'Marsha May', 'Memphis Monroe', 'Nicolette Shea', 'Nikki Benz', 'Noelle Easton', 'Peta Jensen', 'Rebeca Linares', 'Rebecca More', 'Riley Evans', 'Roberta Gemma',
+            'Romi Rain', 'Sensual Jane', 'Shyla Stylez', 'Sienna West', 'Sophie Dee', 'Stella Cox', 
+            'Syren De Mer', 'Tarra White', 'Tory Lane', 'Velicity Von', 'Veronica Avluv', 'Yasmin Scott']
+
+
         #% Layout for the PS1
         self.PS1_layout = QHBoxLayout()
         # self.PS1_layout.setAlignment(Qt.AlignLeft)
@@ -150,6 +173,7 @@ class BrazzersManualMainWindow(QWidget):
 
         #% Add the single components to the layout
         self.comboboxes_complete_layout.addLayout(self.site_layout)
+        self.comboboxes_complete_layout.addLayout(self.PSTop61_layout)
         self.comboboxes_complete_layout.addLayout(self.PS1_layout)
         self.comboboxes_complete_layout.addLayout(self.PS2_layout)
         self.comboboxes_complete_layout.addLayout(self.title_layout)
@@ -261,19 +285,19 @@ class BrazzersManualMainWindow(QWidget):
         # rows = 0
 
     def cell_was_clicked(self, row, column):
-        print("Row %d and Column %d was clicked" % (row, column))
+        # print("Row %d and Column %d was clicked" % (row, column))
         item = self.brazzers_table.item(row, 0)  
         ### look at the second entry! Because it is 0, python gives the column!
 
         self.ID_row = item.text()
-        print('selected row :', self.ID_row)
+        # print('selected row :', self.ID_row)
         self.selected_file = self.loaded_csv_df.iloc[int(self.ID_row)]['Link']
         self.selected_site_for_picture = self.loaded_csv_df.iloc[int(self.ID_row)]['Site']
         self.selected_title = self.loaded_csv_df.iloc[int(self.ID_row)]['Title']
 
-        print('Link: \n', self.selected_file)
-        print('Selected site: \n', self.selected_site_for_picture)
-        print('Selected title: \n', self.selected_title)
+        # print('Link: \n', self.selected_file)
+        # print('Selected site: \n', self.selected_site_for_picture)
+        # print('Selected title: \n', self.selected_title)
         self.link_text.setText(self.selected_file)
 
         name_tmp = self.selected_site_for_picture.replace(" ", "_").lower() + ".png"
@@ -281,7 +305,7 @@ class BrazzersManualMainWindow(QWidget):
         path_to_picture = os.path.join(path_folder_site_pictures, name_tmp)
         print('path_to_picture', path_to_picture)
         pixmap = QPixmap(path_to_picture)
-        self.label_for_site_picture.setPixmap(pixmap)
+        # self..setPixmap(pixmap)
 
     #% function for executing, when the site is changed in the combobox...
 
@@ -289,10 +313,13 @@ class BrazzersManualMainWindow(QWidget):
        self.brazzers_table.setRowCount(0)
     #    self.combobox_PS1.clear()
        print('currentText_site: ', self.combobox_site.currentText())
-       print('self.loaded_csv_df@site_changed: ', self.loaded_csv_df.head())
+    #    print('self.loaded_csv_df@site_changed: ', self.loaded_csv_df.head())
 
        self.df_selected_site = self.loaded_csv_df[self.loaded_csv_df['Site'] == self.combobox_site.currentText()]#['Site']
+       self.selected_site = self.combobox_site.currentText()
        self.fill_brazzers_table(self.df_selected_site)
+       self.show_brazzers_site_logo(self.selected_site)
+    #    self.lbl_site_logo = self.show_brazzers_site_logo.lbl_site_logo_tmp
  
     def play_file(self):
         subprocess.call(['open', self.selected_file])
@@ -307,7 +334,66 @@ class BrazzersManualMainWindow(QWidget):
             for num, data in enumerate(columns):
                 self.brazzers_table.setItem(rows, num, QTableWidgetItem(str(data)))
         
-        print('Debug 1', selected_df)
+        # print('Debug 1', selected_df)
+
+    def show_brazzers_site_logo(self, selected_site_for_picture):
+            self.lbl_site_logo.hide()
+            self.selected_site_for_picture = selected_site_for_picture
+            site_name_tmp = self.selected_site_for_picture.replace(" ", "_").lower() + ".png"
+            path_folder_site_pictures = Path(r"/Users/joerg/repos/braz/site_pictures")
+            path_to_picture = path_folder_site_pictures / Path(site_name_tmp)
+
+
+            lbl_site_logo_tmp = QLabel("")
+            
+            # self.pixmap = QPixmap("/Users/joerg/repos/braz/braz_manual_edition/zz_series.jpg")
+            
+            default_site_pic_path = Path(r"/Users/joerg/repos/braz/site_pictures/big_tits_in_uniform.png")
+            
+            # site_pic_path = '/Users/joerg/repos/braz/site_pictures/big_tits_in_sports.png'
+            pixmap = QPixmap(str(path_to_picture))
+
+            scaled = pixmap.scaled(lbl_site_logo_tmp.size() / 4, QtCore.Qt.KeepAspectRatio)
+            
+            # scaled = pixmap.scaled(self.lbl_site_logo.size() / 4, QtCore.Qt.KeepAspectRatio)
+            self.lbl_site_logo.setPixmap(scaled)
+            self.lbl_site_logo.setScaledContents(False)
+            self.lbl_site_logo.show()
+
+
+
+
+            # self.selected_site_for_picture = selected_site_for_picture
+            # print('self.selected_site_for_picture: ', self.selected_site_for_picture)
+            # site_name_tmp = self.selected_site_for_picture.replace(" ", "_").lower() + ".png"
+            # path_folder_site_pictures = Path(r"/Users/joerg/repos/braz/site_pictures")
+            # path_to_picture = path_folder_site_pictures / Path(site_name_tmp)
+            # # path_to_picture = os.path.join(path_folder_site_pictures, site_name_tmp)
+
+            # print('path_to_picture', str(path_to_picture))
+            # # self.pixmap = QPixmap(str(path_to_picture))
+            
+            # print('Debug 1')
+            # pixmap = QPixmap(str(path_to_picture))
+            # print('Debug 2')
+            # lbl_site_logo_tmp = QLabel("")
+            # print('Debug 3')
+            # lbl_site_logo_tmp.setPixmap(pixmap)
+            # # scaled_brazzers_picture = pixmap.scaled(lbl_site_logo_tmp.size() / 10, QtCore.Qt.KeepAspectRatio)
+            
+            # # lbl_site_logo_tmp.show()
+            # print('Debug 4')
+            # # self.lbl_site_logo.setScaledContents(False)
+            # print('Debug 5')
+            # # self.lbl_site_logo = lbl_site_logo_tmp
+            # #self.lbl_site_logo.show()
+
+
+            # image = QFileDialog.getOpenFileName(None, 'OpenFile', '', "Image file(*.png)")
+            # imagePath = image[0]
+            # pixmap = QPixmap(imagePath)
+            # self.pixmap_brazzers.setPixmap(pixmap)
+            # print(imagePath)
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
