@@ -9,6 +9,7 @@ from PySide2.QtGui import QPixmap
 from PySide2.QtCore import QThread
 from PySide2.QtCore import Signal as pyqtSignal
 import os, subprocess, sys
+from MultiComboBox import MultiComboBox
 
 os.environ['QT_MAC_WANTS_LAYER'] = '1'
 from PySide2.QtWidgets import (
@@ -117,22 +118,23 @@ class BrazzersManualMainWindow(QWidget):
         self.TopPS_layout = QHBoxLayout()
         # self.PS1_layout.setAlignment(Qt.AlignLeft)
         self.TopPS_label = QLabel("Top PS: ")
-        self.combobox_TopPS = QComboBox()
+        # self.combobox_TopPS = QComboBox()
+        self.combobox_TopPS = MultiComboBox()
 
         #%new: implement a button instead of a combobox 
         #%to show the multi-selectable checkboxes
-        self.btn_TopPS = QPushButton("== ALL Top PS ==")
-        self.btn_TopPS.clicked.connect(self.show_TopPSFilterFrame)
-        self.TopPS_layout.addWidget(self.TopPS_label)
-        self.TopPS_layout.stretch(1)
-        # self.TopPS_layout.addWidget(self.combobox_TopPS)
-        self.TopPS_layout.addWidget(self.btn_TopPS)
+        # self.btn_TopPS = QPushButton("== ALL Top PS ==")
+        # self.btn_TopPS.clicked.connect(self.show_TopPSFilterFrame)
+        # self.TopPS_layout.addWidget(self.TopPS_label)
+        # self.TopPS_layout.stretch(1)
+        self.TopPS_layout.addWidget(self.combobox_TopPS)
+        # self.TopPS_layout.addWidget(self.btn_TopPS)
 
         self.TopPS = ['Abbey Brooks', 'Abbie Cat', 'Alena Croft', 'Aletta Ocean', 'Alexis Ford', 
             'Angel Wicky', 'Angela White', 'Armani Black', 'Ava Addams', 'Bridgette B', 'Britney Shannon', 'Carmella Bing', 'Cathy Heaven', 'Chessie Kay', 'Christie Stevens', 'Claire Dames', 'Corinna Blake', 'Dee Williams', 'Diamond Foxxx', 'Donna Bell', 'Ella Hughes', 'Emma Butt', 'Eva Karera', 'Eva Notty', 'Harmony Reigns', 'Holly Halston', 'Jasmine Jae', 'Jayden Jaymes', 'Jenna Presley', 'Jessica Moore', 'Jillian Janson', 'Julia Ann', 'Katie Kox', 'Kelly Divine', 'Kendra Lust', 'Kiara Mia', 'Krissy Lynn', 'Leigh Darby', 'Madison Ivy', 'Marsha May', 'Memphis Monroe', 'Nicolette Shea', 'Nikki Benz', 'Noelle Easton', 'Peta Jensen', 'Rebeca Linares', 'Rebecca More', 'Riley Evans', 'Roberta Gemma',
             'Romi Rain', 'Sensual Jane', 'Shyla Stylez', 'Sienna West', 'Sophie Dee', 'Stella Cox', 
             'Syren De Mer', 'Tarra White', 'Tory Lane', 'Velicity Von', 'Veronica Avluv', 'Yasmin Scott']
-
+        self.combobox_TopPS.addItems(self.TopPS)
 
         #% Layout for the PS1
         self.PS1_layout = QHBoxLayout()
@@ -450,11 +452,11 @@ class BrazzersManualMainWindow(QWidget):
             # self.pixmap_brazzers.setPixmap(pixmap)
             # print(imagePath)
 
-    def show_TopPSFilterFrame(self):
-        print('Going into TopPSFilterFrame ....')
-        self.anom_type_filter_frame = AnomTypeFilterFrame(parent=self)
-        self.anom_type_filter_frame.move(self.btn_TopPS.pos())
-        self.anom_type_filter_frame.init_ui()
+    # def show_TopPSFilterFrame(self):
+    #     print('Going into TopPSFilterFrame ....')
+    #     self.anom_type_filter_frame = AnomTypeFilterFrame(parent=self)
+    #     self.anom_type_filter_frame.move(self.btn_TopPS.pos())
+    #     self.anom_type_filter_frame.init_ui()
 
 
 ############################################################
