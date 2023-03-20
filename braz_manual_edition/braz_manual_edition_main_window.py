@@ -125,7 +125,7 @@ class BrazzersManualMainWindow(QWidget):
         #%to show the multi-selectable checkboxes
         # self.btn_TopPS = QPushButton("== ALL Top PS ==")
         # self.btn_TopPS.clicked.connect(self.show_TopPSFilterFrame)
-        # self.TopPS_layout.addWidget(self.TopPS_label)
+        self.TopPS_layout.addWidget(self.TopPS_label)
         # self.TopPS_layout.stretch(1)
         self.TopPS_layout.addWidget(self.combobox_TopPS)
         # self.TopPS_layout.addWidget(self.btn_TopPS)
@@ -169,9 +169,12 @@ class BrazzersManualMainWindow(QWidget):
         self.play_button.clicked.connect(self.play_file)
         self.close_button = QPushButton("Close")
         self.close_button.clicked.connect(self.close)
+        self.dummy_button = QPushButton("Dummy")
+        self.dummy_button.clicked.connect(self.dummy_func)
         self.load_play_and_close_button_layout.addWidget(self.load_button)
         self.load_play_and_close_button_layout.addWidget(self.play_button)
         self.load_play_and_close_button_layout.addWidget(self.close_button)
+        self.load_play_and_close_button_layout.addWidget(self.dummy_button)
 
         #% Layout for the Output of the (possible) terminal statements...
         self.text_statements_layout = QVBoxLayout()
@@ -266,10 +269,12 @@ class BrazzersManualMainWindow(QWidget):
         self.TopPS_list_sorted.insert(0, "== All Top PS ==")
         # print('Sorted list: ', self.site_list_sorted)
 
-        for lf, TopPS_i in zip(self.TopPS_list_sorted, range(len(self.TopPS_list_sorted)+1)):
-            self.combobox_TopPS.addItem(lf)
-            self.combobox_TopPS.setItemData(TopPS_i, Qt.AlignRight)
-        self.combobox_TopPS.setFixedWidth(160)
+        #% the next code rows are not relevant, when the MultiCombobox is used!!!    
+        # for lf, TopPS_i in zip(self.TopPS_list_sorted, range(len(self.TopPS_list_sorted)+1)):
+        #     self.combobox_TopPS.addItem(lf)
+        #     self.combobox_TopPS.setItemData(TopPS_i, Qt.AlignRight)
+        # self.combobox_TopPS.setFixedWidth(260)
+
         # self.combobox_TopPS.currentTextChanged.connect(self.site_changed)
 
         #% Filling Combobox of "Site"
@@ -458,6 +463,8 @@ class BrazzersManualMainWindow(QWidget):
     #     self.anom_type_filter_frame.move(self.btn_TopPS.pos())
     #     self.anom_type_filter_frame.init_ui()
 
+    def dummy_func(self):
+        print('self.combobox_TopPS.currentData: ', self.combobox_TopPS.currentData())
 
 ############################################################
 class AnomTypeFilterFrame(QFrame):
