@@ -1,6 +1,7 @@
 import sys
 import os
 from pathlib import Path
+from typing import Optional
 from PySide2.QtGui import QPixmap
 from PySide2 import QtCore
 from PySide2.QtCore import Qt
@@ -13,7 +14,8 @@ os.environ['QT_MAC_WANTS_LAYER'] = '1'
 from PySide2.QtWidgets import (
     QApplication, QVBoxLayout, QHBoxLayout, QGridLayout, QLineEdit, QTableView,
     QMainWindow, QWidget, QPushButton, QComboBox, QLabel, QListWidget, QTableWidget,
-    QFileDialog, QFrame, QMessageBox, QTableWidgetItem, QStyle, QPlainTextEdit
+    QFileDialog, QFrame, QMessageBox, QTableWidgetItem, QStyle, QPlainTextEdit, QCheckBox,
+    QScrollArea
 )
 #from emat_mfl_combined.applications.pdw_upload.analysis_tools.path2proj import Path2ProjAnomaliesGeneral
 import pathlib
@@ -116,8 +118,15 @@ class BrazzersManualMainWindow(QWidget):
         # self.PS1_layout.setAlignment(Qt.AlignLeft)
         self.TopPS_label = QLabel("Top PS: ")
         self.combobox_TopPS = QComboBox()
+
+        #%new: implement a button instead of a combobox 
+        #%to show the multi-selectable checkboxes
+        self.btn_TopPS = QPushButton("== ALL Top PS ==")
+        self.btn_TopPS.clicked.connect(self.show_TopPSFilterFrame)
         self.TopPS_layout.addWidget(self.TopPS_label)
-        self.TopPS_layout.addWidget(self.combobox_TopPS)
+        self.TopPS_layout.stretch(1)
+        # self.TopPS_layout.addWidget(self.combobox_TopPS)
+        self.TopPS_layout.addWidget(self.btn_TopPS)
 
         self.TopPS = ['Abbey Brooks', 'Abbie Cat', 'Alena Croft', 'Aletta Ocean', 'Alexis Ford', 
             'Angel Wicky', 'Angela White', 'Armani Black', 'Ava Addams', 'Bridgette B', 'Britney Shannon', 'Carmella Bing', 'Cathy Heaven', 'Chessie Kay', 'Christie Stevens', 'Claire Dames', 'Corinna Blake', 'Dee Williams', 'Diamond Foxxx', 'Donna Bell', 'Ella Hughes', 'Emma Butt', 'Eva Karera', 'Eva Notty', 'Harmony Reigns', 'Holly Halston', 'Jasmine Jae', 'Jayden Jaymes', 'Jenna Presley', 'Jessica Moore', 'Jillian Janson', 'Julia Ann', 'Katie Kox', 'Kelly Divine', 'Kendra Lust', 'Kiara Mia', 'Krissy Lynn', 'Leigh Darby', 'Madison Ivy', 'Marsha May', 'Memphis Monroe', 'Nicolette Shea', 'Nikki Benz', 'Noelle Easton', 'Peta Jensen', 'Rebeca Linares', 'Rebecca More', 'Riley Evans', 'Roberta Gemma',
@@ -170,6 +179,18 @@ class BrazzersManualMainWindow(QWidget):
         self.output_textbox.appendPlainText(text)
         self.text_statements_layout.addWidget(self.output_textbox)
 
+        #% Test for QFrame...
+        self.layout_for_frame = QHBoxLayout()
+        self.frame_dummy_left = QFrame()
+        self.layout_for_frame.addWidget(self.frame_dummy_left)
+        self.frame_dummy_left.setFrameStyle(QFrame.Panel | QFrame.Raised)
+        self.frame_for_scrollarea = None
+        self.scrolling_area = QScrollArea()
+        self.scrolling_area.setWidgetResizable(True)
+
+        self.layout_for_frame.addWidget(self.scrolling_area)
+        
+
 
         #% Add the single components to the layout
         self.comboboxes_complete_layout.addLayout(self.site_layout)
@@ -179,6 +200,7 @@ class BrazzersManualMainWindow(QWidget):
         self.comboboxes_complete_layout.addLayout(self.title_layout)
         self.comboboxes_complete_layout.addLayout(self.load_play_and_close_button_layout)
         self.comboboxes_complete_layout.addLayout(self.text_statements_layout)
+        self.comboboxes_complete_layout.addLayout(self.layout_for_frame)
 
         #% Add both layout to the brazzers_table_and_comboxes_layout
         self.brazzers_table_and_comboxes_layout.addLayout(self.brazzers_table_layout)
@@ -261,6 +283,11 @@ class BrazzersManualMainWindow(QWidget):
         self.combobox_site.setFixedWidth(160)
         self.combobox_site.currentTextChanged.connect(self.site_changed)
 
+        #% Filling/setting Top_PS-layout
+        self.btn_TopPS.setFixedWidth(160)
+        self.show
+
+
         #% Filling the ComboBox "PS1"
         self.ps1_list_unique = self.loaded_csv_df['PS1'].unique()
         self.ps1_list_sorted = sorted(list(self.ps1_list_unique))
@@ -288,9 +315,8 @@ class BrazzersManualMainWindow(QWidget):
         
         self.combobox_PS1.setFixedWidth(160)
 
-        #% Filling the ComboBox "PS2" and adjust it with the max_width of text-entry
-        
-    
+
+        #% Filling the ComboBox "PS2" and adjust it with the max_width of text-entry    
         self.combobox_PS2.setFixedWidth(160)
 
         # self.combobox_title.setFixedWidth(160)
@@ -324,14 +350,25 @@ class BrazzersManualMainWindow(QWidget):
 
     def site_changed(self):
        self.brazzers_table.setRowCount(0)
-    #    self.combobox_PS1.clear()
+       self.selected_site = self.combobox_site.currentText()
        print('currentText_site: ', self.combobox_site.currentText())
+
+       if self.selected_site == "== All Sites ==":
+           self.df_selected_site = self.loaded_csv_df
+       else:
+           self.df_selected_site = self.loaded_csv_df[self.loaded_csv_df['Site'] == self.combobox_site.currentText()]
+        
+    #    self.df_selected_site = self.loaded_csv_df[self.loaded_csv_df['Site'] == self.combobox_site.currentText()]'
+       
+       self.fill_brazzers_table(self.df_selected_site)
+       self.show_brazzers_site_logo(self.selected_site)       
+       
+    #    self.brazzers_table.setRowCount(0)
+    #    self.combobox_PS1.clear()
+       
     #    print('self.loaded_csv_df@site_changed: ', self.loaded_csv_df.head())
 
-       self.df_selected_site = self.loaded_csv_df[self.loaded_csv_df['Site'] == self.combobox_site.currentText()]#['Site']
-       self.selected_site = self.combobox_site.currentText()
-       self.fill_brazzers_table(self.df_selected_site)
-       self.show_brazzers_site_logo(self.selected_site)
+       
     #    self.lbl_site_logo = self.show_brazzers_site_logo.lbl_site_logo_tmp
  
     def play_file(self):
@@ -352,16 +389,21 @@ class BrazzersManualMainWindow(QWidget):
     def show_brazzers_site_logo(self, selected_site_for_picture):
             self.lbl_site_logo.hide()
             self.selected_site_for_picture = selected_site_for_picture
-            site_name_tmp = self.selected_site_for_picture.replace(" ", "_").lower() + ".png"
-            path_folder_site_pictures = Path(r"/Users/joerg/repos/braz/site_pictures")
-            path_to_picture = path_folder_site_pictures / Path(site_name_tmp)
+            if self.selected_site_for_picture == "== All Sites ==":
+                path_to_picture = Path("/Users/joerg/repos/braz/braz_manual_edition/zz_series.jpg")
+                
+            else:
+                print('self.selected_site_for_picture: ', self.selected_site_for_picture)
+                site_name_tmp = self.selected_site_for_picture.replace(" ", "_").lower() + ".png"
+                path_folder_site_pictures = Path(r"/Users/joerg/repos/braz/site_pictures")
+                path_to_picture = path_folder_site_pictures / Path(site_name_tmp)
 
 
             lbl_site_logo_tmp = QLabel("")
             
             # self.pixmap = QPixmap("/Users/joerg/repos/braz/braz_manual_edition/zz_series.jpg")
             
-            default_site_pic_path = Path(r"/Users/joerg/repos/braz/site_pictures/big_tits_in_uniform.png")
+            # default_site_pic_path = Path(r"/Users/joerg/repos/braz/site_pictures/big_tits_in_uniform.png")
             
             # site_pic_path = '/Users/joerg/repos/braz/site_pictures/big_tits_in_sports.png'
             pixmap = QPixmap(str(path_to_picture))
@@ -407,6 +449,188 @@ class BrazzersManualMainWindow(QWidget):
             # pixmap = QPixmap(imagePath)
             # self.pixmap_brazzers.setPixmap(pixmap)
             # print(imagePath)
+
+    def show_TopPSFilterFrame(self):
+        print('Going into TopPSFilterFrame ....')
+        self.anom_type_filter_frame = AnomTypeFilterFrame(parent=self)
+        self.anom_type_filter_frame.move(self.btn_TopPS.pos())
+        self.anom_type_filter_frame.init_ui()
+
+
+############################################################
+class AnomTypeFilterFrame(QFrame):
+    """Overlay frame to set the current TopPS to filter.
+
+    Args:
+        parent: Parent widget in which this widget may be embedded into.
+    """
+
+    filter_anom_types_signal = QtCore.Signal(list)
+
+    def __init__(self, parent: Optional[QWidget] = None) -> None:
+        super().__init__(parent)
+
+        style = """AnomTypeFilterFrame {
+            border: 1px solid;
+            background-color: white;
+        }
+        """
+        self.setStyleSheet(style)
+
+        # self.existing_anom_types: list[str] = []
+        self.existing_anom_types = ['Abbey Brooks', 'Abbie Cat', 'Alena Croft', 'Aletta Ocean', 'Alexis Ford', 
+            'Angel Wicky', 'Angela White', 'Armani Black', 'Ava Addams', 'Bridgette B']
+            # 'Britney Shannon', 'Carmella Bing', 'Cathy Heaven', 'Chessie Kay', 'Christie Stevens', 'Claire Dames', 'Corinna Blake', 'Dee Williams', 'Diamond Foxxx']
+            # ', 'Donna Bell', 'Ella Hughes', 'Emma Butt', 'Eva Karera', 'Eva Notty', 'Harmony Reigns', 'Holly Halston', 'Jasmine Jae', 'Jayden Jaymes', 'Jenna Presley', 'Jessica Moore', 'Jillian Janson', 'Julia Ann', 'Katie Kox', 'Kelly Divine', 'Kendra Lust', 'Kiara Mia', 'Krissy Lynn', 'Leigh Darby', 'Madison Ivy', 'Marsha May', 'Memphis Monroe', 'Nicolette Shea', 'Nikki Benz', 'Noelle Easton', 'Peta Jensen', 'Rebeca Linares', 'Rebecca More', 'Riley Evans', 'Roberta Gemma',
+            # 'Romi Rain', 'Sensual Jane', 'Shyla Stylez', 'Sienna West', 'Sophie Dee', 'Stella Cox', 
+            # 'Syren De Mer', 'Tarra White', 'Tory Lane', 'Velicity Von', 'Veronica Avluv', 'Yasmin Scott']
+        self.chosen_anom_types: list[str] = []
+
+        self.checkboxes: list[QCheckBox] = []
+        self.enabling_mapping: Optional[dict[str, bool]] = None
+
+    def init_ui(self) -> None:
+        """Initialize the ui."""
+        # Reparent layout to create the new layout without any issues
+        if self.layout():
+            QWidget().setLayout(self.layout())
+
+        if self.enabling_mapping is None:
+            self.enabling_mapping: dict[str, bool] = {}
+
+            for single_topPS in ["All"] + self.existing_anom_types:
+                self.enabling_mapping[single_topPS] = True
+            # for anom_type in ["All"] + self.existing_anom_types:
+            #     self.enabling_mapping[anom_type] = True
+
+            self.enabling_mapping["None"] = False
+
+        self.checkboxes: list[QCheckBox] = []
+
+        layout = QVBoxLayout()
+
+        anom_types_layout = QVBoxLayout()
+
+        for anom_type in ["All", "None"] + self.existing_anom_types:
+            anom_type_checkbox = QCheckBox(anom_type)
+            anom_type_checkbox.setChecked(self.enabling_mapping[anom_type])
+            anom_type_checkbox.clicked.connect(self.toggle_anom_type)
+            anom_types_layout.addWidget(anom_type_checkbox)
+            self.checkboxes.append(anom_type_checkbox)
+
+        layout.addLayout(anom_types_layout)
+
+        button_layout = QHBoxLayout()
+        self.apply_button = QPushButton("Apply")
+        self.apply_button.clicked.connect(self.emit_chosen_anom_types)
+        button_layout.addWidget(self.apply_button)
+        layout.addLayout(button_layout)
+
+        self.setLayout(layout)
+        self.setMinimumHeight(35 * (2 + len(self.existing_anom_types)) + 30)
+        self.setMinimumWidth(200)
+        self.show()
+
+    def set_existing_anom_types(self, anom_types: list[str]) -> None:
+        """Sets the existing anomaly types for this frame. The input will be sorted.
+
+        Args:
+            anom_types: List of anomaly types, e.g. ["LIN", "MIFE"]
+        """
+        self.existing_anom_types = sorted(anom_types)
+
+    def emit_chosen_anom_types(self) -> None:
+        """Emits the chosen anomaly types"""
+        self.hide()
+
+        self.chosen_anom_types: list[str] = []
+
+        for anom_type in ["All", "None"] + self.existing_anom_types:
+            is_checked = self.enabling_mapping[anom_type]
+
+            if is_checked and anom_type not in {"All", "None"}:
+                self.chosen_anom_types.append(anom_type)
+
+        self.filter_anom_types_signal.emit(self.chosen_anom_types)
+
+    def toggle_anom_type(self, state: bool) -> None:
+        """Check or uncheck the clicked checkbox and update other checkboxes if needed.
+
+        Since there is an "All" and a "None" checkbox, there is some update logic needed to
+        check or uncheck other checkboxes.
+
+        Args:
+            state: True if the checkbox has been checked, False otherwise
+        """
+
+        clicked_anom_type = self.sender().text()
+
+        if state is True:
+            if clicked_anom_type == "All":
+                for anom_type in ["All"] + self.existing_anom_types:
+                    self.enabling_mapping[anom_type] = True
+
+                self.enabling_mapping["None"] = False
+
+            elif clicked_anom_type == "None":
+                for anom_type in ["All"] + self.existing_anom_types:
+                    self.enabling_mapping[anom_type] = False
+
+                self.enabling_mapping["None"] = True
+
+            else:
+                self.enabling_mapping[clicked_anom_type] = True
+
+                all_enabled = True
+
+                for anom_type in self.existing_anom_types:
+                    if self.enabling_mapping[anom_type] is False:
+                        all_enabled = False
+                        break
+
+                self.enabling_mapping["All"] = all_enabled
+                self.enabling_mapping["None"] = False
+
+        elif state is False:
+            if clicked_anom_type == "All":
+                for anom_type in ["All"] + self.existing_anom_types:
+                    self.enabling_mapping[anom_type] = False
+
+                self.enabling_mapping["None"] = True
+            elif clicked_anom_type == "None":
+                for anom_type in ["All"] + self.existing_anom_types:
+                    self.enabling_mapping[anom_type] = True
+
+                self.enabling_mapping["None"] = False
+            else:
+                self.enabling_mapping[clicked_anom_type] = False
+                self.enabling_mapping["All"] = False
+
+                none_enabled = True
+
+                for anom_type in self.existing_anom_types:
+                    if self.enabling_mapping[anom_type] is True:
+                        none_enabled = False
+                        break
+
+                self.enabling_mapping["None"] = none_enabled
+
+        else:
+            raise ValueError(f"State {state} is not valid.")
+
+        for anom_type, checkbox in zip(["All", "None"] + self.existing_anom_types, self.checkboxes):
+            is_checked = self.enabling_mapping[anom_type]
+            checkbox.setChecked(is_checked)
+
+        if self.enabling_mapping["None"] is True:
+            self.apply_button.setEnabled(False)
+        else:
+            self.apply_button.setEnabled(True)
+
+
+
+
+
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
