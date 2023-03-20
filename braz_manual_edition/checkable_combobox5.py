@@ -1,7 +1,6 @@
 from PySide2.QtCore import Qt
-from PySide2.QtWidgets import QApplication, QCheckBox, QComboBox, QMainWindow, QVBoxLayout, QWidget, QStandardItemModel, QStandardItem
-from PySide2.QtGui import QStandardItemModel
-
+from PySide2.QtGui import QStandardItemModel, QStandardItem 
+from PySide2.QtWidgets import QApplication, QCheckBox, QComboBox, QMainWindow, QVBoxLayout, QWidget, QAbstractItemView
 class CheckableComboBox(QComboBox):
     def __init__(self):
         super().__init__()
