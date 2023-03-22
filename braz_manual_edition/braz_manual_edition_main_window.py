@@ -34,11 +34,15 @@ class QHLine(QFrame):
 class BrazzersManualMainWindow(QWidget):
     def __init__(self, x_pos_parent_window, y_pos_parent_window, width_parent_window):
         super().__init__()
-        
 
         self.x_pos_parent_window = x_pos_parent_window
         self.y_pos_parent_window = y_pos_parent_window
         self.width_parent_window = width_parent_window
+        
+
+        self.init_ui()
+
+    def init_ui(self) -> None:
 
         self.setWindowTitle("BRAZZERS - Manual Edition V0.5!")
         self.resize(1000, 600)
@@ -114,25 +118,25 @@ class BrazzersManualMainWindow(QWidget):
         self.site_layout.addWidget(self.combobox_site)
 
 
-        #% Layout for the TopPS
+        #% Layout for the TopPS, NEW: MultiCombobox
         self.TopPS_layout = QHBoxLayout()
         # self.PS1_layout.setAlignment(Qt.AlignLeft)
         self.TopPS_label = QLabel("Top PS: ")
-        # self.combobox_TopPS = QComboBox()
         self.combobox_TopPS = MultiComboBox()
-
-        #%new: implement a button instead of a combobox 
-        #%to show the multi-selectable checkboxes
+        self.btn_filter_TopPS = QPushButton("Filter Top PS")
+        self.btn_filter_TopPS.clicked.connect(self.filter_and_show_TopPS)
+        self.TopPS_layout.addWidget(self.TopPS_label)
+        self.TopPS_layout.addWidget(self.btn_filter_TopPS)
+        self.TopPS_layout.addWidget(self.combobox_TopPS)
         # self.btn_TopPS = QPushButton("== ALL Top PS ==")
         # self.btn_TopPS.clicked.connect(self.show_TopPSFilterFrame)
-        self.TopPS_layout.addWidget(self.TopPS_label)
+        
         # self.TopPS_layout.stretch(1)
-        self.TopPS_layout.addWidget(self.combobox_TopPS)
+        
         # self.TopPS_layout.addWidget(self.btn_TopPS)
 
-        self.TopPS = ['Abbey Brooks', 'Abbie Cat', 'Alena Croft', 'Aletta Ocean', 'Alexis Ford', 
-            'Angel Wicky', 'Angela White', 'Armani Black', 'Ava Addams', 'Bridgette B', 'Britney Shannon', 'Carmella Bing', 'Cathy Heaven', 'Chessie Kay', 'Christie Stevens', 'Claire Dames', 'Corinna Blake', 'Dee Williams', 'Diamond Foxxx', 'Donna Bell', 'Ella Hughes', 'Emma Butt', 'Eva Karera', 'Eva Notty', 'Harmony Reigns', 'Holly Halston', 'Jasmine Jae', 'Jayden Jaymes', 'Jenna Presley', 'Jessica Moore', 'Jillian Janson', 'Julia Ann', 'Katie Kox', 'Kelly Divine', 'Kendra Lust', 'Kiara Mia', 'Krissy Lynn', 'Leigh Darby', 'Madison Ivy', 'Marsha May', 'Memphis Monroe', 'Nicolette Shea', 'Nikki Benz', 'Noelle Easton', 'Peta Jensen', 'Rebeca Linares', 'Rebecca More', 'Riley Evans', 'Roberta Gemma',
-            'Romi Rain', 'Sensual Jane', 'Shyla Stylez', 'Sienna West', 'Sophie Dee', 'Stella Cox', 
+        self.TopPS = ['All_TopPS', 'Abbey Brooks', 'Abbie Cat', 'Alena Croft', 'Aletta Ocean', 'Alexis Ford', 
+            'Angel Wicky', 'Angela White', 'Armani Black', 'Ava Addams', 'Bridgette B', 'Britney Shannon', 'Carmella Bing', 'Cathy Heaven', 'Chessie Kay', 'Christie Stevens', 'Claire Dames', 'Corinna Blake', 'Dee Williams', 'Diamond Foxxx', 'Donna Bell', 'Ella Hughes', 'Emma Butt', 'Eva Karera', 'Eva Notty', 'Harmony Reigns', 'Holly Halston', 'Jasmine Jae', 'Jayden Jaymes', 'Jenna Presley', 'Jessica Moore', 'Jillian Janson', 'Julia Ann', 'Katie Kox', 'Kelly Divine', 'Kendra Lust', 'Kiara Mia', 'Krissy Lynn', 'Leigh Darby', 'Madison Ivy', 'Marsha May', 'Memphis Monroe', 'Nicolette Shea', 'Nikki Benz', 'Noelle Easton', 'Peta Jensen', 'Rebeca Linares', 'Rebecca More', 'Riley Evans', 'Roberta Gemma', 'Romi Rain', 'Sensual Jane', 'Shyla Stylez', 'Sienna West', 'Sophie Dee', 'Stella Cox', 
             'Syren De Mer', 'Tarra White', 'Tory Lane', 'Velicity Von', 'Veronica Avluv', 'Yasmin Scott']
         self.combobox_TopPS.addItems(self.TopPS)
 
@@ -170,7 +174,7 @@ class BrazzersManualMainWindow(QWidget):
         self.close_button = QPushButton("Close")
         self.close_button.clicked.connect(self.close)
         self.dummy_button = QPushButton("Dummy")
-        self.dummy_button.clicked.connect(self.dummy_func)
+        # self.dummy_button.clicked.connect(self.dummy_func)
         self.load_play_and_close_button_layout.addWidget(self.load_button)
         self.load_play_and_close_button_layout.addWidget(self.play_button)
         self.load_play_and_close_button_layout.addWidget(self.close_button)
@@ -180,7 +184,7 @@ class BrazzersManualMainWindow(QWidget):
         self.text_statements_layout = QVBoxLayout()
         self.output_textbox = QPlainTextEdit()
         text = "Welcome to brazzers db"
-        self.output_textbox.setStyleSheet("background-color: rgb(255, 255, 255); border-radius: 15px")
+        self.output_textbox.setStyleSheet("background-color: rgb(155, 155, 55); border-radius: 10px")
         self.output_textbox.appendPlainText(text)
         self.text_statements_layout.addWidget(self.output_textbox)
 
@@ -282,7 +286,6 @@ class BrazzersManualMainWindow(QWidget):
         self.site_list_sorted = sorted(list(self.site_list_unique))
         self.site_list_sorted = [lf.lstrip() for lf in self.site_list_sorted]
         self.site_list_sorted.insert(0, "== All Sites ==")
-        # print('Sorted list: ', self.site_list_sorted)
 
         for lf, i in zip(self.site_list_sorted, range(len(self.site_list_sorted)+1)):
             self.combobox_site.addItem(lf)
@@ -290,8 +293,9 @@ class BrazzersManualMainWindow(QWidget):
         self.combobox_site.setFixedWidth(160)
         self.combobox_site.currentTextChanged.connect(self.site_changed)
 
+
         #% Filling/setting Top_PS-layout
-        self.btn_TopPS.setFixedWidth(160)
+        self.btn_filter_TopPS.setFixedWidth(160)
         self.show
 
 
@@ -300,13 +304,13 @@ class BrazzersManualMainWindow(QWidget):
         self.ps1_list_sorted = sorted(list(self.ps1_list_unique))
         self.ps1_list_sorted = [lf.lstrip() for lf in self.ps1_list_sorted]
         self.ps1_list_sorted.insert(0, "== All PS1 ==")
-        # print('Sorted PS1-list: ', self.ps1_list_sorted)
-        for lf in sorted(self.ps1_list_sorted):
-            self.combobox_PS1.addItem(lf)  
+        # for lf in sorted(self.ps1_list_sorted):
+        #     self.combobox_PS1.addItem(lf)  
         for lf, i_ps1 in zip(self.ps1_list_sorted, range(len(self.ps1_list_sorted)+1)):
             self.combobox_PS1.addItem(lf)    
             self.combobox_PS1.setItemData(i_ps1, Qt.AlignHCenter)
-
+        self.combobox_PS1.setFixedWidth(160)
+        self.combobox_PS1.currentTextChanged.connect(self.ps1_changed)
         
         #% Filling the ComboBox "PS2" 
         self.ps2_list_unique = self.loaded_csv_df['PS2'].unique()
@@ -320,13 +324,13 @@ class BrazzersManualMainWindow(QWidget):
             self.combobox_PS2.addItem(lf)    
             self.combobox_PS2.setItemData(i_ps2, Qt.AlignHCenter)
         
-        self.combobox_PS1.setFixedWidth(160)
+        # self.combobox_PS1.setFixedWidth(160)
 
 
         #% Filling the ComboBox "PS2" and adjust it with the max_width of text-entry    
         self.combobox_PS2.setFixedWidth(160)
 
-        # self.combobox_title.setFixedWidth(160)
+        self.combobox_title.setFixedWidth(160)
 
         # rows = 0
 
@@ -353,8 +357,8 @@ class BrazzersManualMainWindow(QWidget):
         pixmap = QPixmap(path_to_picture)
         # self..setPixmap(pixmap)
 
-    #% function for executing, when the site is changed in the combobox...
 
+    #% function for executing, when the site is changed in the combobox...
     def site_changed(self):
        self.brazzers_table.setRowCount(0)
        self.selected_site = self.combobox_site.currentText()
@@ -363,20 +367,35 @@ class BrazzersManualMainWindow(QWidget):
        if self.selected_site == "== All Sites ==":
            self.df_selected_site = self.loaded_csv_df
        else:
-           self.df_selected_site = self.loaded_csv_df[self.loaded_csv_df['Site'] == self.combobox_site.currentText()]
+           self.df_selected_site = self.loaded_csv_df[self.loaded_csv_df['Site'] == self.combobox_site.currentText()].sort_values(by="PS1", ascending=True)
         
     #    self.df_selected_site = self.loaded_csv_df[self.loaded_csv_df['Site'] == self.combobox_site.currentText()]'
        
-       self.fill_brazzers_table(self.df_selected_site)
-       self.show_brazzers_site_logo(self.selected_site)       
-       
-    #    self.brazzers_table.setRowCount(0)
-    #    self.combobox_PS1.clear()
-       
-    #    print('self.loaded_csv_df@site_changed: ', self.loaded_csv_df.head())
 
+       self.fill_brazzers_table(self.df_selected_site)
+       self.output_textbox.clear()
+       displayed_text = "Site: {site}, counts: {ctn}".format(site=self.combobox_site.currentText(), ctn=len(self.df_selected_site))
+
+       self.output_textbox.appendPlainText(displayed_text)
+       self.show_brazzers_site_logo(self.selected_site)   
+
+
+    
+    #% function for executing, when the PS1 is changed in the combobox...
+    def ps1_changed(self):
+       self.brazzers_table.setRowCount(0)
+       self.selected_ps1 = self.combobox_PS1.currentText()
+       print('current_PS1: ', self.combobox_PS1.currentText())
+
+       if self.selected_ps1 == "== All PS1 ==":
+           self.df_selected_ps1 = self.loaded_csv_df
+       else:
+           self.df_selected_ps1 = self.loaded_csv_df[self.loaded_csv_df['PS1'] == self.combobox_PS1.currentText()].sort_values(by="PS1", ascending=True)
+        
+    #    self.df_selected_site = self.loaded_csv_df[self.loaded_csv_df['Site'] == self.combobox_site.currentText()]'
        
-    #    self.lbl_site_logo = self.show_brazzers_site_logo.lbl_site_logo_tmp
+       self.fill_brazzers_table(self.df_selected_ps1)
+    #    self.show_brazzers_site_logo(self.selected_site)  
  
     def play_file(self):
         subprocess.call(['open', self.selected_file])
@@ -463,8 +482,24 @@ class BrazzersManualMainWindow(QWidget):
     #     self.anom_type_filter_frame.move(self.btn_TopPS.pos())
     #     self.anom_type_filter_frame.init_ui()
 
-    def dummy_func(self):
+    def filter_and_show_TopPS(self):
         print('self.combobox_TopPS.currentData: ', self.combobox_TopPS.currentData())
+        self.brazzers_table.setRowCount(0)
+        self.selected_TopPS = list(self.combobox_TopPS.currentData())
+        print('TopPS selected: ', self.selected_TopPS[0])
+        print('type: ', type(self.selected_TopPS))
+
+        if self.selected_TopPS[0] == "All_TopPS":
+            print('Debug 5')
+            self.df_selected_TopPS = self.loaded_csv_df
+        else:
+            self.df_selected_TopPS = self.loaded_csv_df[self.loaded_csv_df['PS1'].isin(self.selected_TopPS)].sort_values(by="PS1", ascending=True)
+            
+        #    self.df_selected_site = self.loaded_csv_df[self.loaded_csv_df['Site'] == self.combobox_site.currentText()]'
+        
+        self.fill_brazzers_table(self.df_selected_TopPS)
+        # self.show_brazzers_site_logo(self.selected_site)   
+
 
 ############################################################
 class AnomTypeFilterFrame(QFrame):
