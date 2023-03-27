@@ -16,7 +16,7 @@ from PySide2.QtWidgets import (
     QApplication, QVBoxLayout, QHBoxLayout, QGridLayout, QLineEdit, QTableView,
     QMainWindow, QWidget, QPushButton, QComboBox, QLabel, QListWidget, QTableWidget,
     QFileDialog, QFrame, QMessageBox, QTableWidgetItem, QStyle, QPlainTextEdit, QCheckBox,
-    QScrollArea
+    QScrollArea, QHeaderView
 )
 #from emat_mfl_combined.applications.pdw_upload.analysis_tools.path2proj import Path2ProjAnomaliesGeneral
 import pathlib
@@ -45,7 +45,7 @@ class BrazzersManualMainWindow(QWidget):
     def init_ui(self) -> None:
 
         self.setWindowTitle("BRAZZERS - Manual Edition V0.5!")
-        self.resize(1000, 600)
+        self.resize(1500, 600)
 
         ### Define the layout ####
         
@@ -98,8 +98,11 @@ class BrazzersManualMainWindow(QWidget):
                                                       "PS5", "PS6", "PS7", "PS8", "PS9", "PS10",
                                                       "title", "loc", "link"])
 
-        header = self.brazzers_table.horizontalHeader()
 
+        header = self.brazzers_table.horizontalHeader()
+        # header.setSectionResizeMode(0, QHeaderView.ResizeMode.Stretch)
+        header.setSectionResizeMode(2, QHeaderView.ResizeMode.ResizeToContents)
+        header.setSectionResizeMode(5, QHeaderView.ResizeMode.ResizeToContents)
         #% Define the function which his executed, when cell was clicked !
         self.brazzers_table.cellClicked.connect(self.cell_was_clicked)
 
@@ -173,12 +176,23 @@ class BrazzersManualMainWindow(QWidget):
         self.play_button.clicked.connect(self.play_file)
         self.close_button = QPushButton("Close")
         self.close_button.clicked.connect(self.close)
-        self.dummy_button = QPushButton("Dummy")
-        # self.dummy_button.clicked.connect(self.dummy_func)
+        # self.btn_searchDF = QPushButton("Search DF")
+        # self.btn_searchDF.clicked.connect(self.searchDF)
+
         self.load_play_and_close_button_layout.addWidget(self.load_button)
         self.load_play_and_close_button_layout.addWidget(self.play_button)
         self.load_play_and_close_button_layout.addWidget(self.close_button)
-        self.load_play_and_close_button_layout.addWidget(self.dummy_button)
+        # self.load_play_and_close_button_layout.addWidget(self.btn_searchDF)
+
+        #% Layout for Search the DF
+        self.search_df_layout = QHBoxLayout()
+        self.lbl_searchDF = QLabel("Search DF")
+        # self.btn_searchDF.clicked.connect(self.searchDF)
+        self.search_textbox = QLineEdit()
+        self.search_textbox.returnPressed.connect(self.searchDF)
+        self.search_df_layout.addWidget(self.lbl_searchDF)
+        self.search_df_layout.addWidget(self.search_textbox)
+        
 
         #% Layout for the Output of the (possible) terminal statements...
         self.text_statements_layout = QVBoxLayout()
@@ -208,6 +222,7 @@ class BrazzersManualMainWindow(QWidget):
         self.comboboxes_complete_layout.addLayout(self.PS2_layout)
         self.comboboxes_complete_layout.addLayout(self.title_layout)
         self.comboboxes_complete_layout.addLayout(self.load_play_and_close_button_layout)
+        self.comboboxes_complete_layout.addLayout(self.search_df_layout)
         self.comboboxes_complete_layout.addLayout(self.text_statements_layout)
         self.comboboxes_complete_layout.addLayout(self.layout_for_frame)
 
@@ -247,7 +262,7 @@ class BrazzersManualMainWindow(QWidget):
             return
             
 
-        csv_file = pathlib.Path(self.csv_dir) / "df_final_13_03_23.csv"
+        csv_file = pathlib.Path(self.csv_dir) / "df_final_23_03_23.csv"
         # csv_file = pathlib.Path(self.csv_dir) / "df_final_my_db_py_22_04_2022.csv"
         
         print(f"Loading {csv_file} ... ")
@@ -353,7 +368,7 @@ class BrazzersManualMainWindow(QWidget):
         name_tmp = self.selected_site_for_picture.replace(" ", "_").lower() + ".png"
         path_folder_site_pictures = "/Users/joerg/repos/braz/site_pictures"
         path_to_picture = os.path.join(path_folder_site_pictures, name_tmp)
-        print('path_to_picture', path_to_picture)
+        # print('path_to_picture', path_to_picture)
         pixmap = QPixmap(path_to_picture)
         # self..setPixmap(pixmap)
 
@@ -500,6 +515,21 @@ class BrazzersManualMainWindow(QWidget):
         self.fill_brazzers_table(self.df_selected_TopPS)
         # self.show_brazzers_site_logo(self.selected_site)   
 
+    def searchDF(self):
+        # df: pd.DataFrame(), search_string: str()
+        self.brazzers_table.setRowCount(0)
+        print('Return was pressed!!!')
+        print('Value: ', self.search_textbox.text())
+        self.search_string = self.search_textbox.text()
+        self.df = self.loaded_csv_df
+        # self.df = df
+        # self.search_string = search_string
+        mask = (self.df.applymap(lambda x: isinstance(x, str) and self.search_string in x)).any(1)
+        self.filtered_df = self.df[mask]
+        self.fill_brazzers_table(self.filtered_df)
+        # #print('mask: ', dataFrame[mask]['Title'])
+        print('filtered df: ', self.df[mask])
+        # return self.df[mask]#['Title']
 
 ############################################################
 class AnomTypeFilterFrame(QFrame):
@@ -673,7 +703,7 @@ class AnomTypeFilterFrame(QFrame):
 
 
 
-
+    
 
 
 if __name__ == '__main__':
