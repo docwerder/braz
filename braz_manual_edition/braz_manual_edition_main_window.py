@@ -1,4 +1,5 @@
 import sys
+sys.path.append('/Users/joerg/repos/werdernas')
 import os
 from pathlib import Path
 from typing import Optional
@@ -10,6 +11,7 @@ from PySide2.QtCore import QThread
 from PySide2.QtCore import Signal as pyqtSignal
 import os, subprocess, sys
 from MultiComboBox import MultiComboBox
+from connectToWerderNas import Main_WERDERNAS
 
 os.environ['QT_MAC_WANTS_LAYER'] = '1'
 from PySide2.QtWidgets import (
@@ -176,12 +178,15 @@ class BrazzersManualMainWindow(QWidget):
         self.play_button.clicked.connect(self.play_file)
         self.close_button = QPushButton("Close")
         self.close_button.clicked.connect(self.close)
+        self.connect_to_werderNAS_button = QPushButton("Connect")
+        self.connect_to_werderNAS_button.clicked.connect(self.connect_to_WerderNAS)
         # self.btn_searchDF = QPushButton("Search DF")
         # self.btn_searchDF.clicked.connect(self.searchDF)
 
         self.load_play_and_close_button_layout.addWidget(self.load_button)
         self.load_play_and_close_button_layout.addWidget(self.play_button)
         self.load_play_and_close_button_layout.addWidget(self.close_button)
+        self.load_play_and_close_button_layout.addWidget(self.connect_to_werderNAS_button)
         # self.load_play_and_close_button_layout.addWidget(self.btn_searchDF)
 
         #% Layout for Search the DF
@@ -193,6 +198,19 @@ class BrazzersManualMainWindow(QWidget):
         self.search_df_layout.addWidget(self.lbl_searchDF)
         self.search_df_layout.addWidget(self.search_textbox)
         
+        #% Layout for summary of the filtering:
+        self.summary_layout = QGridLayout()
+        self.lbl_selected_ps = QLabel("Selected PS")
+        self.lbl_ctn_selected_ps = QLabel("Ctn:")
+        self.txt_selected_ps = QLabel("")
+        self.txt_ctn_selected_ps = QLabel("")
+
+
+        self.summary_layout.addWidget(self.lbl_selected_ps, 0, 0)
+        self.summary_layout.addWidget(self.lbl_ctn_selected_ps, 1, 0)
+        self.summary_layout.addWidget(self.txt_selected_ps, 0, 1)
+        self.summary_layout.addWidget(self.txt_ctn_selected_ps, 1, 1)
+
 
         #% Layout for the Output of the (possible) terminal statements...
         self.text_statements_layout = QVBoxLayout()
@@ -223,6 +241,7 @@ class BrazzersManualMainWindow(QWidget):
         self.comboboxes_complete_layout.addLayout(self.title_layout)
         self.comboboxes_complete_layout.addLayout(self.load_play_and_close_button_layout)
         self.comboboxes_complete_layout.addLayout(self.search_df_layout)
+        self.comboboxes_complete_layout.addLayout(self.summary_layout)
         self.comboboxes_complete_layout.addLayout(self.text_statements_layout)
         self.comboboxes_complete_layout.addLayout(self.layout_for_frame)
 
@@ -310,7 +329,7 @@ class BrazzersManualMainWindow(QWidget):
 
 
         #% Filling/setting Top_PS-layout
-        self.btn_filter_TopPS.setFixedWidth(160)
+        self.btn_filter_TopPS.setFixedWidth(100)
         self.show
 
 
@@ -501,14 +520,19 @@ class BrazzersManualMainWindow(QWidget):
         print('self.combobox_TopPS.currentData: ', self.combobox_TopPS.currentData())
         self.brazzers_table.setRowCount(0)
         self.selected_TopPS = list(self.combobox_TopPS.currentData())
-        print('TopPS selected: ', self.selected_TopPS[0])
-        print('type: ', type(self.selected_TopPS))
+        print('TopPS selected!: ', self.selected_TopPS[0])
+        print('len of TopPS selected: ', len(self.selected_TopPS))
 
         if self.selected_TopPS[0] == "All_TopPS":
             print('Debug 5')
             self.df_selected_TopPS = self.loaded_csv_df
         else:
             self.df_selected_TopPS = self.loaded_csv_df[self.loaded_csv_df['PS1'].isin(self.selected_TopPS)].sort_values(by="PS1", ascending=True)
+        
+        if len(self.selected_TopPS) == 1:
+            self.txt_selected_ps.setText(self.selected_TopPS[0])
+            self.txt_ctn_selected_ps.setText(str(len(self.df_selected_TopPS)))
+            print('Length of single TopPS df: ', len(self.df_selected_TopPS))
             
         #    self.df_selected_site = self.loaded_csv_df[self.loaded_csv_df['Site'] == self.combobox_site.currentText()]'
         
@@ -523,13 +547,17 @@ class BrazzersManualMainWindow(QWidget):
         self.search_string = self.search_textbox.text()
         self.df = self.loaded_csv_df
         # self.df = df
-        # self.search_string = search_string
+        # self.search_string = search_string!
         mask = (self.df.applymap(lambda x: isinstance(x, str) and self.search_string in x)).any(1)
         self.filtered_df = self.df[mask]
         self.fill_brazzers_table(self.filtered_df)
         # #print('mask: ', dataFrame[mask]['Title'])
         print('filtered df: ', self.df[mask])
         # return self.df[mask]#['Title']
+
+    def connect_to_WerderNAS(self):
+        self.main_werderNAS_window = Main_WERDERNAS(200, 150, 250, 150)
+        self.main_werderNAS_window.show()
 
 ############################################################
 class AnomTypeFilterFrame(QFrame):
