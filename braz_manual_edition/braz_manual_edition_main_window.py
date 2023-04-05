@@ -12,6 +12,8 @@ from PySide2.QtCore import Signal as pyqtSignal
 import os, subprocess, sys
 from MultiComboBox import MultiComboBox
 from connectToWerderNas import Main_WERDERNAS
+from qt_material import apply_stylesheet
+
 
 os.environ['QT_MAC_WANTS_LAYER'] = '1'
 from PySide2.QtWidgets import (
@@ -20,6 +22,7 @@ from PySide2.QtWidgets import (
     QFileDialog, QFrame, QMessageBox, QTableWidgetItem, QStyle, QPlainTextEdit, QCheckBox,
     QScrollArea, QHeaderView
 )
+from PySide2.QtGui import QFont
 #from emat_mfl_combined.applications.pdw_upload.analysis_tools.path2proj import Path2ProjAnomaliesGeneral
 import pathlib
 import os
@@ -47,7 +50,7 @@ class BrazzersManualMainWindow(QWidget):
     def init_ui(self) -> None:
 
         self.setWindowTitle("BRAZZERS - Manual Edition V0.5!")
-        self.resize(1500, 600)
+        self.resize(1200, 600)
 
         ### Define the layout ####
         
@@ -91,20 +94,25 @@ class BrazzersManualMainWindow(QWidget):
         #% table and the comboboxes are horizontal
 
         self.brazzers_table_and_comboxes_layout = QHBoxLayout()
-
+        # self.brazzers_table_and_comboxes_layout.setContentsMargins(0, 0, 0, 0)
         #% QTable-Layout 
         self.brazzers_table_layout = QVBoxLayout()
         self.brazzers_table = QTableWidget()
+        
         self.brazzers_table.setColumnCount(15)
-        self.brazzers_table.setHorizontalHeaderLabels(["Nr.", "Site", "PS1", "PS2", "PS3", "PS4",
-                                                      "PS5", "PS6", "PS7", "PS8", "PS9", "PS10",
-                                                      "title", "loc", "link"])
+        self.brazzers_table.setHorizontalHeaderLabels(["Nr.", "Site", "PS1", "PS2", "PS3", "Title",
+                                                      "PS4", "PS5", "PS6", "PS7", "PS8", "PS9",
+                                                      "PS10", "loc", "link"])
 
 
         header = self.brazzers_table.horizontalHeader()
         # header.setSectionResizeMode(0, QHeaderView.ResizeMode.Stretch)
+        # header.setSectionResizeMode(1, QHeaderView.ResizeMode.ResizeToContents)
         header.setSectionResizeMode(2, QHeaderView.ResizeMode.ResizeToContents)
+        header.setSectionResizeMode(3, QHeaderView.ResizeMode.ResizeToContents)
+
         header.setSectionResizeMode(5, QHeaderView.ResizeMode.ResizeToContents)
+        # self.brazzers_table.resize(100, 500)
         #% Define the function which his executed, when cell was clicked !
         self.brazzers_table.cellClicked.connect(self.cell_was_clicked)
 
@@ -115,9 +123,13 @@ class BrazzersManualMainWindow(QWidget):
         
         #% Layout for the site
         self.site_layout = QHBoxLayout()
+        # self.site_layout.addSpacing(300)
         # self.site_layout.setAlignment(Qsortedt.AlignLeft)
-        self.site_label = QLabel("Site: ")
+        self.site_label = QLabel("SITE: ")
+        self.site_label.setFont(QFont('Roboto', 13))
+        self.site_label.setStyleSheet("color: rgb(255,210,43);font-weight: bold;")
         self.combobox_site = QComboBox()
+        self.combobox_site.setFixedWidth(335)
         
         self.site_layout.addWidget(self.site_label)
         self.site_layout.addWidget(self.combobox_site)
@@ -125,10 +137,14 @@ class BrazzersManualMainWindow(QWidget):
 
         #% Layout for the TopPS, NEW: MultiCombobox
         self.TopPS_layout = QHBoxLayout()
+        # self.TopPS_layout.addSpacing(300)
         # self.PS1_layout.setAlignment(Qt.AlignLeft)
-        self.TopPS_label = QLabel("Top PS: ")
+        self.TopPS_label = QLabel("TOP PS: ")
+        self.TopPS_label.setFont(QFont('Roboto', 13))
+        self.TopPS_label.setStyleSheet("color: rgb(255,210,43);font-weight: bold;")
         self.combobox_TopPS = MultiComboBox()
         self.btn_filter_TopPS = QPushButton("Filter Top PS")
+        self.btn_filter_TopPS.setFixedWidth(120)
         self.btn_filter_TopPS.clicked.connect(self.filter_and_show_TopPS)
         self.TopPS_layout.addWidget(self.TopPS_label)
         self.TopPS_layout.addWidget(self.btn_filter_TopPS)
@@ -144,41 +160,55 @@ class BrazzersManualMainWindow(QWidget):
             'Angel Wicky', 'Angela White', 'Armani Black', 'Ava Addams', 'Bridgette B', 'Britney Shannon', 'Carmella Bing', 'Cathy Heaven', 'Chessie Kay', 'Christie Stevens', 'Claire Dames', 'Corinna Blake', 'Dee Williams', 'Diamond Foxxx', 'Donna Bell', 'Ella Hughes', 'Emma Butt', 'Eva Karera', 'Eva Notty', 'Harmony Reigns', 'Holly Halston', 'Jasmine Jae', 'Jayden Jaymes', 'Jenna Presley', 'Jessica Moore', 'Jillian Janson', 'Julia Ann', 'Katie Kox', 'Kelly Divine', 'Kendra Lust', 'Kiara Mia', 'Krissy Lynn', 'Leigh Darby', 'Madison Ivy', 'Marsha May', 'Memphis Monroe', 'Nicolette Shea', 'Nikki Benz', 'Noelle Easton', 'Peta Jensen', 'Rebeca Linares', 'Rebecca More', 'Riley Evans', 'Roberta Gemma', 'Romi Rain', 'Sensual Jane', 'Shyla Stylez', 'Sienna West', 'Sophie Dee', 'Stella Cox', 
             'Syren De Mer', 'Tarra White', 'Tory Lane', 'Velicity Von', 'Veronica Avluv', 'Yasmin Scott']
         self.combobox_TopPS.addItems(self.TopPS)
-
+        self.combobox_TopPS.setFixedWidth(200)
         #% Layout for the PS1
         self.PS1_layout = QHBoxLayout()
         # self.PS1_layout.setAlignment(Qt.AlignLeft)
         self.PS1_label = QLabel("PS1: ")
+        self.PS1_label.setFont(QFont('Roboto', 13))
+        self.PS1_label.setStyleSheet("color: rgb(255,210,43);font-weight: bold;")
         self.combobox_PS1 = QComboBox()
+        self.combobox_PS1.setFixedWidth(335)
         self.PS1_layout.addWidget(self.PS1_label)
         self.PS1_layout.addWidget(self.combobox_PS1)
 
         #% Layout for the PS2
         self.PS2_layout = QHBoxLayout()
         self.PS2_label = QLabel("PS2: ")
+        self.PS2_label.setFont(QFont('Roboto', 13))
+        self.PS2_label.setStyleSheet("color: rgb(255,210,43);font-weight: bold;")
         # self.PS2_layout.setAlignment(Qt.AlignLeft)
         self.combobox_PS2 = QComboBox()
+        self.combobox_PS2.setFixedWidth(335)
         self.PS2_layout.addWidget(self.PS2_label)
-        self.PS2_layout.stretch(1)
+        # self.PS2_layout.stretch(1)
         self.PS2_layout.addWidget(self.combobox_PS2)
 
         #% Layout for the Title
         self.title_layout = QHBoxLayout()
         self.title_label = QLabel("Title: ")
+        self.title_label.setFont(QFont('Roboto', 13))
+        self.title_label.setStyleSheet("color: rgb(255,210,43);font-weight: bold;")
         # self.title_layout.setAlignment(Qt.AlignLeft)
         self.combobox_title = QComboBox()
+        self.combobox_title.setFixedWidth(335)
         self.title_layout.addWidget(self.title_label)
         self.title_layout.addWidget(self.combobox_title)
 
         #% Layout for load_and_play_buttons
         self.load_play_and_close_button_layout = QHBoxLayout()
+        # self.load_play_and_close_button_layout.addSpacing(300)
         self.load_button = QPushButton("Load csv-file")
+        self.load_button.setFixedWidth(120)
         self.load_button.clicked.connect(self.load_csv_file)
         self.play_button = QPushButton("Play file")
+        self.play_button.setFixedWidth(120)
         self.play_button.clicked.connect(self.play_file)
         self.close_button = QPushButton("Close")
+        self.close_button.setFixedWidth(120)
         self.close_button.clicked.connect(self.close)
         self.connect_to_werderNAS_button = QPushButton("Connect")
+        self.connect_to_werderNAS_button.setFixedWidth(120)
         self.connect_to_werderNAS_button.clicked.connect(self.connect_to_WerderNAS)
         # self.btn_searchDF = QPushButton("Search DF")
         # self.btn_searchDF.clicked.connect(self.searchDF)
@@ -216,7 +246,7 @@ class BrazzersManualMainWindow(QWidget):
         self.text_statements_layout = QVBoxLayout()
         self.output_textbox = QPlainTextEdit()
         text = "Welcome to brazzers db"
-        self.output_textbox.setStyleSheet("background-color: rgb(155, 155, 55); border-radius: 10px")
+        self.output_textbox.setStyleSheet("background-color: rgb(255,210,43); border-radius: 10px")
         self.output_textbox.appendPlainText(text)
         self.text_statements_layout.addWidget(self.output_textbox)
 
@@ -324,12 +354,12 @@ class BrazzersManualMainWindow(QWidget):
         for lf, i in zip(self.site_list_sorted, range(len(self.site_list_sorted)+1)):
             self.combobox_site.addItem(lf)
             self.combobox_site.setItemData(i, Qt.AlignRight)
-        self.combobox_site.setFixedWidth(160)
+        self.combobox_site.setFixedWidth(335)
         self.combobox_site.currentTextChanged.connect(self.site_changed)
 
 
         #% Filling/setting Top_PS-layout
-        self.btn_filter_TopPS.setFixedWidth(100)
+        # self.btn_filter_TopPS.setFixedWidth(100)
         self.show
 
 
@@ -343,7 +373,7 @@ class BrazzersManualMainWindow(QWidget):
         for lf, i_ps1 in zip(self.ps1_list_sorted, range(len(self.ps1_list_sorted)+1)):
             self.combobox_PS1.addItem(lf)    
             self.combobox_PS1.setItemData(i_ps1, Qt.AlignHCenter)
-        self.combobox_PS1.setFixedWidth(160)
+        self.combobox_PS1.setFixedWidth(335)
         self.combobox_PS1.currentTextChanged.connect(self.ps1_changed)
         
         #% Filling the ComboBox "PS2" 
@@ -358,13 +388,13 @@ class BrazzersManualMainWindow(QWidget):
             self.combobox_PS2.addItem(lf)    
             self.combobox_PS2.setItemData(i_ps2, Qt.AlignHCenter)
         
-        # self.combobox_PS1.setFixedWidth(160)
+        self.combobox_PS1.setFixedWidth(335)
 
 
         #% Filling the ComboBox "PS2" and adjust it with the max_width of text-entry    
-        self.combobox_PS2.setFixedWidth(160)
+        # self.combobox_PS2.setFixedWidth(160)
 
-        self.combobox_title.setFixedWidth(160)
+        # self.combobox_title.setFixedWidth(160)
 
         # rows = 0
 
@@ -527,8 +557,9 @@ class BrazzersManualMainWindow(QWidget):
             print('Debug 5')
             self.df_selected_TopPS = self.loaded_csv_df
         else:
-            self.df_selected_TopPS = self.loaded_csv_df[self.loaded_csv_df['PS1'].isin(self.selected_TopPS)].sort_values(by="PS1", ascending=True)
-        
+            # self.df_selected_TopPS = self.loaded_csv_df[self.loaded_csv_df['PS1'].isin(self.selected_TopPS)].sort_values(by="PS1", ascending=True)
+            self.df_selected_TopPS = self.loaded_csv_df[self.loaded_csv_df['PS1'].isin(self.selected_TopPS) | self.loaded_csv_df['PS2'].isin(self.selected_TopPS)].sort_values(by="PS1", ascending=True)
+
         if len(self.selected_TopPS) == 1:
             self.txt_selected_ps.setText(self.selected_TopPS[0])
             self.txt_ctn_selected_ps.setText(str(len(self.df_selected_TopPS)))
@@ -730,12 +761,35 @@ class AnomTypeFilterFrame(QFrame):
             self.apply_button.setEnabled(True)
 
 
+extra = {
+    # Button colors
+    'danger': '#dc3545',
+    'warning': '#ffc107',
+    'success': '#17a2b8',
+    'mycolor1': '#ffd22b',
 
+    # Font
+    # 'font': 'Times',
+    'font_size': '12px',
+    'line_height': '13px',
+    'font_family': 'Roboto',
+    # Density scale
+    'density_scale': '-3',
+
+    # environ:
+    'pyside2_dev': True,
+    'linux': True,
+}
     
-
+# extra['QMenu'] = {
+#     'height': 50,
+#     'padding': '10px 10px 10px 10px',  # top, right, bottom, left
+# }
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
+
+    apply_stylesheet(app, theme='dark_amber.xml', invert_secondary=False, extra=extra)
     window = BrazzersManualMainWindow(200, 330, 800)
     window.show()
     sys.exit(app.exec_())
