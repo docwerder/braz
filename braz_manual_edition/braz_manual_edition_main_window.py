@@ -3,7 +3,7 @@ sys.path.append('/Users/joerg/repos/werdernas')
 import os
 from pathlib import Path
 from typing import Optional
-from PySide2.QtGui import QPixmap
+from PySide2.QtGui import QPixmap, QColor, QPalette, QBrush
 from PySide2 import QtCore
 from PySide2.QtCore import Qt
 from PySide2.QtGui import QPixmap
@@ -13,9 +13,48 @@ import os, subprocess, sys
 from MultiComboBox import MultiComboBox
 from connectToWerderNas import Main_WERDERNAS
 from qt_material import apply_stylesheet
+from PySide2.QtGui import QFontDatabase
+
+
+extra1 = {
+    # Button colors
+    'danger': '#dc3545',
+    'warning': '#ffc107',
+    'success': '#17a2b8',
+    'mycolor1': '#ffd22b',
+
+    # Font
+    # 'font': 'Times',
+    'font_size': '12px',
+    'line_height': '13px',
+    'font_family': 'Roboto',
+    # Density scale
+    'density_scale': '-3',
+
+    # # palette
+    # "primary": "#3b7a9b",  # Primärfarbe
+    # "secondary": "#5b5b5b",  # Sekundärfarbe
+    # "warning": "#d1a11d",  # Warnfarbe
+    # "danger": "#b51a39",  # Gefahrenfarbe
+    # "info": "#1a84b5",  # Informationsfarbe
+    # "success": "#3db54a",  # Erfolgsfarbe
+    # "dark": "#1d1d1d",  # Dunkle Farbe
+    # "light": "#f5f5f5",  # Helle Farbe
+    # "background": "#222222",  # Hintergrundfarbe
+    # environ:
+    'pyside2_dev': True,
+    'linux': True,
+}
+extra2 = {
+    'font_family': 'Raleway',
+}
+
+
+# apply_stylesheet(app, theme="dark_amber.xml", extra=palette)
 
 
 os.environ['QT_MAC_WANTS_LAYER'] = '1'
+
 from PySide2.QtWidgets import (
     QApplication, QVBoxLayout, QHBoxLayout, QGridLayout, QLineEdit, QTableView,
     QMainWindow, QWidget, QPushButton, QComboBox, QLabel, QListWidget, QTableWidget,
@@ -28,6 +67,7 @@ import pathlib
 import os
 import pandas as pd
 from tabulate import tabulate
+from qt_material import QtStyleTools
 
 class QHLine(QFrame):
     def __init__(self):
@@ -37,21 +77,25 @@ class QHLine(QFrame):
 
 
 class BrazzersManualMainWindow(QWidget):
-    def __init__(self, x_pos_parent_window, y_pos_parent_window, width_parent_window):
-        super().__init__()
-
-        self.x_pos_parent_window = x_pos_parent_window
-        self.y_pos_parent_window = y_pos_parent_window
-        self.width_parent_window = width_parent_window
         
+    # def __init__(self, x_pos_parent_window, y_pos_parent_window, width_parent_window):
+    #     super().__init__()
 
-        self.init_ui()
+    #     self.x_pos_parent_window = x_pos_parent_window
+    #     self.y_pos_parent_window = y_pos_parent_window
+    #     self.width_parent_window = width_parent_window
+    #     self.init_ui()
+    def __init__(self):
+        super().__init__()
+        self.init_ui() 
+
 
     def init_ui(self) -> None:
 
         self.setWindowTitle("BRAZZERS - Manual Edition V0.5!")
         self.resize(1200, 600)
 
+        
         ### Define the layout ####
         
         # Create the complete layout
@@ -199,17 +243,40 @@ class BrazzersManualMainWindow(QWidget):
         self.load_play_and_close_button_layout = QHBoxLayout()
         # self.load_play_and_close_button_layout.addSpacing(300)
         self.load_button = QPushButton("Load csv-file")
+        self.load_button.setProperty('class', 'success')
         self.load_button.setFixedWidth(120)
         self.load_button.clicked.connect(self.load_csv_file)
         self.play_button = QPushButton("Play file")
+        self.play_button.setProperty('class', 'danger')
         self.play_button.setFixedWidth(120)
         self.play_button.clicked.connect(self.play_file)
-        self.close_button = QPushButton("Close")
+        self.close_button = QPushButton("Close APP")
         self.close_button.setFixedWidth(120)
         self.close_button.clicked.connect(self.close)
         self.connect_to_werderNAS_button = QPushButton("Connect")
         self.connect_to_werderNAS_button.setFixedWidth(120)
         self.connect_to_werderNAS_button.clicked.connect(self.connect_to_WerderNAS)
+        self.btn_change_theme = QPushButton("Change Theme")
+        self.btn_change_theme.setFixedWidth(120)
+        self.combobox_change_theme = QComboBox()
+        self.combobox_change_theme.setFixedWidth(200)
+        self.combobox_change_theme.setStyleSheet('color: rgb(255, 255, 255);')
+    
+        #% Filling the ComboBox "change_theme"
+        #% home directory of the themes: 
+        #% /Users/joerg/opt/anaconda3/envs/pyside2_dev/lib/python3.10/site-packages/qt_material/themes
+    
+        themes_folder = Path(r"/Users/joerg/opt/anaconda3/envs/pyside2_dev/lib/python3.10/site-packages/qt_material/themes")
+
+        lst_themes = []
+        for single_theme in themes_folder.iterdir():
+            
+            lst_themes.append(single_theme.name)
+        
+        for lf_themes in lst_themes:
+            self.combobox_change_theme.addItem(lf_themes)
+        
+        # self.combobox_change_theme.currentTextChanged.connect(self.theme_changed)
         # self.btn_searchDF = QPushButton("Search DF")
         # self.btn_searchDF.clicked.connect(self.searchDF)
 
@@ -217,6 +284,7 @@ class BrazzersManualMainWindow(QWidget):
         self.load_play_and_close_button_layout.addWidget(self.play_button)
         self.load_play_and_close_button_layout.addWidget(self.close_button)
         self.load_play_and_close_button_layout.addWidget(self.connect_to_werderNAS_button)
+        self.load_play_and_close_button_layout.addWidget(self.combobox_change_theme)
         # self.load_play_and_close_button_layout.addWidget(self.btn_searchDF)
 
         #% Layout for Search the DF
@@ -370,6 +438,7 @@ class BrazzersManualMainWindow(QWidget):
         self.ps1_list_sorted.insert(0, "== All PS1 ==")
         # for lf in sorted(self.ps1_list_sorted):
         #     self.combobox_PS1.addItem(lf)  
+        self.combobox_PS1.setStyleSheet('color: rgb(255, 255, 255);')
         for lf, i_ps1 in zip(self.ps1_list_sorted, range(len(self.ps1_list_sorted)+1)):
             self.combobox_PS1.addItem(lf)    
             self.combobox_PS1.setItemData(i_ps1, Qt.AlignHCenter)
@@ -381,6 +450,7 @@ class BrazzersManualMainWindow(QWidget):
         self.ps2_list_sorted = sorted(list(self.ps2_list_unique))
         self.ps2_list_sorted = [lf.lstrip() for lf in self.ps2_list_sorted]
         self.ps2_list_sorted.insert(0, "== All PS2 ==")
+        self.combobox_PS2.setStyleSheet('color: rgb(255, 255, 255);')
 
         for lf in sorted(self.ps2_list_sorted):
             self.combobox_PS2.addItem(lf)  
@@ -388,8 +458,6 @@ class BrazzersManualMainWindow(QWidget):
             self.combobox_PS2.addItem(lf)    
             self.combobox_PS2.setItemData(i_ps2, Qt.AlignHCenter)
         
-        self.combobox_PS1.setFixedWidth(335)
-
 
         #% Filling the ComboBox "PS2" and adjust it with the max_width of text-entry    
         # self.combobox_PS2.setFixedWidth(160)
@@ -413,7 +481,7 @@ class BrazzersManualMainWindow(QWidget):
         # print('Selected site: \n', self.selected_site_for_picture)
         # print('Selected title: \n', self.selected_title)
         self.link_text.setText(self.selected_file)
-
+        self.link_text.setStyleSheet('color: rgb(255, 255, 255);')
         name_tmp = self.selected_site_for_picture.replace(" ", "_").lower() + ".png"
         path_folder_site_pictures = "/Users/joerg/repos/braz/site_pictures"
         path_to_picture = os.path.join(path_folder_site_pictures, name_tmp)
@@ -444,7 +512,6 @@ class BrazzersManualMainWindow(QWidget):
        self.show_brazzers_site_logo(self.selected_site)   
 
 
-    
     #% function for executing, when the PS1 is changed in the combobox...
     def ps1_changed(self):
        self.brazzers_table.setRowCount(0)
@@ -461,19 +528,74 @@ class BrazzersManualMainWindow(QWidget):
        self.fill_brazzers_table(self.df_selected_ps1)
     #    self.show_brazzers_site_logo(self.selected_site)  
  
+    def theme_changed(self):
+        self.selected_theme = self.combobox_change_theme.currentText()
+        print('selected: theme: ', self.combobox_change_theme.currentText())
+
+
     def play_file(self):
         subprocess.call(['open', self.selected_file])
 
     def fill_brazzers_table(self, selected_df: pd.DataFrame):
         # self.loaded_csv_df = load_csv_df
+        # Erstellen Sie eine QPalette-Instanz
+        # Erstellen Sie eine Instanz der gewünschten Farbe
+        color = QColor(extra1["success"])
+        # Setzen Sie die Standardpalette des QTableWidgetItem zurück
+        palette = QPalette()
+        # self.brazzers_table.item(rows, num).setPalette(palette)
+
         
+
+# Setzen Sie die Hintergrundfarbe des QTableWidgetItem
+        
+
         #% Filling the table with the content of the csv-file
         for rows, columns in selected_df.iterrows():
             rows = self.brazzers_table.rowCount()
             self.brazzers_table.insertRow(rows)
             for num, data in enumerate(columns):
                 self.brazzers_table.setItem(rows, num, QTableWidgetItem(str(data)))
+
+                if rows == 3 and num == 2:
+                    self.brazzers_table.item(rows, num).setBackground(QColor(255,210,43))
+                    self.brazzers_table.item(rows, num).setForeground(QColor(12,210,43))
+                    # Wenden Sie die Palette auf das QTableWidgetItem an
+                    
+                    self.brazzers_table.item(rows, num).setBackground(color)
+                    # Deaktivieren Sie setAutoFillBackground
+                    # self.brazzers_table.item(rows, num).setAutoFillBackground(False)
+
+                    # Wiederherstellen der Standardpalette des QTableWidgetItem
+                    # palette = self.brazzers_table.item(rows, num).palette()
+                    # self.brazzers_table.item(rows, num).setPalette(palette)
+
+                    # self.brazzers_table.item.setProperty('cool', True)
+                    # self.brazzers_table.item(rows, num).setProperty('class', 'success') # (QColor(extra["warning"]))
+        # self.brazzers_table.setItem(3, 5, QTableWidgetItem())
+        # self.brazzers_table.item(3, 5).setBackground(QColor(255,210,43)) 
+        # self.brazzers_table.setBackground(QColor(palette["green"]))
+
         
+        # self.brazzers_table.setStyleSheet("")
+        # self.brazzers_table.setStyleSheet("QTableWidgetItem {foreground-color: green; color: red;}")
+        # item = QTableWidgetItem('black')
+        # item.setBackgroundColor(QColor(255,210,43))
+        # item.setForeground(QColor(255, 155, 255))
+        # item.setBackgroundColor(QColor(230,230,250))
+        
+        
+
+        # item.setForeground(QBrush(QColor("blue")))
+        # self.brazzers_table.setItem(3, 2, item)
+        # # item.setBackground(background_color)
+        # item.setForeground(QColor("red"))  
+        # self.brazzers_table.setItem(3, 2, item)
+
+        # background_color = QColor(palette.color(QPalette.Light))
+        # item.setBackground(background_color)
+        # table_widget.setItem(row, column, item)
+
         # print('Debug 1', selected_df)
 
     def show_brazzers_site_logo(self, selected_site_for_picture):
@@ -587,7 +709,8 @@ class BrazzersManualMainWindow(QWidget):
         # return self.df[mask]#['Title']
 
     def connect_to_WerderNAS(self):
-        self.main_werderNAS_window = Main_WERDERNAS(200, 150, 250, 150)
+        # self.main_werderNAS_window = Main_WERDERNAS(200, 150, 250, 150)
+        self.main_werderNAS_window = Main_WERDERNAS()
         self.main_werderNAS_window.show()
 
 ############################################################
@@ -760,26 +883,23 @@ class AnomTypeFilterFrame(QFrame):
         else:
             self.apply_button.setEnabled(True)
 
+class RuntimeStylesheets(BrazzersManualMainWindow, QtStyleTools):
+    
+    def __init__(self):
+        super().__init__()
+        #self.main = QUiLoader().load('main_window.ui', self)
+        # self.main = BrazzersManualMainWindow(200, 330, 800) 
+        self.main = BrazzersManualMainWindow() 
+        # self.apply_stylesheet(self.main, 'dark_amber.xml', extra=extra)
 
-extra = {
-    # Button colors
-    'danger': '#dc3545',
-    'warning': '#ffc107',
-    'success': '#17a2b8',
-    'mycolor1': '#ffd22b',
+        # self.main.btn_change_theme.clicked.connect(lambda: self.apply_stylesheet(self.main, 'dark_teal.xml'))
 
-    # Font
-    # 'font': 'Times',
-    'font_size': '12px',
-    'line_height': '13px',
-    'font_family': 'Roboto',
-    # Density scale
-    'density_scale': '-3',
+        self.main.combobox_change_theme.currentTextChanged.connect(lambda: self.apply_stylesheet(self.main, self.main.combobox_change_theme.currentText(), extra=extra1))
+        # self.main.btn_change_theme.clicked.connect(lambda: self.apply_stylesheet(self.main, 'light_red.xml', extra=extra2))
+        # # self.main.pushButton_3.clicked.connect(lambda: self.apply_stylesheet(self.main, 'light_blue.xml', extra={'font_family': 'Raleway', }))
+        # # self.apply_stylesheet(self.main, 'light_red.xml')
+        # self.apply_stylesheet(self.main, 'light_blue.xml'
 
-    # environ:
-    'pyside2_dev': True,
-    'linux': True,
-}
     
 # extra['QMenu'] = {
 #     'height': 50,
@@ -789,7 +909,12 @@ extra = {
 if __name__ == '__main__':
     app = QApplication(sys.argv)
 
-    apply_stylesheet(app, theme='dark_amber.xml', invert_secondary=False, extra=extra)
-    window = BrazzersManualMainWindow(200, 330, 800)
-    window.show()
+    QFontDatabase.addApplicationFont('Raleway-Regular.ttf')
+    frame = RuntimeStylesheets()
+    frame.main.show()
+    
+    # apply_stylesheet(app, theme='dark_teal.xml', invert_secondary=False, extra=extra)
+    # window = BrazzersManualMainWindow(200, 330, 800)
+    # window = window = BrazzersManualMainWindow()
+    # window.show()
     sys.exit(app.exec_())
