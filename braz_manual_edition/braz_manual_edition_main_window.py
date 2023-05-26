@@ -93,8 +93,9 @@ class BrazzersManualMainWindow(QWidget):
     def init_ui(self) -> None:
 
         self.setWindowTitle("BRAZZERS - Manual Edition V0.5!")
-        self.resize(1200, 600)
-
+        self.resize(1500, 1000)
+        self.move(200, 0) #widht, height
+        
         
         ### Define the layout ####
         
@@ -137,8 +138,10 @@ class BrazzersManualMainWindow(QWidget):
         #% First: Define QHBoxLayout, so that the alignment of the 
         #% table and the comboboxes are horizontal
 
+        
+                           
         self.brazzers_table_and_comboxes_layout = QHBoxLayout()
-        # self.brazzers_table_and_comboxes_layout.setContentsMargins(0, 0, 0, 0)
+           # self.brazzers_table_and_comboxes_layout.setContentsMargins(0, 0, 0, 0)
         #% QTable-Layout 
         self.brazzers_table_layout = QVBoxLayout()
         self.brazzers_table = QTableWidget()
@@ -156,7 +159,7 @@ class BrazzersManualMainWindow(QWidget):
         header.setSectionResizeMode(3, QHeaderView.ResizeMode.ResizeToContents)
 
         header.setSectionResizeMode(5, QHeaderView.ResizeMode.ResizeToContents)
-        # self.brazzers_table.resize(100, 500)
+        self.brazzers_table.resize(100, 500)
         #% Define the function which his executed, when cell was clicked !
         self.brazzers_table.cellClicked.connect(self.cell_was_clicked)
 
@@ -243,7 +246,7 @@ class BrazzersManualMainWindow(QWidget):
         self.load_play_and_close_button_layout = QHBoxLayout()
         # self.load_play_and_close_button_layout.addSpacing(300)
         self.load_button = QPushButton("Load csv-file")
-        self.load_button.setProperty('class', 'success')
+        # self.load_button.setProperty('class', 'success')
         self.load_button.setFixedWidth(120)
         self.load_button.clicked.connect(self.load_csv_file)
         self.play_button = QPushButton("Play file")
@@ -358,12 +361,17 @@ class BrazzersManualMainWindow(QWidget):
 
         # Set the hand-made complete layout in a superordinate QWidget called dummy_widget
         # dummy_widget = QWidget()
+        
         self.complete_layout.addLayout(self.brazzers_logo_site_logo_layout)
+        self.complete_layout.setSpacing(10)
         self.complete_layout.addLayout(self.brazzers_table_and_comboxes_layout)#
+        self.complete_layout.addStretch(1)
         self.complete_layout.addLayout(self.complete_link_layout)
+        
         # dummy_widget.setLayout(self.complete_layout)
         # self.setCentralWidget(dummy_widget)
         self.setLayout(self.complete_layout)
+        
 
     #% Define the methods of the buttons etc....
 
@@ -893,7 +901,7 @@ class RuntimeStylesheets(BrazzersManualMainWindow, QtStyleTools):
         # self.apply_stylesheet(self.main, 'dark_amber.xml', extra=extra)
 
         # self.main.btn_change_theme.clicked.connect(lambda: self.apply_stylesheet(self.main, 'dark_teal.xml'))
-
+        apply_stylesheet(app, theme='dark_teal.xml', extra=extra1)
         self.main.combobox_change_theme.currentTextChanged.connect(lambda: self.apply_stylesheet(self.main, self.main.combobox_change_theme.currentText(), extra=extra1))
         # self.main.btn_change_theme.clicked.connect(lambda: self.apply_stylesheet(self.main, 'light_red.xml', extra=extra2))
         # # self.main.pushButton_3.clicked.connect(lambda: self.apply_stylesheet(self.main, 'light_blue.xml', extra={'font_family': 'Raleway', }))
