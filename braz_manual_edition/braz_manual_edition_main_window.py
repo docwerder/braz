@@ -138,10 +138,10 @@ class BrazzersManualMainWindow(QWidget):
         #% First: Define QHBoxLayout, so that the alignment of the 
         #% table and the comboboxes are horizontal
 
-        
-                           
+
+
         self.brazzers_table_and_comboxes_layout = QHBoxLayout()
-           # self.brazzers_table_and_comboxes_layout.setContentsMargins(0, 0, 0, 0)
+        # self.brazzers_table_and_comboxes_layout.setContentsMargins(0, 0, 0, 0)
         #% QTable-Layout 
         self.brazzers_table_layout = QVBoxLayout()
         self.brazzers_table = QTableWidget()
@@ -154,7 +154,7 @@ class BrazzersManualMainWindow(QWidget):
 
         header = self.brazzers_table.horizontalHeader()
         # header.setSectionResizeMode(0, QHeaderView.ResizeMode.Stretch)
-        # header.setSectionResizeMode(1, QHeaderView.ResizeMode.ResizeToContents)
+        header.setSectionResizeMode(1, QHeaderView.ResizeMode.ResizeToContents)
         header.setSectionResizeMode(2, QHeaderView.ResizeMode.ResizeToContents)
         header.setSectionResizeMode(3, QHeaderView.ResizeMode.ResizeToContents)
 
@@ -387,7 +387,7 @@ class BrazzersManualMainWindow(QWidget):
             return
             
 
-        csv_file = pathlib.Path(self.csv_dir) / "df_final_23_03_23.csv"
+        csv_file = pathlib.Path(self.csv_dir) / "df_final_30_05_23.csv"
         # csv_file = pathlib.Path(self.csv_dir) / "df_final_my_db_py_22_04_2022.csv"
         
         print(f"Loading {csv_file} ... ")
@@ -688,7 +688,16 @@ class BrazzersManualMainWindow(QWidget):
             self.df_selected_TopPS = self.loaded_csv_df
         else:
             # self.df_selected_TopPS = self.loaded_csv_df[self.loaded_csv_df['PS1'].isin(self.selected_TopPS)].sort_values(by="PS1", ascending=True)
-            self.df_selected_TopPS = self.loaded_csv_df[self.loaded_csv_df['PS1'].isin(self.selected_TopPS) | self.loaded_csv_df['PS2'].isin(self.selected_TopPS)].sort_values(by="PS1", ascending=True)
+            self.df_selected_TopPS = self.loaded_csv_df[self.loaded_csv_df['PS1'].isin(self.selected_TopPS) |
+                                                        self.loaded_csv_df['PS2'].isin(self.selected_TopPS) | 
+                                                        self.loaded_csv_df['PS3'].isin(self.selected_TopPS) |
+                                                        self.loaded_csv_df['PS4'].isin(self.selected_TopPS) |
+                                                        self.loaded_csv_df['PS5'].isin(self.selected_TopPS) |
+                                                        self.loaded_csv_df['PS6'].isin(self.selected_TopPS) |
+                                                        self.loaded_csv_df['PS7'].isin(self.selected_TopPS) |
+                                                        self.loaded_csv_df['PS8'].isin(self.selected_TopPS) |
+                                                        self.loaded_csv_df['PS9'].isin(self.selected_TopPS) |
+                                                        self.loaded_csv_df['PS10'].isin(self.selected_TopPS) ].sort_values(by="PS1", ascending=True)
 
         if len(self.selected_TopPS) == 1:
             self.txt_selected_ps.setText(self.selected_TopPS[0])

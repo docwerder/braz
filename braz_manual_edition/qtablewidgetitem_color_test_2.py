@@ -5,7 +5,7 @@ app = QApplication()
 
 # Laden der Farben aus der dark_amber.xml-Datei in ein QPalette-Objekt
 palette = QPalette()
-palette_file = open('/Users/joerg/opt/anaconda3/envs/pyside2_dev/lib/python3.10/site-packages/qt_material/themes/my_dark_amber.xml')
+palette_file = open('/Users/joerg/opt/anaconda3/envs/pyside2_dev/lib/python3.10/site-packages/qt_material/themes/my_dark_amber.xm')
 palette.read(palette_file)
 
 # Erstellung des QTableWidget

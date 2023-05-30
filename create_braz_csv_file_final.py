@@ -41,7 +41,7 @@ bra_dir_db_2 = sorted(next(os.walk(bra_dir_2))[1])
 selected_dirs = [bra_dir_db[i] for i in [0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
                             15, 16, 17, 19, 20, 21, 23]]
 
-selected_dirs_2 = [bra_dir_db_2[i] for i in [0, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 19, 20, 23]]
+selected_dirs_2 = [bra_dir_db_2[i] for i in [0, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 19, 20, 21, 22]]
 
 
 selected_dirs_final = [selected_dirs, selected_dirs_2]
@@ -67,6 +67,7 @@ link_files_db = {}
 for lf in selected_dirs:
     tmp_dir = os.path.join(bra_dir,lf)
     tmp_files = sorted(glob.glob(r'{}/*.mp4'.format(tmp_dir)))
+    
 
     for lf_tmp in tmp_files:
         #print('lf_tmp: ', lf_tmp )
@@ -95,20 +96,23 @@ for lf in selected_dirs:
 
 # going through the chosen folders selected_dirs_2
 for lf in selected_dirs_2:
+    # print('selected_dirs_2: ', selected_dirs_2)
 
     tmp_dir = os.path.join(bra_dir_2, lf)
+    # print(bra_dir_2)
     tmp_files = sorted(glob.glob(r'{}/*.mp4'.format(tmp_dir)))
     
     for lf_tmp in tmp_files:
-        # print('lf_tmp: ', lf_tmp)
+        
         site_string = lf_tmp.split('/')[-2]
         location = lf_tmp.split("/")[2]
         site_with_ps = lf_tmp.split('/')[-1].split('-')[0]
         
         ps_all = lf_tmp.split("-")[0].split(site_string + "_")[1]
-    
+        # print('ps_all: ', ps_all)
 
         ps_single = ps_all.split("__")
+        # print('ps_single: ', ps_single)
         tmp_files_location_db_tmp.append(location)
         tmp_files_location_db = pd.DataFrame(tmp_files_location_db_tmp)
         tmp_files_db_tmp.append(ps_single)
@@ -157,5 +161,6 @@ df_bra_final = df_final_tmp_2[custom_cols_new]
 #print('df_bra_final: \n ', df_bra_final)
 #print(tabulate(df_bra_final, headers='keys', tablefmt='psql'))
 
-saved_csv_file = input('Enter the name of the csv_file: ')
+# saved_csv_file = input('Enter the name of the csv_file: ')
+saved_csv_file = r"/Users/joerg/repos/braz/df_final_30_05_23.csv"
 df_bra_final.to_csv(saved_csv_file)
