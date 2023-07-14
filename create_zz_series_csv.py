@@ -23,14 +23,13 @@ mnt_WERDERNAS2X()
 
 
 
-bra_dir = '/Volumes/WERDERNASX/VIDEOSX/BRAZZERS'
-bra_dir_2 = '/Volumes/WERDERNAS2X/VIDEOS2X/BRAZZERS2'
+bra_zz_series_dir = '/Volumes/WERDERNASX/VIDEOSX/BRAZZERS/zz_series'
 
 # Go through the root folder
 # With next we get the folder structure under the
 # root folder
 
-next(os.walk(bra_dir))
+next(os.walk(bra_zz_series_dir))
 bra_dir_db=sorted(next(os.walk(bra_dir))[1])
 
 next(os.walk(bra_dir_2))
@@ -164,5 +163,5 @@ df_bra_final = df_final_tmp_2[custom_cols_new]
 #print(tabulate(df_bra_final, headers='keys', tablefmt='psql'))
 
 # saved_csv_file = input('Enter the name of the csv_file: ')
-saved_csv_file = r"/Users/joerg/repos/brazGUI/csv_data/df_final_13_07_23.csv"
+saved_csv_file = r"/Users/joerg/repos/brazGUI/csv_data/df_zz_series_13_07_23.csv"
 df_bra_final.to_csv(saved_csv_file)
